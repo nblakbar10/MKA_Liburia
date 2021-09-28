@@ -1,0 +1,332 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #92deff;
+    position: absolute;
+}
+
+.logo img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 785px;
+    top: 120px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: grid;
+    grid-template-columns: repeat();
+}
+@media (max-width: 750px) {
+    .logo img {
+        width: 15000px;
+        left: 50%;
+        margin-top: -270px;
+    }
+}
+.form-signin {
+    position: absolute;
+    width: 527px;
+    height: 586px;
+    left: 112px;
+    top: 40px;
+    background: #ffffff;
+    border-radius: 25px;
+}
+@media (max-width: 750px) {
+    .form-signin {
+        width: 200px;
+        width: 400px;
+        margin-top: 10px;
+        margin-left: -50px;
+        box-shadow: #afafaf;
+    }
+}
+.title {
+    position: absolute;
+    width: 315px;
+    height: 15px;
+    left: 97px;
+    top: 70px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #113c4e;
+}
+@media (max-width: 750px) {
+    .title {
+        font-size: 16px;
+        padding-right: 25%;
+    }
+}
+
+.input-field {
+    position: absolute;
+    width: 357px;
+    height: 45px;
+    left: 97px;
+    top: 170px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #afafaf;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15% 75%;
+}
+@media (max-width: 750px) {
+    .input-field {
+        width: 230px;
+        height: 35px;
+        padding-right: 30px;
+    }
+}
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+@media (max-width: 750px) {
+    .input-field input {
+        font-size: 15px;
+    }
+}
+
+.input-field1 {
+    position: absolute;
+    width: 357px;
+    height: 45px;
+    left: 97px;
+    top: 235px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #afafaf;
+
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15% 75%;
+}
+
+@media (max-width: 750px) {
+    .input-field1 {
+        width: 230px;
+        height: 35px;
+        padding-right: 30px;
+    }
+}
+
+.input-field1 input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+@media (max-width: 750px) {
+    .input-field1 input {
+        font-size: 15px;
+    }
+}
+
+.lupa {
+    position: absolute;
+    width: 114px;
+    height: 21px;
+    left: 340px;
+    top: 280px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+@media (max-width: 750px) {
+    .lupa {
+        font-size: 10px;
+        left: 110px;
+    }
+}
+
+.lupa:hover {
+    background-color: #92deff;
+}
+
+.submit {
+    position: absolute;
+    width: 357px;
+    height: 55px;
+    left: 97px;
+    top: 360px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    /* identical to box height */
+
+    background-color: #07b4fe;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+@media (max-width: 750px) {
+    .submit {
+        width: 230px;
+        height: 35px;
+        top: 330px;
+    }
+}
+.submit:hover {
+    background-color: #92deff;
+}
+
+.anu {
+    position: absolute;
+    width: 132px;
+    height: 21px;
+    left: 205px;
+    top: 430px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+@media (max-width: 750px) {
+    .anu {
+        width: 130px;
+        height: 5px;
+        font-size: 12px;
+        left: 37%;
+        top: 382px;
+    }
+}
+.input {
+    position: absolute;
+    width: 357px;
+    height: 55px;
+    left: 97px;
+    top: 467px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #666666;
+    /* identical to box height */
+
+    background: #ffffff;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 15% 75%;
+}
+@media (max-width: 750px) {
+    .input {
+        width: 230px;
+        height: 35px;
+        margin-top: -65px;
+    }
+}
+.input:hover {
+    background-color: #adacac;
+}
+
+.input input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #666666;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.input img {
+    margin-left: 140%;
+    margin-top: 30%;
+    font-size: 180%;
+}
+@media (max-width: 750px) {
+    .input img {
+        font-size: 80px;
+        margin-left: 10%;
+        top: 700px;
+    }
+}
+.sign a {
+    text-decoration: none;
+}
+.sign a:hover {
+    background-color: #92deff;
+}
+.sign {
+    position: absolute;
+    width: 357px;
+    height: 55px;
+    left: 150px;
+    top: 510px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+@media (max-width: 750px) {
+    .sign {
+        font-size: 16px;
+        width: 00px;
+        margin-top: -20px;
+        padding-right: 500px;
+    }
+}
