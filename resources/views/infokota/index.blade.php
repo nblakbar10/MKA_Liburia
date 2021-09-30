@@ -19,9 +19,10 @@
 
 
 <body class="text-center">
-
+    <!-- images -->
     <img src="{{asset('img/tour.svg')}}" alt="">
     <div class="one">
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">
                 <img src="{{asset('img/logo.svg')}}" alt="">
@@ -49,6 +50,7 @@
         </nav>
     </div>
 
+    <!-- konten -->
     <div class="container">
         <div class="row">
             <div class="col">
@@ -113,7 +115,7 @@
 
 
 
-
+    <!-- footer -->
     <div class="footers">
         <div class="container">
             <div class="row">

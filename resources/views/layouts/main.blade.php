@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <title>Info | Liburia</title>
+    <title>{{$title}} | Liburia</title>
 </head>
 
 <body>
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">
             <img src="{{asset('img/logo.svg')}}" alt="">
@@ -49,29 +49,27 @@
     </nav>
     <br>
 
-    <!-- konten -->
+    <!-- Jumbotron -->
+    <div class="container-one">
+        <img src="{{asset('img/icon.svg')}}" class="rounded float-right" width="630px">
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col informasi">
-                <h2>Menikmati desiran angin laut dan deburan ombak pantai
-                    di Pantai Manggar Segara Sari</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolore, voluptatum ipsam enim rerum quibusdam assumenda cum explicabo eum reiciendis, impedit nobis ducimus ratione adipisci, est quasi asperiores. Nesciunt, quisquam.</p>
+            <div class="col ">
+                <p class="myfont">Temukan </p>
+                <p class="myfont1"><img src="{{asset('img/atribut.svg')}}" width="250"></p>
+                <br>
+                <p class="myfont2"> cara baru untuk <br> berlibur !</p>
             </div>
         </div>
     </div>
 
+    <!-- Konten -->
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h5>Jam Operasional</h5>
-                <h5>Harga Tiket Masuk</h5>
-                <h5>Akomodasi Terdekat</h5>
-                <h5>Jarak dari bandara</h5>
-            </div>
-        </div>
+        @yield('content')
     </div>
 
-    <!-- before footer -->
+    <!-- Before Footer -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -79,7 +77,7 @@
             </div>
         </div>
     </div>
-    <!-- footer -->
+    <!-- Footer -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -128,4 +126,9 @@
             </a>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
+
+</html>

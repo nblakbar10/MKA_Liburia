@@ -26,6 +26,6 @@ class UtamaController extends Controller
         $dataview = [
             'article' => $data
         ];
-        return view('front.index', $dataview);
+        return view('halamanutama.index', $dataview);
     }
 }
