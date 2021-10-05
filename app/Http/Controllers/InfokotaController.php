@@ -8,6 +8,8 @@ class InfokotaController extends Controller
 {
     public function index()
     {
+
+
         return view('infokota.index');
     }
 }

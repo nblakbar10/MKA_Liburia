@@ -10,15 +10,15 @@ class UtamaController extends Controller
     {
         $data = [
             [
-                "title" => "A",
+                "title" => "Majukan Pariwisata NTT Lewat Ideathon 2021 #RinduLabuanBajo",
                 "description" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quibusdam ullam? Accusamus labore sapiente magni quia autem impedit in voluptatibus assumenda blanditiis quae illum perspiciatis dignissimos dolorum ut, vitae molestias?"
             ],
             [
-                "title" => "B",
+                "title" => "Majukan Pariwisata NTT Lewat Ideathon 2021 #RinduLabuanBajo",
                 "description" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quibusdam ullam? Accusamus labore sapiente magni quia autem impedit in voluptatibus assumenda blanditiis quae illum perspiciatis dignissimos dolorum ut, vitae molestias?"
             ],
             [
-                "title" => "C",
+                "title" => "Majukan Pariwisata NTT Lewat Ideathon 2021 #RinduLabuanBajo",
                 "description" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quibusdam ullam? Accusamus labore sapiente magni quia autem impedit in voluptatibus assumenda blanditiis quae illum perspiciatis dignissimos dolorum ut, vitae molestias?"
             ],
         ];
@@ -26,6 +26,8 @@ class UtamaController extends Controller
         $dataview = [
             'article' => $data
         ];
-        return view('halamanutama.index', $dataview);
+        return view('halamanutama.index', $dataview, [
+            "title" => "Halaman Utama"
+        ]);
     }
 }
