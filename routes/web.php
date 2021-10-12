@@ -27,10 +27,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
-Route::post('/login', [LoginController::class, 'store']);
+Route::post('/login', [LoginController::class, 'login']);
 Route::get('/download', [DownloadController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'store']);
+Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/halamanutama', [UtamaController::class, 'index']);
 Route::get('/destinasi', [DestinasiController::class, 'index']);
 Route::get('/infokota', [InfokotaController::class, 'index']);
