@@ -2,6 +2,21 @@
 
  <!-- Konten -->
  @section('content')
+ <!-- Jumbotron -->
+ <div class="container-one">
+     <img src="{{asset('img/icon.svg')}}" class="rounded float-right" width="630px">
+ </div>
+ <div class="container">
+     <div class="row">
+         <div class="col ">
+             <p class="myfont">Temukan </p>
+             <p class="myfont1"><img src="{{asset('img/atribut.svg')}}" width="250"></p>
+             <br>
+             <p class="myfont2"> cara baru untuk <br> berlibur !</p>
+         </div>
+     </div>
+ </div>
+
  <div class="container">
      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
          <ol class="carousel-indicators">
@@ -123,7 +138,6 @@
                          <div class="card-body">
                              <h5 class="card-title">{{ $a ["title"]}}</h5>
                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus iusto hic sapiente architecto facere debitis, tenetur provident vel sed voluptatum aperiam quasi ratione nemo placeat consequuntur maiores molestiae corporis.</p>
-                             <p class="card-text"><small class="text-muted">Diposting 19 menit lalu</small></p>
                          </div>
                      </div>
                  </div>
