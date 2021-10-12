@@ -13,17 +13,22 @@ class UserController extends Controller
 
     public $successStatus = 200;
 
+    //ini buat login
     public function login(){
-        if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){
+        if(Auth::attempt(['username' => request('username'), 'password' => request('password')])){
             $user = Auth::user();
             $success['token'] =  $user->createToken('nApp')->accessToken;
-            return response()->json(['success' => $success], $this->successStatus);
+            return response()->json(['Login success' => $success], $this->successStatus);
+            ///$success['username'] =  $user->username;
+            ///return response()->json(['username'=>$user->username], 401);
+            ///return response(['username'=>$username]);
         }
         else{
             return response()->json(['error'=>'Unauthorised'], 401);
         }
     }
 
+    ///ini buat register
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -44,7 +49,8 @@ class UserController extends Controller
         $success['token'] =  $user->createToken('nApp')->accessToken;
         $success['username'] =  $user->username;
 
-        return response()->json(['success'=>$success], $this->successStatus);
+        return response()->json(['Register success!'=>$success], $this->successStatus);
+        
     }
 
     ///ini function buat logout
@@ -58,6 +64,7 @@ class UserController extends Controller
         }
     }
 
+    ///ini buat show data (user)
     public function details()
     {
         $user = Auth::user();
