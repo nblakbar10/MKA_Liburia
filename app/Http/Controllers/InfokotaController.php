@@ -10,6 +10,8 @@ class InfokotaController extends Controller
     {
 
 
-        return view('infokota.index');
+        return view('infokota.index', [
+            "title" => " Informasi Kota"
+        ]);
     }
 }

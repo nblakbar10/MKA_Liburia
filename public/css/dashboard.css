@@ -1,0 +1,150 @@
+body {
+    font-size: 0.875rem;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.mysidebar {
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 5rem;
+    }
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    margin-top: 75px;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+}
+
+.sidebar .nav-link {
+    color: #07b4fe;
+    font-size: 16px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #07b4feef;
+    color: white;
+    font-size: 16px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #07b4feef;
+    color: white;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+.navbar {
+    box-shadow: 0 7px 7px rgba(192, 186, 186, 0.8);
+    background-color: white;
+}
+
+.navbar-nav {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #080808;
+}
+
+.img-circle {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.nav-link4 {
+    color: #030303;
+    text-align: center;
+}
+
+/* dashboard */
+.content {
+    margin-left: 230px;
+    margin-top: -550px;
+}
+
+.menu {
+    box-shadow: 0 10px 7px rgba(192, 186, 186, 0.8);
+}
+
+.col H2 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Chart Pie */
+.card.card-info {
+    width: 400px;
+    height: 250px;
+    margin-left: 180px;
+    margin-top: 40px;
+    box-shadow: 0 10px 7px rgba(192, 186, 186, 0.8);
+}
+
+.card-title {
+    font-family: "Poppins", sans-serif;
+}

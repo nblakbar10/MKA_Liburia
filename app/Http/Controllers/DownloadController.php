@@ -8,6 +8,8 @@ class DownloadController extends Controller
 {
     public function index()
     {
-        return view('download.index');
+        return view('download.index', [
+            "title" => "Download"
+        ]);
     }
 }

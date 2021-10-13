@@ -4,7 +4,7 @@
 @section('content')
 <!-- images -->
 <div class="img">
-    <img src="{{asset('img/tour.svg')}}" alt="">
+    <img width="1300px" src="{{asset('img/tour.svg')}}" alt="">
 </div>
 <!-- Konten -->
 <div class="container">
@@ -77,7 +77,7 @@
 <br>
 
 <div class="container">
-    <h2 class="mydestinasi">
+    <h2 class="mydestinasi1">
         Destinasi Wisata Favorite
     </h2>
     <div class="row favorite">

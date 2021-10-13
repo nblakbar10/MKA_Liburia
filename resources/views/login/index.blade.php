@@ -19,6 +19,7 @@
 
 
 <body class="text-center">
+
     <!-- 
     @if(session()->has('succes'))
     <div class="alert alert-succes alert-dismissible fade show" role="alert">

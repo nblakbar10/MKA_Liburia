@@ -8,6 +8,7 @@ use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\InfokotaController;
 use App\Http\Controllers\InfoController;
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,10 +29,29 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'store']);
+
 Route::get('/download', [DownloadController::class, 'index']);
+
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
+
 Route::get('/halamanutama', [UtamaController::class, 'index']);
 Route::get('/destinasi', [DestinasiController::class, 'index']);
 Route::get('/infokota', [InfokotaController::class, 'index']);
 Route::get('/info', [InfoController::class, 'index']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index', [
+        "title" => "Dashboard"
+    ]);
+});
+
+Route::get('/chart', function () {
+    return view('chart.index');
+});
+
+Route::get('/admin', function () {
+    return view('admin.index', [
+        "title" => "Manajemen Admin"
+    ]);
+});

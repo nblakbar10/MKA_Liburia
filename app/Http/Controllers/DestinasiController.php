@@ -8,7 +8,9 @@ class DestinasiController extends Controller
 {
     public function index()
     {
-        return view('destinasi.index');
+        return view('destinasi.index',  [
+            "title" => "Destinasi"
+        ]);
     }
 
     // public function search(Request $request)
