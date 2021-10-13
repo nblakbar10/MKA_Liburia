@@ -47,7 +47,7 @@
                     </div>
                     <div class="signup-field4">
                         <i class="bi bi-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Konfirmasi Password">
+                        <input type="password" name="c_password" id="c_password" placeholder="Konfirmasi Password">
                     </div>
                     <input type="submit" class="submit2" value="Daftar">
             </div>
