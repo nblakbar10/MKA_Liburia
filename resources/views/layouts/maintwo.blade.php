@@ -34,8 +34,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Beranda<span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Beranda<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Tentang</a>
@@ -44,10 +44,12 @@
                         <a class="nav-link" href="#">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/download">Download</a>
+                        <a class="nav-link {{ Request::is('download') ? 'active' : '' }}" href="/download">Download</a>
                     </li>
-                    <li class="nav-item4">
-                        <a class="nav-link4" href="/login">Masuk</a>
+                    <li class="nav-item2">
+                        <div class="info">
+                            <a href="#" class="d-block">| Selamat datang, Jesyca</a>
+                        </div>
                     </li>
                 </ul>
             </div>

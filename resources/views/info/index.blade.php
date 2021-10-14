@@ -1,4 +1,4 @@
-@extends('../layouts/main')
+@extends('../layouts/halaman')
 
 <!-- Konten -->
 @section('content')

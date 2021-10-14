@@ -148,3 +148,41 @@ body {
 .card-title {
     font-family: "Poppins", sans-serif;
 }
+
+/* Admin */
+
+.card-header a {
+    margin-left: 800px;
+}
+
+.dataTables_filter {
+    margin-right: 90px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #afafaf;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    box-shadow: 0 7px 7px rgba(192, 186, 186, 0.8);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15% 75%;
+}
+
+.dataTables_filter input {
+    width: 330px;
+    margin-top: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.tambah button {
+    float: right;
+    margin-top: -40px;
+}
