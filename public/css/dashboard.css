@@ -186,3 +186,34 @@ body {
     float: right;
     margin-top: -40px;
 }
+
+/* pup up admin */
+.modal-body .input {
+    font-family: "Poppins", sans-serif;
+}
+
+.modal-body .input input,
+.modal-body .input select {
+    font-family: "Poppins", sans-serif;
+    width: 400px;
+}
+
+.modal-body .input label,
+.modal-body .input input,
+.modal-body .input select {
+    margin-left: 30px;
+}
+
+.modal-footer {
+    width: 200px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 150px;
+}
+
+.modal-content .modal-header h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+}
+.modal-content .modal-header {
+    box-shadow: 0 10px 7px rgba(192, 186, 186, 0.8);
+}

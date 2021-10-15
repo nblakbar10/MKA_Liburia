@@ -37,29 +37,32 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    Nama
+                                    <label for="">Nama</label>
                                     <br>
                                     <input type="text" placeholder="Nama Admin . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    Daerah <br>
-                                    <input type="password" placeholder="Daerah Admin ">
+                                    <label for=""> Daerah</label> <br>
+                                    <select name="" placeholder="Daerah Admin " autofocus>
+                                        <option value="">- Pilih -</option>
+                                    </select>
                                 </div>
                                 <br>
                                 <div class="input">
-                                    Email <br>
-                                    <input type="password" placeholder="Email ">
+                                    <label for=""> Email </label><br>
+                                    <input type="text" placeholder="Email ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    No. Telepon <br>
-                                    <input type="password" placeholder="Nomor telepon admin">
+                                    <label for=""> No. Telepon </label><br>
+                                    <input type="number" placeholder="Nomor telepon admin">
                                 </div>
                                 <br>
                             </div>
+                            <br>
+                            <br>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
@@ -91,7 +94,13 @@
                     <td>Cron job running</td>
                     <td>
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
-                        <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </a>
+                        <form action="" class="d-inline">
+                            @method('delete')
+                            @csrf
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </form>
                     </td>
                 </tr>
                 <tr>
@@ -103,7 +112,13 @@
                     <td>Cron job running</td>
                     <td>
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
-                        <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </a>
+                        <form action="" class="d-inline">
+                            @method('delete')
+                            @csrf
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </form>
                     </td>
                 </tr>
                 <tr>
@@ -115,7 +130,13 @@
                     <td>Cron job running</td>
                     <td>
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
-                        <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </a>
+                        <form action="" class="d-inline">
+                            @method('delete')
+                            @csrf
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </form>
                     </td>
                 </tr>
                 <tr>
@@ -127,7 +148,14 @@
                     <td>Fix and squish bugs</td>
                     <td>
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
-                        <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> </a>
+
+                        <form action="" class="d-inline">
+                            @method('delete')
+                            @csrf
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </form>
                     </td>
                 </tr>
             </tbody>
