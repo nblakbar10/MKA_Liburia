@@ -53,3 +53,9 @@ Route::get('/admin', function () {
         "title" => "Manajemen Admin"
     ]);
 });
+
+Route::get('/user', function () {
+    return view('user.index', [
+        "title" => "Manajemen User"
+    ]);
+});

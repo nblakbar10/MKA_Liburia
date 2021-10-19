@@ -50,6 +50,13 @@
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
+                    <div class="signup-field5">
+                        <i class="bi bi-envelope"></i>
+                        <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" id="phone" placeholder="No hp...">
+                        @error('phone')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
                     <div class="signup-field3">
                         <i class="bi bi-lock"></i>
                         <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password...">

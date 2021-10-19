@@ -26,9 +26,9 @@ class RegisterController extends Controller
         ]);
 
 
-        if ($request->fails()) {
-            return response()->json(['error' => $request->errors()], 401);
-        }
+        // if ($request->fails()) {
+        //     return response()->json(['error' => $request->errors()], 401);
+        // }
 
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
@@ -51,6 +51,6 @@ class RegisterController extends Controller
 
         ///dd('registrasi berhasil');
         $request->session()->flash('succes', 'Registrasi berhasil !! silahkan login');
-        return redirect('/halamanutama');
+        return redirect('/login');
     }
 }
