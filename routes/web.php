@@ -71,3 +71,9 @@ Route::get('/tiket', function () {
         "title" => "Manajemen Tiket"
     ]);
 });
+
+Route::get('/hotel', function () {
+    return view('hotel.index', [
+        "title" => "Manajemen Hotel"
+    ]);
+});

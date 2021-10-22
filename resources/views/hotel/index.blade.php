@@ -5,7 +5,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">List Tiket</h3>
+        <h3 class="card-title">List Hotel</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
@@ -13,7 +13,7 @@
             <div id="example1_filter" class="dataTables_filter">
                 <i class="bi bi-search"></i>
                 <label>
-                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama bundling . . ." aria-controls="example1">
+                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama hotel . . ." aria-controls="example1">
                 </label>
             </div>
         </div>
@@ -37,22 +37,28 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama Bundling</label>
+                                    <label for="">Nama Hotel</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Bundling . . . ">
+                                    <input type="text" placeholder="Nama Hotel . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Rincian</label> <br>
+                                    <label for="">Alamat Hotel</label> <br>
                                     <br>
-                                    <input type="text" placeholder="Rincian Bundling . . . ">
+                                    <input type="text" placeholder="Alamat Hotel . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Harga</label><br>
-                                    <input type="text" placeholder="Harga Bundling . . . ">
+                                    <label for=""> Kamar</label><br>
+                                    <input type="text" placeholder="Jenis Kamar . . . ">
                                 </div>
-
+                                <br>
+                            </div>
+                            <br>
+                                <div class="input">
+                                    <label for=""> Foto/Video</label><br>
+                                    <input type="text" placeholder="Foto/Video . . . ">
+                                </div>
                                 <br>
                             </div>
                             <br>
@@ -71,9 +77,11 @@
             <thead>
                 <tr>
                     <th style="width: 10px">#</th>
-                    <th>Nama Bundling</th>
-                    <th>Rincian</th>
-                    <th>Harga</th>
+                    <th>Nama Hotel</th>
+                    <th>Alamat Hotel</th>
+                    <th>Jenis Kamar</th>
+                    <th>Fasilitas</th>
+                    <th>Foto/Video</th>
                     <th style="width: 100px;">Aksi</th>
 
                 </tr>
@@ -82,6 +90,8 @@
                 <tr>
                     <td>1.</td>
                     <td>Jesyca Natalia</td>
+                    <td>Medan</td>
+                    <td>Medan</td>
                     <td>Medan</td>
                     <td>Medan</td>
                     <td>
