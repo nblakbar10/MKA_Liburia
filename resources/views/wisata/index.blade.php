@@ -5,7 +5,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">List User</h3>
+        <h3 class="card-title">List Tempat Wisata</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
@@ -13,7 +13,7 @@
             <div id="example1_filter" class="dataTables_filter">
                 <i class="bi bi-search"></i>
                 <label>
-                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama user . . ." aria-controls="example1">
+                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama tempat . . ." aria-controls="example1">
                 </label>
             </div>
         </div>
@@ -77,13 +77,10 @@
                 <tr>
                     <th style="width: 10px">#</th>
                     <th>Nama</th>
-                    <th>Asal Daerah</th>
-                    <th>Email</th>
-                    <th>No.Telepon</th>
-                    <th>Status</th>
-                    <th>Rencana Liburan</th>
-                    <th>Pemesanan</th>
-                    <!-- <th style="width: 95px">Aksi</th> -->
+                    <th>Alamat Tempat Wisata</th>
+                    <th>Review</th>
+                    <th>Foto</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -91,9 +88,6 @@
                     <td>1.</td>
                     <td>Jesyca Natalia</td>
                     <td>Medan</td>
-                    <td>Jesyca@gmail.com</td>
-                    <td>0123321111</td>
-                    <td>Online</td>
                     <td>
                         <a href="" class="btn btn-primary"><i class="bi bi-file-earmark-text"></i>
                             Detail

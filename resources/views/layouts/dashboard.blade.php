@@ -97,14 +97,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </li><br>
 
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('promo') ? 'active' : '' }}" href="/promo">
-                                <i class="bi bi-percent"></i>
-                                Manajemen Promo
-
-                            </a>
-                        </li><br>
-
-                        <li class="nav-item">
                             <a class="nav-link {{ Request::is('tiket') ? 'active' : '' }}" href="/tiket">
                                 <i class="bi bi-card-text"></i>
                                 Manajemen Tiket

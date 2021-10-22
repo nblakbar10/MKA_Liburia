@@ -59,3 +59,15 @@ Route::get('/user', function () {
         "title" => "Manajemen User"
     ]);
 });
+
+Route::get('/wisata', function () {
+    return view('wisata.index', [
+        "title" => "Manajemen Tempat Wisata"
+    ]);
+});
+
+Route::get('/tiket', function () {
+    return view('tiket.index', [
+        "title" => "Manajemen Tiket"
+    ]);
+});
