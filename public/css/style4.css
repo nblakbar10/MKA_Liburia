@@ -113,8 +113,7 @@
 }
 @media (max-width: 750px) {
     .foot1 {
-        font-size: 20px;
-        right: -500px;
+        font-size: 30px;
     }
 }
 .tagone {
@@ -124,11 +123,30 @@
 }
 .foot2,
 .list2 {
-    margin-left: 390px;
+    margin-left: 250px;
     margin-top: -90px;
     font-family: "Poppins", sans-serif;
-    text-align: left;
-    font-size: 15px;
+}
+@media (max-width: 750px) {
+    .foot2,
+    .list2 {
+        font-size: 15px;
+        margin-left: 400px;
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .foot3,
+    .list3 {
+        font-size: 15px;
+    }
+}
+.list3,
+.foot3 {
+    margin-left: 590px;
+    margin-top: -180px;
+    font-family: "Poppins", sans-serif;
 }
 
 .list2 {
@@ -136,7 +154,7 @@
 }
 .list3,
 .foot3 {
-    margin-left: 700px;
+    margin-left: 20px;
     margin-top: -150px;
     font-family: "Poppins", sans-serif;
     text-align: left;
@@ -248,12 +266,22 @@
 .down {
     margin-top: 100px;
 }
+@media (max-width: 750px) {
+    .down {
+        width: 300px;
+        height: 300px;
+    }
+}
 
 .down2 {
     margin-top: -480px;
     margin-left: 480px;
 }
-
+@media (max-width: 750px) {
+    .down2 {
+        font-size: 12px;
+    }
+}
 .kotak {
     margin-top: -370px;
     margin-left: 450px;

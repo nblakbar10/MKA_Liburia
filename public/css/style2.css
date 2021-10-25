@@ -48,7 +48,7 @@ body {
     width: 315px;
     height: 15px;
     left: 97px;
-    top: 70px;
+    top: 100px;
 
     font-family: Poppins;
     font-style: normal;
@@ -333,4 +333,12 @@ body {
         margin-top: -20px;
         padding-right: 500px;
     }
+}
+
+/* alert */
+.container .alert {
+    width: 400px;
+    margin-left: 160px;
+    z-index: 3;
+    margin-top: 30px;
 }

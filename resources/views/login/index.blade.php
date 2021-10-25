@@ -20,16 +20,15 @@
 
 <body class="text-center">
 
-    <!-- 
     @if(session()->has('succes'))
-    <div class="alert alert-succes alert-dismissible fade show" role="alert">
-        {{ session('succes')}}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="container">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('succes')}}
+        </div>
     </div>
-    @endif -->
-    <!-- test1 -->
+    @endif
+
+
     <div class="logo">
         <img src="{{asset('img/logo2.svg')}}" alt="">
     </div>
@@ -38,6 +37,7 @@
         <form action="" class="login-form">
             <p class="title">Hai,Selamat Datang! <br>
                 Silahkan Login terlebih dahulu!</p>
+
             <div class="input-field">
                 <i class="bi bi-person"></i>
                 <input type="text" placeholder="Username...">

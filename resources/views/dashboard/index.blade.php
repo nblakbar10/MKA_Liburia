@@ -58,7 +58,7 @@
     <br>
     <br>
     <div class="row">
-        <div class="col">
+        <div class="col1">
             <H2><b>Top 5 User</b></H2>
         </div>
     </div>

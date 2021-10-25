@@ -31,42 +31,42 @@
                         Sign up terlebih dahulu!</p>
                     <div class="signup-field">
                         <i class="bi bi-person"></i>
-                        <input type="text" name="fullname" class="form-control @error('fullname') is-invalid @enderror" id="fullname" placeholder="Fullname...">
+                        <input type="text" name="fullname" class="form-control @error('fullname') is-invalid @enderror" id="fullname" placeholder="Fullname..." required value="{{ old('fullname') }}">
                         @error('fullname')
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="signup-field1">
                         <i class="bi bi-person"></i>
-                        <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username...">
+                        <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username..." required value="{{ old('username') }}">
                         @error('username')
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="signup-field2">
                         <i class="bi bi-envelope"></i>
-                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Email...">
+                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Email..." required value="{{ old('email') }}">
                         @error('email')
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="signup-field5">
                         <i class="bi bi-envelope"></i>
-                        <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" id="phone" placeholder="No hp...">
+                        <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" id="phone" placeholder="No hp..." required value="{{ old('phone') }}">
                         @error('phone')
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="signup-field3">
                         <i class="bi bi-lock"></i>
-                        <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password...">
+                        <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password..." required>
                         @error('password')
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="signup-field4">
                         <i class="bi bi-lock"></i>
-                        <input type="password" name="c_password" class="form-control @error('c_password') is-invalid @enderror" id="c_password" placeholder="Konfirmasi Password">
+                        <input type="password" name="c_password" class="form-control @error('c_password') is-invalid @enderror" id="c_password" placeholder="Konfirmasi Password" required>
                         @error('c_password')
                         <div class="invalid-feedback">Password not match</div>
                         @enderror

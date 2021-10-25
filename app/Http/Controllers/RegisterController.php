@@ -15,20 +15,16 @@ class RegisterController extends Controller
     {
         return view('register.index');
     }
+
     public function register(Request $request)
     {
         $request->validate([
-            'fullname' => 'required',
+            'fullname' => 'required|max:255',
             'username' => 'required',
-            'email' => 'required|email',
+            'email' => 'required|email:dns',
             'password' => 'required|min:5',
             'c_password' => 'required|same:password',
         ]);
-
-
-        // if ($request->fails()) {
-        //     return response()->json(['error' => $request->errors()], 401);
-        // }
 
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
@@ -36,20 +32,6 @@ class RegisterController extends Controller
         $success['token'] =  $user->createToken('nApp')->accessToken;
         $success['username'] =  $user->username;
 
-        ///return response()->json(['success'=>$success], $this->successStatus);
-
-        ///public function store(){
-        // ka nabil ini validasi datanya untuk registrasi, aku komen dulu soalnya
-        // kalo ga dikomen jadi error karna dimodel blom diatur
-
-        ///$request->validate([
-        ///'fullname' => 'required|max:255',
-        ///'username' => ['required', 'min:3', 'max:255', 'unique:users'],
-        ///'email' => 'required|email|unique:users',
-        ///'password' => 'required|min:5|max:255'
-        ///]);
-
-        ///dd('registrasi berhasil');
         $request->session()->flash('succes', 'Registrasi berhasil !! silahkan login');
         return redirect('/login');
     }
