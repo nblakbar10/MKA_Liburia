@@ -28,6 +28,14 @@
     </div>
     @endif
 
+    @if(session()->has('loginError'))
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ session('loginError')}}
+        </div>
+    </div>
+    @endif
+
 
     <div class="logo">
         <img src="{{asset('img/logo2.svg')}}" alt="">
@@ -40,12 +48,18 @@
 
             <div class="input-field">
                 <i class="bi bi-person"></i>
-                <input type="text" placeholder="Username...">
+                <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username..." required value="{{ old('username') }}">
+                @error('username')
+                <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
+
             <div class="input-field1">
                 <i class="bi bi-lock"></i>
-                <input type="password" placeholder="Password...">
-
+                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password..." required>
+                @error('password')
+                <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
             <b><a href="#" class="lupa">Lupa Password?</a></b>
             <br>

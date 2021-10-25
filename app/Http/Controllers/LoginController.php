@@ -15,15 +15,18 @@ class LoginController extends Controller
         return view('login.index');
     }
 
-    public function login(){
-        if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){
-            $user = Auth::user();
-            $success['token'] =  $user->createToken('nApp')->accessToken;
-            ///return response()->json(['success' => $success], $this->successStatus);
+    public function login(Request $request)
+    {
+        $credentials = $request->validate([
+            'username' => 'required',
+            'password' => 'required'
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('/halamanutama');
         }
-        ///else{
-            ///return response()->json(['error'=>'Unauthorised'], 401);
-        ///}
-        return redirect('/halamanutama');
+
+        return back()->with('loginError', 'Login gagal!');
     }
 }

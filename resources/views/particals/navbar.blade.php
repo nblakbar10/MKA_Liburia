@@ -21,9 +21,28 @@
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('download') ? 'active' : '' }}" href="/download">Download</a>
                 </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                @auth
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        | Selamat datang, {{ auth()->user()->fullname }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">My Dashboard</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                @else
                 <li class="nav-item4">
                     <a class="nav-link4" href="/login">Masuk</a>
                 </li>
+                @endauth
             </ul>
+
         </div>
     </nav>

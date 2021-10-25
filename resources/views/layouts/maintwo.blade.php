@@ -24,36 +24,8 @@
 
     <!-- Navbar -->
     <div class="one">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="{{asset('img/logo.svg')}}" alt="">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Beranda<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::is('download') ? 'active' : '' }}" href="/download">Download</a>
-                    </li>
-                    <li class="nav-item2">
-                        <div class="info">
-                            <a href="#" class="d-block">| Selamat datang, Jesyca</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        @include('particals.navbar')
+        <br>
         <br>
     </div>
 
