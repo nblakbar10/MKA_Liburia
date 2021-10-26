@@ -9,34 +9,40 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item1 ">
                     <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Beranda<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item1">
                     <a class="nav-link" href="#">Tentang</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item1">
                     <a class="nav-link" href="#">Kontak</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item1">
                     <a class="nav-link {{ Request::is('download') ? 'active' : '' }}" href="/download">Download</a>
                 </li>
-            </ul>
 
-            <ul class="navbar-nav ms-auto">
                 @auth
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        | Selamat datang, {{ auth()->user()->fullname }}
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">My Dashboard</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            | Selamat datang! {{ auth()->user()->fullname }}
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-sidebar-reverse"></i> My Dashboard</a>
+
+                            <form action="/logout" method="POST">
+                                @csrf
+                                <button type="submit" class="dropdown-item">
+                                    <i class="bi bi-box-arrow-right"></i> Keluar</a>
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
                 </li>
+
                 @else
                 <li class="nav-item4">
                     <a class="nav-link4" href="/login">Masuk</a>

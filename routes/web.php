@@ -29,6 +29,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
 Route::get('/download', [DownloadController::class, 'index']);
 
 Route::get('/register', [RegisterController::class, 'index']);
