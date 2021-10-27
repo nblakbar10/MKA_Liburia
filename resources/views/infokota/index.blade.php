@@ -4,7 +4,7 @@
 @section("content")
 <!-- images -->
 <div class="img">
-    <img src="{{asset('img/tour.svg')}}" alt="">
+    <img width="1300px" src="{{asset('img/tour.svg')}}" alt="">
 </div>
 
 <div class="container">

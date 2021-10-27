@@ -10,10 +10,10 @@
     <!-- /.card-header -->
     <div class="card-body">
         <div class="col-sm-12 col-md-6">
-            <div id="example1_filter" class="dataTables_filter">
+            <div id="user1_filter" class="dataTables_filter">
                 <i class="bi bi-search"></i>
                 <label>
-                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama tempat . . ." aria-controls="example1">
+                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama tempat . . ." aria-controls="user1">
                 </label>
             </div>
         </div>
@@ -21,16 +21,16 @@
         <div class="row">
             <div class="tambah col ">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal">
                     <i class="bi bi-plus"></i> Tambah
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
+                                <h5 class="modal-title" id="userModalLabel">Tambah Data</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
 
@@ -78,9 +78,9 @@
                     <th style="width: 10px">#</th>
                     <th>Nama</th>
                     <th>Alamat Tempat Wisata</th>
+                    <th>Deskripsi</th>
                     <th>Review</th>
-                    <th>Foto</th>
-
+                    <th>Foto/Video</th>
                 </tr>
             </thead>
             <tbody>
@@ -89,16 +89,79 @@
                     <td>Jesyca Natalia</td>
                     <td>Medan</td>
                     <td>
-                        <a href="" class="btn btn-primary"><i class="bi bi-file-earmark-text"></i>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal1">
+                            <i class="bi bi-file-earmark-text"></i>
                             Detail
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="userModal1" tabindex="-1" aria-labelledby="userModal1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="userModal1Label">Deskripsi Tempat Wisata</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
+
+
                     <td>
-                        <a href="" class="btn btn-primary"><i class="bi bi-file-earmark-text"></i>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal2">
+                            <i class="bi bi-file-earmark-text"></i>
                             Detail
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="userModal2" tabindex="-1" aria-labelledby="userModal2Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="userModal2Label">Review </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal3">
+                            <i class="bi bi-file-earmark-text"></i>
+                            Detail
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="userModal3" tabindex="-1" aria-labelledby="userModal3Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="userModal3Label">Foto/Video</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                 </tr>
             </tbody>

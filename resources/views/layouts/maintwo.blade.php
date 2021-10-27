@@ -53,8 +53,8 @@
             </div>
             <div class="col-md-12">
                 <b>
-                    <h2 class="foot3">Kontak</h2>
-                    <p class="list3">Help <br> <br>
+                    <h2 class="foot">Kontak</h2>
+                    <p class="list">Help <br> <br>
                         FAQ <br> <br>
                         Press</p>
                 </b>

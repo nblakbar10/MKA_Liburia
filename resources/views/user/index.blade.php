@@ -83,6 +83,8 @@
                     <th>Status</th>
                     <th>Rencana Liburan</th>
                     <th>Pemesanan</th>
+                    <th>Foto/Video</th>
+                    <th>Ulasan</th>
                     <!-- <th style="width: 95px">Aksi</th> -->
                 </tr>
             </thead>
@@ -94,32 +96,126 @@
                     <td>Jesyca@gmail.com</td>
                     <td>0123321111</td>
                     <td>Online</td>
+
+
                     <td>
-                        <a href="" class="btn btn-primary"><i class="bi bi-file-earmark-text"></i>
+                        <!-- Button trigger modal -->
+                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <i class="bi bi-file-earmark-text"></i>
                             Detail
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal1Label">Rencana Liburan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
+
+
                     <td>
-                        <a href="" class="btn btn-primary"><i class="bi bi-file-earmark-text"></i>
+                        <!-- Button trigger modal -->
+                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <i class="bi bi-file-earmark-text"></i>
                             Detail
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal2Label">Detail Pemesanan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
-                </tr>
-            </tbody>
-        </table>
+
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            <i class="bi bi-file-earmark-text"></i>
+                            Detail
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal3Label">Foto/Video</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                            <i class="bi bi-file-earmark-text"></i>
+                            Detail
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal2Label">Ulasan/Review</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
     </div>
-    <!-- /.card-body -->
-    <div class="card-footer clearfix">
-        <ul class="pagination pagination-sm m-0 float-right">
-            <li class="page-item"><a class="page-link" href="#">«</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">»</a></li>
-        </ul>
-    </div>
+</div>
+
+</tr>
+</tbody>
+</table>
+</div>
+<!-- /.card-body -->
+<div class="card-footer clearfix">
+    <ul class="pagination pagination-sm m-0 float-right">
+        <li class="page-item"><a class="page-link" href="#">«</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">»</a></li>
+    </ul>
+</div>
 </div>
 
 @endsection

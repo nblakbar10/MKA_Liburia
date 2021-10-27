@@ -121,6 +121,17 @@
     text-align: left;
     margin-left: 100px;
 }
+
+.foot,
+.list {
+    margin-right: 300px;
+    font-family: "Poppins", sans-serif;
+}
+
+.foot {
+    margin-top: -180px;
+}
+
 .foot2,
 .list2 {
     margin-left: 250px;
@@ -137,16 +148,10 @@
 }
 
 @media (max-width: 750px) {
-    .foot3,
-    .list3 {
+    .foot,
+    .list {
         font-size: 15px;
     }
-}
-.list3,
-.foot3 {
-    margin-left: 590px;
-    margin-top: -180px;
-    font-family: "Poppins", sans-serif;
 }
 
 .list2 {
