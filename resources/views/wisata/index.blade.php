@@ -75,12 +75,12 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th style="width: 10px">#</th>
-                    <th>Nama</th>
-                    <th>Alamat Tempat Wisata</th>
-                    <th>Deskripsi</th>
-                    <th>Review</th>
-                    <th>Foto/Video</th>
+                    <th style="width: 10px">id_wisata</th>
+                    <th>nama_wisata</th>
+                    <th>alamat_Wisata</th>
+                    <th>foto_wisata</th>
+                    <th>fasilitas_wisata/th>
+                    <th>harga_wisata</th>
                 </tr>
             </thead>
             <tbody>
