@@ -387,9 +387,29 @@
 
 /* info */
 .informasi h2 {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
+.video video {
+    border-radius: 25px;
+    margin-top: 50px;
+}
+.video h5 {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.video i {
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+}
+
+.listtiket {
+    font-family: "Poppins", sans-serif;
+    margin-top: 50px;
+}
+.jamoperasional {
+    font-family: "Poppins", sans-serif;
+}
 .img-circle {
     border-radius: 50%;
     -moz-border-radius: 50%;
