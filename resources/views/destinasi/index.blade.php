@@ -9,9 +9,14 @@
 <!-- Konten -->
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col kontenatas">
             <h3 class="judul">Cari Tempat Wisatamu di <br> Kalimantan</h3>
             <p class="subjudul">Nikmati Indahnya Destinasi Wisata Alam</p>
+
+            <form action="" method="GET">
+                <input type="text" name="cari" placeholder="Cari ...">
+                <input type="submit" value="CARI">
+            </form>
         </div>
     </div>
 </div>
