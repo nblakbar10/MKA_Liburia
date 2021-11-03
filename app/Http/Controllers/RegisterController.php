@@ -24,12 +24,13 @@ class RegisterController extends Controller
             'email' => 'required|email:dns',
             'password' => 'required|min:5',
             'c_password' => 'required|same:password',
+            'phone' => 'required',
         ]);
 
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
         $user = User::create($input);
-        $success['token'] =  $user->createToken('nApp')->accessToken;
+        //$success['token'] =  $user->createToken('nApp')->accessToken;
         $success['username'] =  $user->username;
 
         $request->session()->flash('succes', 'Registrasi berhasil !! silahkan login');
