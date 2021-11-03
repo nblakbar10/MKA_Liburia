@@ -134,6 +134,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('martikel') ? 'active' : '' }}" href="/martikel">
+                                <i class="bi bi-file-earmark-text-fill"></i>
+                                Manajemen Artikel
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

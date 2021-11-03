@@ -79,3 +79,15 @@ Route::get('/hotel', function () {
         "title" => "Manajemen Hotel"
     ]);
 });
+
+Route::get('/martikel', function () {
+    return view('martikel.index', [
+        "title" => "Manajemen Artikel"
+    ]);
+});
+
+Route::get('/inputartikel', function () {
+    return view('martikel.input', [
+        "title" => "Input Artikel"
+    ]);
+});
