@@ -36,7 +36,7 @@
 
     <!-- Footer -->
     <div class="container">
-        <div class="row">
+        <div class="row judulawal">
             <div class="col-md-12">
                 <b>
                     <h2 class="foot1">Byon</h2>

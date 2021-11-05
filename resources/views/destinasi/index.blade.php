@@ -6,6 +6,8 @@
 <div class="img">
     <img width="1300px" src="{{asset('img/tour.svg')}}" alt="">
 </div>
+
+
 <!-- Konten -->
 <div class="container">
     <div class="row">
@@ -91,8 +93,7 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
             </div>
         </div>
 
@@ -101,24 +102,22 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
             </div>
         </div>
     </div>

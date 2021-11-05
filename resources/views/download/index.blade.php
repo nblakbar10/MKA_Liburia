@@ -4,7 +4,7 @@
 @section("content")
 <div class="container">
     <div class="row slider2">
-        <div class="col">
+        <div class="col satu">
             <div class="row">
                 <img class="down" src="{{asset('img/download1.svg')}}" width="400px" alt="">
                 <img class="kotak" src="{{asset('img/kotak.svg')}}" width="300px" alt="">

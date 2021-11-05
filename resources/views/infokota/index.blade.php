@@ -42,32 +42,31 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="wisata">
+                <a href="/info">
+                    <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+                </a>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="wisata">
-                <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
-                <p>Pulau Derawan</p>
-                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
             </div>
         </div>
     </div>

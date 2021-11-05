@@ -65,6 +65,11 @@
 .imgasset img {
     margin-top: 250px;
 }
+@media (max-width: 750px) {
+    .imgasset .carousel-control-prev img {
+        width: 10pxs;
+    }
+}
 
 .one {
     margin-right: 170px;
@@ -95,27 +100,27 @@
 
 @media (max-width: 750px) {
     .virtu img {
-        width: 120px;
-        margin-top: -110px;
+        width: 10px;
         padding-left: 50px;
+        font-size: 10px;
     }
 }
 
 @media (max-width: 750px) {
     .myfont,
     .myfont2 {
-        font-size: 40px;
+        font-size: 50px;
     }
 }
 
 @media (max-width: 750px) {
     .myfont1 img {
-        width: 100px;
+        width: 200px;
     }
 }
 @media (max-width: 750px) {
     .container-one img {
-        width: 570px;
+        width: 600px;
         padding-left: 230px;
     }
 }
@@ -154,25 +159,48 @@
     margin-top: -70px;
 }
 
-@media (max-width: 750px) {
-    .img-areaone img {
-        width: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+/* @media (max-width: 750px) {
+    .destinasi1 .single-box .img-areaone img,
+    .destinasi1 .single-box .img-area img {
+        width: 100px;
     }
+} */
+
+.img-area,
+.img-area1 {
+    margin-top: -70px;
 }
 
-.img-area {
-    margin-top: -70px;
+@media (max-width: 750px) {
+    .img-area img,
+    .img-area1 img,
+    .img-areaone img {
+        width: 200px;
+    }
+}
+@media (max-width: 992px) {
+    .img-area img,
+    .img-area1 img,
+    .img-areaone img {
+        width: 300px;
+    }
+}
+@media (max-width: 750px) {
+    .container {
+        margin-right: 150px;
+        width: 800px;
+    }
 }
 @media (max-width: 750px) {
     .img-area img {
-        width: 250px;
-        margin-top: 80px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 230px;
+        margin-top: -130px;
+    }
+}
+@media (max-width: 750px) {
+    .img-area1 img {
+        margin-left: 450px;
+        margin-top: -130px;
     }
 }
 
@@ -185,6 +213,13 @@
 .artimg3 img {
     width: 250px;
     padding-top: 30px;
+}
+
+/* @media (max-width: 750px) {
+    .judulawal h2,
+    .judulawal p {
+        margin-right: 500px;
+    }
 }
 
 .foot1 {
@@ -206,8 +241,7 @@
     .foot2,
     .list2 {
         font-size: 15px;
-        margin-left: 400px;
-        margin-top: -100px;
+        margin-top: -120px;
     }
 }
 @media (max-width: 750px) {
@@ -383,9 +417,237 @@
         width: 150px;
         margin-top: -70px;
     }
+} */
+
+/* footer */
+@media (max-width: 750px) {
+    .myfooter {
+        width: 650px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .myfooter {
+        width: 900px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .judulawal h2,
+    .judulawal p {
+        margin-right: 500px;
+    }
+}
+@media (max-width: 750px) {
+    .judulawal .foot2,
+    .judulawal .list2 {
+        margin-left: 550px;
+    }
+}
+@media (max-width: 992px) {
+    .judulawal .foot,
+    .judulawal .list {
+        margin-left: 170px;
+    }
+}
+@media (max-width: 992px) {
+    .judulawal .foot1,
+    .judulawal .tagone{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .judulawal .foot2,
+    .judulawal .list2 {
+        margin-left: 350px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .inifooter {
+        margin-right: 50px;
+        margin-top: -20px;
+    }
+}
+@media (max-width: 750px) {
+    .inifooter .tagakhir3 {
+        margin-right: 150px;
+    }
+}
+@media (max-width: 750px) {
+    .inifooter .tagakhir2 img,
+    .inifooter .tagakhir3 img {
+        width: 10px;
+    }
+}
+@media (max-width: 750px) {
+    .inifooter .tagakhir2 .textplay,
+    .inifooter .tagakhir3 .textplay {
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+    }
+}
+
+.foot1 {
+    margin-top: 50px;
+    font-family: "Lobster", cursive;
+    color: #07b4fe;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 100px;
+}
+@media (max-width: 750px) {
+    .foot1 {
+        font-size: 30px;
+        margin-right: -100px;
+    }
+}
+.tagone {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.foot,
+.list {
+    margin-right: 300px;
+    font-family: "Poppins", sans-serif;
+}
+
+.foot {
+    margin-top: -180px;
+}
+
+.foot2,
+.list2 {
+    margin-left: 250px;
+    margin-top: -90px;
+    font-family: "Poppins", sans-serif;
+}
+@media (max-width: 750px) {
+    .foot2,
+    .list2 {
+        font-size: 15px;
+        margin-left: 400px;
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .foot,
+    .list {
+        font-size: 15px;
+    }
+}
+
+.list2 {
+    margin-top: -1px;
+}
+.list3,
+.foot3 {
+    margin-left: 20px;
+    margin-top: -150px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-size: 15px;
+}
+
+.list3 {
+    margin-top: 5px;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    font-size: 25px;
+    margin-top: -150px;
+}
+.sosmed li {
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #07b4fe;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.tagakhir {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    margin-right: 160px;
+    margin-top: -100px;
+}
+
+.textplay {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tagakhir2 {
+    margin-right: 250px;
+    margin-top: -60px;
+}
+
+.tagakhir2 a {
+    list-style: none;
+    width: 120px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080808;
+    border-radius: 10%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.tagakhir3 a {
+    list-style: none;
+    width: 120px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080808;
+    border-radius: 10%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.tagakhir3 {
+    margin-right: 100px;
+    margin-top: -60px;
 }
 
 /* info */
+@media (max-width: 992px) {
+    .video video {
+        width: 900px;
+        height: 400px;
+    }
+}
+@media (max-width: 750px) {
+    .video video {
+        width: 600px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 750px) {
+    .jamoperasional ul {
+        width: 600px;
+        height: 60px;
+    }
+}
+
 .informasi h2 {
     margin-top: 50px;
 }

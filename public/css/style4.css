@@ -35,6 +35,38 @@
     font-size: 26px;
 }
 
+/* Destinasi */
+@media (max-width: 750px) {
+    .img {
+        width: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .img {
+        width: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .kontenatas form {
+        margin-left: 120px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .kontenatas form {
+        margin-left: 120px;
+        width: 300px;
+    }
+}
+
+.kontenatas form {
+    font-family: "Poppins", sans-serif;
+    margin-right: 570px;
+}
+
 .judul {
     text-align: left;
     font-family: "Poppins", sans-serif;
@@ -74,6 +106,44 @@
     text-align: left;
     margin-left: 100px;
 }
+
+@media (max-width: 750px) {
+    .slider .details img {
+        width: 170px;
+    }
+}
+
+@media (max-width: 750px) {
+    .kota .details img {
+        width: 170px;
+    }
+}
+
+@media (max-width: 750px) {
+    .favorite .wisata img {
+        width: 250px;
+        margin-right: 200px;
+    }
+}
+@media (max-width: 992px) {
+    .favorite .wisata img {
+        width: 300px;
+        margin-right: 200px;
+    }
+}
+@media (max-width: 992px) {
+    .favorite .wisata p {
+        font-size: 15px;
+        margin-left: 170px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        margin-left: 100px;
+    }
+}
+
 .mydestinasi1 {
     font-size: 25px;
     margin-top: 50px;
@@ -84,7 +154,6 @@
 .container {
     margin-right: 150px;
 }
-
 .favorite {
     margin-top: 50px;
     margin-left: 95px;
@@ -103,6 +172,64 @@
 }
 
 /* footer */
+
+@media (max-width: 992px) {
+    .judulawal .foot1,
+    .judulawal .tagone{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .judulawal .foot2,
+    .judulawal .list2 {
+        margin-left: 50px;
+    }
+}
+@media (max-width: 992px) {
+    .judulawal .foot,
+    .judulawal .list {
+        margin-left: 2px;
+    }
+}
+@media (max-width: 750px) {
+    .judulawal h2,
+    .judulawal p {
+        margin-right: 500px;
+    }
+}
+@media (max-width: 750px) {
+    .judulawal .foot2,
+    .judulawal .list2 {
+        margin-left: 450px;
+    }
+}
+
+@media (max-width: 750px) {
+    .inifooter {
+        margin-right: 50px;
+        margin-top: -20px;
+    }
+}
+@media (max-width: 750px) {
+    .inifooter .tagakhir3 {
+        margin-right: 150px;
+    }
+}
+@media (max-width: 750px) {
+    .inifooter .tagakhir2 img,
+    .inifooter .tagakhir3 img {
+        width: 10px;
+    }
+}
+@media (max-width: 750px) {
+    .inifooter .tagakhir2 .textplay,
+    .inifooter .tagakhir3 .textplay {
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+    }
+}
+
 .foot1 {
     margin-top: 50px;
     font-family: "Lobster", cursive;
@@ -114,6 +241,7 @@
 @media (max-width: 750px) {
     .foot1 {
         font-size: 30px;
+        margin-right: -100px;
     }
 }
 .tagone {
@@ -284,7 +412,25 @@
 }
 @media (max-width: 750px) {
     .down2 {
-        font-size: 12px;
+        width: 300px;
+        margin-left: 200px;
+    }
+}
+@media (max-width: 750px) {
+    .down3 {
+        width: 200px;
+        margin-left: 480px;
+    }
+}
+@media (max-width: 750px) {
+    .parag {
+        font-size: 8px;
+    }
+}
+@media (max-width: 750px) {
+    .kotak {
+        width: 60px;
+        margin-left: 200px;
     }
 }
 .kotak {
@@ -306,9 +452,4 @@
     text-align: left;
     margin-top: -280px;
     margin-left: 480px;
-}
-
-.kontenatas form {
-    font-family: "Poppins", sans-serif;
-    margin-right: 570px;
 }
