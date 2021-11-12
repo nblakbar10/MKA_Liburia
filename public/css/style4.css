@@ -35,6 +35,7 @@
     font-size: 26px;
 }
 
+<<<<<<< HEAD
 /* Destinasi */
 @media (max-width: 750px) {
     .img {
@@ -67,6 +68,8 @@
     margin-right: 570px;
 }
 
+=======
+>>>>>>> update integrasi dashboard admin
 .judul {
     text-align: left;
     font-family: "Poppins", sans-serif;
@@ -106,6 +109,7 @@
     text-align: left;
     margin-left: 100px;
 }
+<<<<<<< HEAD
 
 @media (max-width: 750px) {
     .slider .details img {
@@ -144,6 +148,8 @@
     }
 }
 
+=======
+>>>>>>> update integrasi dashboard admin
 .mydestinasi1 {
     font-size: 25px;
     margin-top: 50px;
@@ -154,6 +160,10 @@
 .container {
     margin-right: 150px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> update integrasi dashboard admin
 .favorite {
     margin-top: 50px;
     margin-left: 95px;
@@ -172,6 +182,7 @@
 }
 
 /* footer */
+<<<<<<< HEAD
 
 @media (max-width: 992px) {
     .judulawal .foot1,
@@ -230,6 +241,8 @@
     }
 }
 
+=======
+>>>>>>> update integrasi dashboard admin
 .foot1 {
     margin-top: 50px;
     font-family: "Lobster", cursive;
@@ -241,7 +254,10 @@
 @media (max-width: 750px) {
     .foot1 {
         font-size: 30px;
+<<<<<<< HEAD
         margin-right: -100px;
+=======
+>>>>>>> update integrasi dashboard admin
     }
 }
 .tagone {
@@ -412,6 +428,7 @@
 }
 @media (max-width: 750px) {
     .down2 {
+<<<<<<< HEAD
         width: 300px;
         margin-left: 200px;
     }
@@ -431,6 +448,9 @@
     .kotak {
         width: 60px;
         margin-left: 200px;
+=======
+        font-size: 12px;
+>>>>>>> update integrasi dashboard admin
     }
 }
 .kotak {
@@ -453,3 +473,11 @@
     margin-top: -280px;
     margin-left: 480px;
 }
+<<<<<<< HEAD
+=======
+
+.kontenatas form {
+    font-family: "Poppins", sans-serif;
+    margin-right: 570px;
+}
+>>>>>>> update integrasi dashboard admin

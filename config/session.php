@@ -169,7 +169,10 @@ return [
     */
 
     'secure' => env('SESSION_SECURE_COOKIE'),
+<<<<<<< HEAD
    
+=======
+>>>>>>> update integrasi dashboard admin
 
     /*
     |--------------------------------------------------------------------------

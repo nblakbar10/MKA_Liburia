@@ -46,9 +46,23 @@ return [
             'provider' => 'users',
             //'hash' => false,
         ],
+<<<<<<< HEAD
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
+=======
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+            //'hash' => false,
+        ],
+
+        'user' => [
+            'driver' => 'session',
+            'provider' => 'users',
+            //'hash' => false,
+>>>>>>> update integrasi dashboard admin
         ],
     ],
 
@@ -74,11 +88,19 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> update integrasi dashboard admin
         'admins' => [
             'driver' => 'eloquent',
             'model' => App\Admin::class,
         ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> update integrasi dashboard admin
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

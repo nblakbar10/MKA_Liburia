@@ -4,7 +4,10 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
+=======
+>>>>>>> update integrasi dashboard admin
 
 class Handler extends ExceptionHandler
 {
@@ -53,6 +56,7 @@ class Handler extends ExceptionHandler
     {
         return parent::render($request, $exception);
     }
+<<<<<<< HEAD
 
 
     protected function unauthenticated($request, Throwable $exception)
@@ -72,4 +76,6 @@ class Handler extends ExceptionHandler
         return redirect()->route($route);
     }
 
+=======
+>>>>>>> update integrasi dashboard admin
 }

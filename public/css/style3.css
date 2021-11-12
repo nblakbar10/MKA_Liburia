@@ -25,6 +25,7 @@ body {
         margin-top: -270px;
     }
 }
+<<<<<<< HEAD
 @media (max-width: 992px) {
     .logo img {
         width: 5px;
@@ -32,6 +33,8 @@ body {
         margin-top: -270px;
     }
 }
+=======
+>>>>>>> update integrasi dashboard admin
 
 .forms-container {
     position: absolute;

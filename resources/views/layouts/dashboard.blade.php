@@ -128,6 +128,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </li><br>
 
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link {{ Request::is('hotel') ? 'active' : '' }}" href="/hotel">
                                 <i class="bi bi-building"></i>
                                 Manajemen Hotel
@@ -138,6 +139,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('martikel') ? 'active' : '' }}" href="/martikel">
                                 <i class="bi bi-file-earmark-text-fill"></i>
+=======
+                            <a class="nav-link {{ Request::is('artikel') ? 'active' : '' }}" href="/artikel">
+                                <i class="bi bi-building"></i>
+>>>>>>> update integrasi dashboard admin
                                 Manajemen Artikel
 
                             </a>

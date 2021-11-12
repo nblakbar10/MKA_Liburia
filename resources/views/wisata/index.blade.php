@@ -75,6 +75,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
+<<<<<<< HEAD
                     <th style="width: 10px">id_wisata</th>
                     <th>nama_wisata</th>
                     <th>alamat_Wisata</th>
@@ -164,6 +165,27 @@
                         </div>
                     </td>
                 </tr>
+=======
+                    <th style="width: 10px">ID</th>
+                    <th>Nama Tempat Wisata</th>
+                    <th>Alamat</th>
+                    <th>Foto</th>
+                    <th>Fasilitas</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach ($tempatWisata as $wis)
+                <tr>
+                    <td>{{$wis->id}}</td>
+                    <td>{{$wis->nama_wisata}}</td>
+                    <td>{{$wis->alamat_Wisata}}</td>
+                    <td>{{$wis->foto_wisata}}</td>
+                    <td>{{$wis->fasilitas_Wisata}}</td>
+                    <td>{{$wis->harga_wisata}}</td>
+                </tr>
+            @endforeach
+>>>>>>> update integrasi dashboard admin
             </tbody>
         </table>
     </div>

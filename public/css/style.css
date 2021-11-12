@@ -65,11 +65,14 @@
 .imgasset img {
     margin-top: 250px;
 }
+<<<<<<< HEAD
 @media (max-width: 750px) {
     .imgasset .carousel-control-prev img {
         width: 10pxs;
     }
 }
+=======
+>>>>>>> update integrasi dashboard admin
 
 .one {
     margin-right: 170px;
@@ -100,27 +103,45 @@
 
 @media (max-width: 750px) {
     .virtu img {
+<<<<<<< HEAD
         width: 10px;
         padding-left: 50px;
         font-size: 10px;
+=======
+        width: 120px;
+        margin-top: -110px;
+        padding-left: 50px;
+>>>>>>> update integrasi dashboard admin
     }
 }
 
 @media (max-width: 750px) {
     .myfont,
     .myfont2 {
+<<<<<<< HEAD
         font-size: 50px;
+=======
+        font-size: 40px;
+>>>>>>> update integrasi dashboard admin
     }
 }
 
 @media (max-width: 750px) {
     .myfont1 img {
+<<<<<<< HEAD
         width: 200px;
+=======
+        width: 100px;
+>>>>>>> update integrasi dashboard admin
     }
 }
 @media (max-width: 750px) {
     .container-one img {
+<<<<<<< HEAD
         width: 600px;
+=======
+        width: 570px;
+>>>>>>> update integrasi dashboard admin
         padding-left: 230px;
     }
 }
@@ -159,6 +180,7 @@
     margin-top: -70px;
 }
 
+<<<<<<< HEAD
 /* @media (max-width: 750px) {
     .destinasi1 .single-box .img-areaone img,
     .destinasi1 .single-box .img-area img {
@@ -201,6 +223,27 @@
     .img-area1 img {
         margin-left: 450px;
         margin-top: -130px;
+=======
+@media (max-width: 750px) {
+    .img-areaone img {
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.img-area {
+    margin-top: -70px;
+}
+@media (max-width: 750px) {
+    .img-area img {
+        width: 250px;
+        margin-top: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+>>>>>>> update integrasi dashboard admin
     }
 }
 
@@ -215,6 +258,7 @@
     padding-top: 30px;
 }
 
+<<<<<<< HEAD
 /* @media (max-width: 750px) {
     .judulawal h2,
     .judulawal p {
@@ -222,6 +266,8 @@
     }
 }
 
+=======
+>>>>>>> update integrasi dashboard admin
 .foot1 {
     margin-top: 50px;
     font-family: "Lobster", cursive;
@@ -241,7 +287,12 @@
     .foot2,
     .list2 {
         font-size: 15px;
+<<<<<<< HEAD
         margin-top: -120px;
+=======
+        margin-left: 400px;
+        margin-top: -100px;
+>>>>>>> update integrasi dashboard admin
     }
 }
 @media (max-width: 750px) {
@@ -417,6 +468,7 @@
         width: 150px;
         margin-top: -70px;
     }
+<<<<<<< HEAD
 } */
 
 /* footer */
@@ -648,6 +700,11 @@
     }
 }
 
+=======
+}
+
+/* info */
+>>>>>>> update integrasi dashboard admin
 .informasi h2 {
     margin-top: 50px;
 }

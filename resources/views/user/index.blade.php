@@ -75,8 +75,14 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
+<<<<<<< HEAD
                     <th style="width: 10px">#</th>
                     <th>Nama</th>
+=======
+                    <th style="width: 10px">ID</th>
+                    <th>Username</th>
+                    <th>Nama Lengkap</th>
+>>>>>>> update integrasi dashboard admin
                     <th>Asal Daerah</th>
                     <th>Email</th>
                     <th>No.Telepon</th>
@@ -89,6 +95,7 @@
                 </tr>
             </thead>
             <tbody>
+<<<<<<< HEAD
                 <tr>
                     <td>1.</td>
                     <td>Jesyca Natalia</td>
@@ -199,6 +206,26 @@
                             </div>
                         </div>
                     </td>
+=======
+            @foreach ($users as $us)
+                <tr>
+                    <td>{{$us->id}}</td>
+                    <td>{{$us->username}}</td>
+                    <td>{{$us->fullname}}</td>
+                    <td></td>
+                    <td>{{$us->email}}</td>
+                    <td>{{$us->phone}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>{{$us->photo}}</td>
+                    <td></td>
+                    
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+>>>>>>> update integrasi dashboard admin
     </div>
 </div>
 
