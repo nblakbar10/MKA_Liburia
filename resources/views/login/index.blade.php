@@ -19,7 +19,7 @@
 </head>
 
 
-<body class="text-center">
+<body class="">
 
     @if(session()->has('succes'))
     <div class="container">

@@ -69,7 +69,6 @@
 
     <div class="inifooter">
         <ul class="sosmed float-right">
-            <li class="env"><i class="bi bi-envelope"></i></li>
             <li><i class="bi bi-instagram"></i></li>
             <li><i class="bi bi-facebook"></i></li>
             <li><i class="bi bi-twitter"></i></li>

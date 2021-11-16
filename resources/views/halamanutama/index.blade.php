@@ -8,7 +8,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col ">
+        <div class="col">
             <p class="myfont">Temukan </p>
             <p class="myfont1"><img src="{{asset('img/atribut.svg')}}" width="250"></p>
             <br>

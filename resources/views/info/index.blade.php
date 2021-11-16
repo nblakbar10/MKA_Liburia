@@ -55,7 +55,7 @@
             </ul>
         </div>
 
-        <div class="col jamoperasional">
+        <div class="col jamoperasional1">
             <h5>Akomodasi </h5>
             <ul>
                 <img src="{{ asset('img/akomodasi.svg')}}" alt="">
@@ -87,7 +87,7 @@
             </ul>
         </div>
 
-        <div class="col listtiket">
+        <div class="col listtiket1">
             <h5>Jarak Dari Bandara</h5>
             <ul>
                 <img src="{{ asset('img/tiket2.svg')}}" alt="">

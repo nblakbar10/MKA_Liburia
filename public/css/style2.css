@@ -14,18 +14,21 @@ body {
     display: grid;
     grid-template-columns: repeat();
 }
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     .logo img {
-        width: 15000px;
-        left: 50%;
-        margin-top: -270px;
+        width: 1px;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 320px) {
     .logo img {
-        width: 5px;
-        left: 50%;
-        margin-top: -270px;
+        width: 1px;
+        left: 10%;
+    }
+}
+@media (max-width: 375px) {
+    .logo img {
+        width: 1px;
+        left: 10%;
     }
 }
 .navbar {
@@ -41,15 +44,35 @@ body {
     background: #ffffff;
     border-radius: 25px;
 }
-@media (max-width: 750px) {
+/* @media (max-width: 320px) {
     .form-signin {
-        width: 200px;
-        width: 400px;
-        margin-top: 10px;
-        margin-left: -50px;
+        width: 360px;
+        margin-left: -150px;
         box-shadow: #afafaf;
+        border-radius: 0px;
     }
 }
+@media (max-width: 375px) {
+    .form-signin {
+        width: 360px;
+        margin-left: -110px;
+        box-shadow: #afafaf;
+        border-radius: 0px;
+    }
+} */
+@media (max-width: 768px) {
+    .form-signin {
+        margin-top: 200px;
+    }
+}
+/* @media (max-width: 425px) {
+    .form-signin {
+        width: 400px;
+        margin-left: -110px;
+        box-shadow: #afafaf;
+        border-radius: 0px;
+    }
+} */
 .title {
     position: absolute;
     width: 315px;
@@ -67,12 +90,24 @@ body {
 
     color: #113c4e;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .title {
-        font-size: 16px;
-        padding-right: 25%;
+        font-size: 14px;
+        padding-right: 200px;
     }
 }
+@media (max-width: 375px) {
+    .title {
+        font-size: 14px;
+        padding-right: 200px;
+    }
+}
+/* @media (max-width: 425px) {
+    .title {
+        font-size: 14px;
+        padding-right: 100px;
+    }
+} */
 
 .input-field {
     position: absolute;
@@ -96,24 +131,53 @@ body {
     display: grid;
     grid-template-columns: 15% 75%;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .input-field {
-        width: 230px;
+        width: 200px;
         height: 35px;
-        padding-right: 30px;
+        margin-right: -30px;
     }
 }
+@media (max-width: 375px) {
+    .input-field {
+        width: 200px;
+        height: 35px;
+        margin-right: -30px;
+    }
+}
+/* @media (max-width: 425px) {
+    .input-field {
+        width: 250px;
+        height: 35px;
+        margin-right: -30px;
+    }
+} */
 .input-field input {
     background: none;
     outline: none;
     border: none;
     font-size: 20px;
 }
-@media (max-width: 750px) {
+/* @media (max-width: 425px) {
+    .input input {
+        width: ;
+    }
+} */
+@media (max-width: 320px) {
     .input-field input {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
+@media (max-width: 375px) {
+    .input-field input {
+        font-size: 13px;
+    }
+}
+/* @media (max-width: 425px) {
+    .input-field input {
+        font-size: 13px;
+    }
+} */
 
 .input-field1 {
     position: absolute;
@@ -141,25 +205,45 @@ body {
     grid-template-columns: 15% 75%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .input-field1 {
-        width: 230px;
+        width: 200px;
         height: 35px;
-        padding-right: 30px;
     }
 }
-
+@media (max-width: 375px) {
+    .input-field1 {
+        width: 200px;
+        height: 35px;
+    }
+}
+/* @media (max-width: 425px) {
+    .input-field1 {
+        width: 250px;
+        height: 35px;
+    }
+} */
 .input-field1 input {
     background: none;
     outline: none;
     border: none;
     font-size: 20px;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .input-field1 input {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
+@media (max-width: 375px) {
+    .input-field1 input {
+        font-size: 13px;
+    }
+}
+/* @media (max-width: 425px) {
+    .input-field1 input {
+        font-size: 13px;
+    }
+} */
 
 .lupa {
     position: absolute;
@@ -180,12 +264,24 @@ body {
 
     color: #000000;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .lupa {
         font-size: 10px;
         left: 110px;
     }
 }
+@media (max-width: 375px) {
+    .lupa {
+        font-size: 10px;
+        left: 110px;
+    }
+}
+/* @media (max-width: 425px) {
+    .lupa {
+        font-size: 10px;
+        left: 110px;
+    }
+} */
 
 .lupa:hover {
     background-color: #92deff;
@@ -210,13 +306,27 @@ body {
     box-sizing: border-box;
     border-radius: 30px;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .submit {
-        width: 230px;
+        width: 200px;
         height: 35px;
         top: 330px;
     }
 }
+@media (max-width: 375px) {
+    .submit {
+        width: 200px;
+        height: 35px;
+        top: 330px;
+    }
+}
+/* @media (max-width: 425px) {
+    .submit {
+        width: 200px;
+        height: 35px;
+        top: 330px;
+    }
+} */
 .submit:hover {
     background-color: #92deff;
 }
@@ -241,7 +351,7 @@ body {
 
     color: #000000;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .anu {
         width: 130px;
         height: 5px;
@@ -250,6 +360,24 @@ body {
         top: 382px;
     }
 }
+@media (max-width: 375px) {
+    .anu {
+        width: 130px;
+        height: 5px;
+        font-size: 12px;
+        left: 37%;
+        top: 382px;
+    }
+}
+/* @media (max-width: 425px) {
+    .anu {
+        width: 130px;
+        height: 5px;
+        font-size: 12px;
+        left: 37%;
+        top: 382px;
+    }
+} */
 .input {
     position: absolute;
     width: 357px;
@@ -272,7 +400,14 @@ body {
     display: grid;
     grid-template-columns: 15% 75%;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
+    .input {
+        width: 230px;
+        height: 35px;
+        margin-top: -65px;
+    }
+}
+@media (max-width: 375px) {
     .input {
         width: 230px;
         height: 35px;
@@ -295,14 +430,32 @@ body {
     font-size: 18px;
     line-height: 27px;
 }
+@media (max-width: 320px) {
+    .input input {
+        font-size: 12px;
+    }
+}
+@media (max-width: 375px) {
+    .input input {
+        font-size: 12px;
+    }
+}
+
 .input img {
     margin-left: 140%;
     margin-top: 30%;
     font-size: 180%;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .input img {
-        font-size: 80px;
+        font-size: 50px;
+        margin-left: 10%;
+        top: 700px;
+    }
+}
+@media (max-width: 375px) {
+    .input img {
+        font-size: 50px;
         margin-left: 10%;
         top: 700px;
     }
@@ -333,10 +486,16 @@ body {
 
     color: #000000;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .sign {
-        font-size: 16px;
-        width: 00px;
+        font-size: 13px;
+        margin-top: -20px;
+        padding-right: 500px;
+    }
+}
+@media (max-width: 375px) {
+    .sign {
+        font-size: 13px;
         margin-top: -20px;
         padding-right: 500px;
     }

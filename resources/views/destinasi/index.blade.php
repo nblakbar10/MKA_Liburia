@@ -16,8 +16,8 @@
             <p class="subjudul">Nikmati Indahnya Destinasi Wisata Alam</p>
 
             <form action="" method="GET">
-                <input type="text" name="cari" placeholder="Cari ...">
-                <input type="submit" value="CARI">
+                <input class="box" type="text" name="cari" placeholder="Cari ...">
+                <input class="box2" type="submit" value="CARI">
             </form>
         </div>
     </div>

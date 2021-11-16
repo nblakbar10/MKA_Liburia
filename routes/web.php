@@ -69,15 +69,19 @@ Route::get('/chart', function () {
 Route::get('admin/login', 'Auth\AdminAuthController@getLogin')->name('admin.login');
 Route::post('admin/login', 'Auth\AdminAuthController@postLogin');
 
-Route::middleware('auth:admin')->group(function(){
+Route::middleware('auth:admin')->group(function () {
     Route::get('/admin', function () {
         return view('admin.login', [
-        "title" => "Manajemen Admin"
+            "title" => "Manajemen Admin"
         ]);
     });
 });
-    
 
+Route::get('/user', function () {
+    return view('user.index', [
+        "title" => "Manajemen User"
+    ]);
+});
 
 Route::get('/wisata', function () {
     return view('wisata.index', [
