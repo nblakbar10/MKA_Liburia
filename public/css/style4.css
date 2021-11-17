@@ -312,7 +312,6 @@
     font-family: "Poppins", sans-serif;
     margin-right: 800px;
 }
-
 .judul {
     text-align: left;
     font-family: "Poppins", sans-serif;
@@ -347,12 +346,53 @@
     margin-left: 100px;
 }
 
+@media (max-width: 750px) {
+    .slider .details img {
+        width: 170px;
+    }
+}
+
+@media (max-width: 750px) {
+    .kota .details img {
+        width: 170px;
+    }
+}
+
+@media (max-width: 750px) {
+    .favorite .wisata img {
+        width: 250px;
+        margin-right: 200px;
+    }
+}
+@media (max-width: 992px) {
+    .favorite .wisata img {
+        width: 300px;
+        margin-right: 200px;
+    }
+}
+@media (max-width: 992px) {
+    .favorite .wisata p {
+        font-size: 15px;
+        margin-left: 170px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        margin-left: 100px;
+    }
+}
+
 .mydestinasi1 {
     font-size: 25px;
     margin-top: 50px;
     font-family: "Poppins", sans-serif;
     text-align: left;
     margin-left: 100px;
+}
+
+.container {
+    margin-right: 150px;
 }
 
 .favorite {
@@ -547,13 +587,20 @@
         font-size: 10px;
     }
 }
-
 .foot1 {
     margin-top: 50px;
     font-family: "Lobster", cursive;
     color: #07b4fe;
     font-size: 40px;
     text-align: left;
+
+    margin-left: 100px;
+}
+@media (max-width: 750px) {
+    .foot1 {
+        font-size: 30px;
+        margin-right: -100px;
+    }
 }
 
 .tagone {
@@ -727,6 +774,7 @@
     .kotak {
         width: 60px;
         margin-left: 200px;
+        font-size: 12px;
     }
 }
 .kotak {
@@ -748,4 +796,9 @@
     text-align: left;
     margin-top: -280px;
     margin-left: 480px;
+}
+
+.kontenatas form {
+    font-family: "Poppins", sans-serif;
+    margin-right: 570px;
 }

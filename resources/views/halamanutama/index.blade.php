@@ -66,6 +66,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+<<<<<<< HEAD
                         <div class="row destinasi1">
                             <div class="col-md-4">
                                 <div class="single-box">
@@ -73,22 +74,37 @@
                                         <div class="img-areaone">
                                             <img src="{{asset('img/destinasi1.svg')}}" alt="">
                                         </div>
+=======
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <a href="/destinasi">
+                                        <div class="img-areaone"><img src="{{asset('img/destinasi1.svg')}}" alt=""></div>
+>>>>>>> update integrasi dashboard admin
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <a href="/destinasi">
+<<<<<<< HEAD
                                         <div class="img-area">
                                             <img src="{{asset('img/destinasi2.svg')}}" alt="">
                                         </div>
+=======
+                                        <div class="img-area"><img src="{{asset('img/destinasi2.svg')}}" alt=""></div>
+>>>>>>> update integrasi dashboard admin
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <a href="/destinasi">
+<<<<<<< HEAD
                                         <div class="img-area1"><img src="{{asset('img/destinasi3.svg')}}" alt=""></div>
+=======
+                                        <div class="img-area"><img src="{{asset('img/destinasi3.svg')}}" alt=""></div>
+>>>>>>> update integrasi dashboard admin
                                     </a>
                                 </div>
                             </div>
@@ -114,7 +130,11 @@
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <a href="/destinasi">
+<<<<<<< HEAD
                                         <div class="img-area1"><img src="{{asset('img/destinasi6.svg')}}" alt=""></div>
+=======
+                                        <div class="img-area"><img src="{{asset('img/destinasi6.svg')}}" alt=""></div>
+>>>>>>> update integrasi dashboard admin
                                     </a>
                                 </div>
                             </div>

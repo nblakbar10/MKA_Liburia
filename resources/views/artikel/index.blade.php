@@ -5,7 +5,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">List Tiket</h3>
+        <h3 class="card-title">List Artikel</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
@@ -13,7 +13,7 @@
             <div id="example1_filter" class="dataTables_filter">
                 <i class="bi bi-search"></i>
                 <label>
-                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama bundling . . ." aria-controls="example1">
+                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama artikel . . ." aria-controls="example1">
                 </label>
             </div>
         </div>
@@ -37,22 +37,28 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama Bundling</label>
+                                    <label for="">Nama Artikel</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Bundling . . . ">
+                                    <input type="text" placeholder="Nama Artikel . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Rincian</label> <br>
+                                    <label for="">Alamat Artikel</label> <br>
                                     <br>
-                                    <input type="text" placeholder="Rincian Bundling . . . ">
+                                    <input type="text" placeholder="Alamat Artikel . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Harga</label><br>
-                                    <input type="text" placeholder="Harga Bundling . . . ">
+                                    <label for=""> Kamar</label><br>
+                                    <input type="text" placeholder="Jenis Kamar . . . ">
                                 </div>
-
+                                <br>
+                            </div>
+                            <br>
+                                <div class="input">
+                                    <label for=""> Foto/Video</label><br>
+                                    <input type="text" placeholder="Foto/Video . . . ">
+                                </div>
                                 <br>
                             </div>
                             <br>
@@ -70,40 +76,21 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-<<<<<<< HEAD
-                    <th style="width: 10px">#</th>
-                    <th>Nama Bundling</th>
-                    <th>Rincian</th>
-                    <th>Harga</th>
-=======
                     <th style="width: 10px">No</th>
-                    <th>Tanggal Pesan</th>
-                    <th>Jumlah Pesan</th>
-                    <th>Total Harga</th>
-                    <th>Keterangan</th>
-                    <th>Status</th>
->>>>>>> update integrasi dashboard admin
+                    <th>Judul Artikel</th>
+                    <th>Foto/Video Artikel</th>
+                    <th>Isi Artikel</th>
                     <th style="width: 100px;">Aksi</th>
 
                 </tr>
             </thead>
             <tbody>
-<<<<<<< HEAD
+            @foreach ($artikel as $at)
                 <tr>
-                    <td>1.</td>
-                    <td>Jesyca Natalia</td>
-                    <td>Medan</td>
-                    <td>Medan</td>
-=======
-            @foreach ($tiket as $pt)
-                <tr>
-                    <td>{{$pt->id}}</td>
-                    <td>{{$pt->tanggal_pesan}}</td>
-                    <td>{{$pt->jumlah_pesan}}</td>
-                    <td>{{$pt->total_harga}}</td>
-                    <td>{{$pt->keterangan}}</td>
-                    <td>{{$pt->status}}</td>
->>>>>>> update integrasi dashboard admin
+                    <td>{{$at->id}}</td>
+                    <td>{{$at->judul}}</td>
+                    <td>{{$at->foto}}</td>
+                    <td>{{$at->isi}}</td>
                     <td>
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
                         <form action="" class="d-inline">
@@ -115,10 +102,7 @@
                         </form>
                     </td>
                 </tr>
-<<<<<<< HEAD
-=======
             @endforeach
->>>>>>> update integrasi dashboard admin
             </tbody>
         </table>
     </div>

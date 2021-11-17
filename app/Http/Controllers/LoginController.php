@@ -22,9 +22,22 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
+<<<<<<< HEAD
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/halamanutama');
+=======
+        if (Auth::guard('user')->attempt(['username' => $request->username, 'password' => $request->password])){
+            $request->session()->regenerate();
+            return redirect()->intended('/halamanutama');
+        }elseif (Auth::guard('admin')->attempt(['username' => $request->username, 'password' => $request->password])){
+            $request->session()->regenerate();
+            return redirect()->intended('/dashboard');
+        
+        // if (Auth::attempt($credentials)) {
+        //     $request->session()->regenerate();
+        //     return redirect()->intended('/halamanutama');
+>>>>>>> update integrasi dashboard admin
         }
 
         return back()->with('loginError', 'Login gagal!');
@@ -32,11 +45,24 @@ class LoginController extends Controller
 
     public function logout()
     {
+<<<<<<< HEAD
         Auth::logout();
 
         request()->session()->invalidate();
 
         request()->session()->regenerateToken();
+=======
+        if (Auth::guard('admin')->check()){
+            Auth::guard('admin')->logout();
+        }elseif(Auth::guard('user')->check()){
+            Auth::guard('user')->logout();
+        }
+        // // Auth::logout();
+
+        // // request()->session()->invalidate();
+
+        //request()->session()->regenerateToken();
+>>>>>>> update integrasi dashboard admin
 
         return redirect('/');
     }

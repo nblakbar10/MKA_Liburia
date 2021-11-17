@@ -36,7 +36,11 @@
 
     <!-- Footer -->
     <div class="container">
+<<<<<<< HEAD
         <div class="row judulawal">
+=======
+        <div class="row">
+>>>>>>> update integrasi dashboard admin
             <div class="col-md-12">
                 <b>
                     <h2 class="foot1">Byon</h2>

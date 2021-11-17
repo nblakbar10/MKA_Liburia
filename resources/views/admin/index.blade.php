@@ -72,19 +72,32 @@
         </div>
 
         <br>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> update integrasi dashboard admin
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th style="width: 10px">#</th>
+<<<<<<< HEAD
                     <th>Nama</th>
                     <th>Hak Akses</th>
                     <th>Email</th>
                     <th>No.Telepon</th>
                     <th>Status</th>
+=======
+                    <th>Nama Lengkap</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>No.Telepon</th>
+                    <th>Foto</th>
+>>>>>>> update integrasi dashboard admin
                     <th style="width: 95px">Aksi</th>
                 </tr>
             </thead>
             <tbody>
+<<<<<<< HEAD
                 <tr>
                     <td>1.</td>
                     <td>Update software</td>
@@ -93,6 +106,16 @@
                     <td>Cron job running</td>
                     <td>Cron job running</td>
                     <td>
+=======
+                @foreach ($admins as $adm)
+                <tr>
+                    <td>{{$adm->id}}</td>
+                    <td>{{$adm->fullname}}</td>
+                    <td>{{$adm->username}}</td>
+                    <td>{{$adm->email}}</td>
+                    <td>{{$adm->phone}}</td>
+                    <td>{{$adm->photo}}</td>
+>>>>>>> update integrasi dashboard admin
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
                         <form action="" class="d-inline">
                             @method('delete')
@@ -103,6 +126,7 @@
                         </form>
                     </td>
                 </tr>
+<<<<<<< HEAD
                 <tr>
                     <td>2.</td>
                     <td>Clean database</td>
@@ -158,6 +182,9 @@
                         </form>
                     </td>
                 </tr>
+=======
+                @endforeach
+>>>>>>> update integrasi dashboard admin
             </tbody>
         </table>
     </div>

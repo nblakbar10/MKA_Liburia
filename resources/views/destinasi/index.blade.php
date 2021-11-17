@@ -6,8 +6,11 @@
 <div class="img">
     <img width="1300px" src="{{asset('img/tour.svg')}}" alt="">
 </div>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> update integrasi dashboard admin
 <!-- Konten -->
 <div class="container">
     <div class="row">
@@ -93,7 +96,12 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
+<<<<<<< HEAD
                 <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+=======
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
             </div>
         </div>
 
@@ -102,22 +110,37 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
+<<<<<<< HEAD
                 <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
 
+=======
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+<<<<<<< HEAD
                 <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+=======
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+<<<<<<< HEAD
                 <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+=======
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
             </div>
         </div>
     </div>

@@ -7,6 +7,7 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 use Illuminate\Support\Arr;
 
+
 class Handler extends ExceptionHandler
 {
     /**

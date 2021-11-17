@@ -99,4 +99,9 @@ class UserController extends Controller
         $file->move($path, $file->getClientOriginalName());
         return response()->json(compact('path'));
      }*/
+<<<<<<< HEAD
+=======
+
+     
+>>>>>>> update integrasi dashboard admin
 }
