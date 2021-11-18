@@ -37,26 +37,29 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama</label>
+                                    <label for="">Nama Lengkap</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Admin . . . ">
+                                    <input type="text" placeholder="Nama Lengkap . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Daerah</label> <br>
-                                    <select name="" placeholder="Daerah Admin " autofocus>
-                                        <option value="">- Pilih -</option>
-                                    </select>
+                                    <label for=""> Username</label> <br>
+                                    <input type="text" placeholder="Username . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
                                     <label for=""> Email </label><br>
-                                    <input type="text" placeholder="Email ">
+                                    <input type="email" placeholder="Email . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
                                     <label for=""> No. Telepon </label><br>
-                                    <input type="number" placeholder="Nomor telepon admin">
+                                    <input type="phone" placeholder="No. telepon . . . ">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Foto</label><br>
+                                    <input placeholder="Foto ">
                                 </div>
                                 <br>
                             </div>

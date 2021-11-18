@@ -37,26 +37,29 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama</label>
+                                    <label for="">Nama Tempat Wisata</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Admin . . . ">
+                                    <input type="text" placeholder="nama tempat wisata . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Daerah</label> <br>
-                                    <select name="" placeholder="Daerah Admin " autofocus>
-                                        <option value="">- Pilih -</option>
-                                    </select>
+                                    <label for=""> Alamat</label> <br>
+                                    <input type="text" placeholder="alamat . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Email </label><br>
-                                    <input type="text" placeholder="Email ">
+                                    <label for=""> Foto </label><br>
+                                    <input type="text" placeholder="foto . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> No. Telepon </label><br>
-                                    <input type="number" placeholder="Nomor telepon admin">
+                                    <label for=""> Fasilitas </label><br>
+                                    <input type="number" placeholder="fasilitas . . .">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Harga </label><br>
+                                    <input type="number" placeholder="harga . . .">
                                 </div>
                                 <br>
                             </div>

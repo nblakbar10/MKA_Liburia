@@ -37,22 +37,30 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama Bundling</label>
+                                    <label for="">Tanggal Pesan</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Bundling . . . ">
+                                    <input type="text" placeholder="tanggal pesan . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Rincian</label> <br>
-                                    <br>
-                                    <input type="text" placeholder="Rincian Bundling . . . ">
+                                    <label for="">Jumlah Pesan</label> <br>
+                                    <input type="text" placeholder="jumlah pesan . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Harga</label><br>
-                                    <input type="text" placeholder="Harga Bundling . . . ">
+                                    <label for="">Total Harga</label><br>
+                                    <input type="text" placeholder="total harga . . . ">
                                 </div>
-
+                                <br>
+                                <div class="input">
+                                    <label for="">Keterangan</label><br>
+                                    <input type="text" placeholder="keterangan . . . ">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for="">Status</label><br>
+                                    <input type="text" placeholder="status . . . ">
+                                </div>
                                 <br>
                             </div>
                             <br>

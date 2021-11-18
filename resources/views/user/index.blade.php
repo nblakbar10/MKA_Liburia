@@ -37,14 +37,20 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama</label>
+                                    <label for="">Username</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Admin . . . ">
+                                    <input type="text" placeholder="Username Admin . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Daerah</label> <br>
-                                    <select name="" placeholder="Daerah Admin " autofocus>
+                                    <label for="">Nama Lengkap</label>
+                                    <br>
+                                    <input type="text" placeholder="Nama Lengkap . . . ">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for="">Asal Daerah</label> <br>
+                                    <select name="" placeholder="Asal Daerah . . . " autofocus>
                                         <option value="">- Pilih -</option>
                                     </select>
                                 </div>
@@ -57,6 +63,31 @@
                                 <div class="input">
                                     <label for=""> No. Telepon </label><br>
                                     <input type="number" placeholder="Nomor telepon admin">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Status </label><br>
+                                    <input type="text" placeholder="Status admin">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Rencana Liburan </label><br>
+                                    <input type="text" placeholder="Rencana Liburan">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Pemesanan </label><br>
+                                    <input type="text" placeholder="Pemesanan">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Foto/Video </label><br>
+                                    <input type="text" placeholder="Foto/Video">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Ulasan</label><br>
+                                    <input type="text" placeholder="Ulasan">
                                 </div>
                                 <br>
                             </div>
