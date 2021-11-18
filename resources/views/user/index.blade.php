@@ -75,14 +75,9 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-<<<<<<< HEAD
-                    <th style="width: 10px">#</th>
-                    <th>Nama</th>
-=======
                     <th style="width: 10px">ID</th>
                     <th>Username</th>
                     <th>Nama Lengkap</th>
->>>>>>> update integrasi dashboard admin
                     <th>Asal Daerah</th>
                     <th>Email</th>
                     <th>No.Telepon</th>
@@ -95,15 +90,39 @@
                 </tr>
             </thead>
             <tbody>
-<<<<<<< HEAD
+                @foreach ($users as $us)
                 <tr>
-                    <td>1.</td>
-                    <td>Jesyca Natalia</td>
-                    <td>Medan</td>
-                    <td>Jesyca@gmail.com</td>
-                    <td>0123321111</td>
-                    <td>Online</td>
+                    <td>{{$us->id}}</td>
+                    <td>{{$us->username}}</td>
+                    <td>{{$us->fullname}}</td>
+                    <td></td>
+                    <td>{{$us->email}}</td>
+                    <td>{{$us->phone}}</td>
+                    <td></td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <i class="bi bi-file-earmark-text"></i>
+                            Detail
+                        </button>
 
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal1Label">Rencana Liburan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
 
                     <td>
                         <!-- Button trigger modal -->
@@ -130,102 +149,13 @@
                         </div>
                     </td>
 
-
-                    <td>
-                        <!-- Button trigger modal -->
-                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Detail
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModal2Label">Detail Pemesanan</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <!-- body -->
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-
-                    <td>
-                        <!-- Button trigger modal -->
-                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Detail
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModal3Label">Foto/Video</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <!-- body -->
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-
-
-                    <td>
-                        <!-- Button trigger modal -->
-                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Detail
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4Label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModal2Label">Ulasan/Review</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <!-- body -->
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-=======
-            @foreach ($users as $us)
-                <tr>
-                    <td>{{$us->id}}</td>
-                    <td>{{$us->username}}</td>
-                    <td>{{$us->fullname}}</td>
-                    <td></td>
-                    <td>{{$us->email}}</td>
-                    <td>{{$us->phone}}</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>{{$us->photo}}</td>
                     <td></td>
-                    
+
                 </tr>
-            @endforeach
+                @endforeach
             </tbody>
         </table>
->>>>>>> update integrasi dashboard admin
     </div>
 </div>
 

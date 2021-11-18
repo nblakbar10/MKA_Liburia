@@ -75,97 +75,6 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-<<<<<<< HEAD
-                    <th style="width: 10px">id_wisata</th>
-                    <th>nama_wisata</th>
-                    <th>alamat_Wisata</th>
-                    <th>foto_wisata</th>
-                    <th>fasilitas_wisata/th>
-                    <th>harga_wisata</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td>Jesyca Natalia</td>
-                    <td>Medan</td>
-                    <td>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal1">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Detail
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="userModal1" tabindex="-1" aria-labelledby="userModal1Label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="userModal1Label">Deskripsi Tempat Wisata</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <!-- body -->
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-
-
-                    <td>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal2">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Detail
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="userModal2" tabindex="-1" aria-labelledby="userModal2Label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="userModal2Label">Review </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <!-- body -->
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-
-                    <td>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal3">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Detail
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="userModal3" tabindex="-1" aria-labelledby="userModal3Label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="userModal3Label">Foto/Video</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <!-- body -->
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-=======
                     <th style="width: 10px">ID</th>
                     <th>Nama Tempat Wisata</th>
                     <th>Alamat</th>
@@ -175,7 +84,7 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach ($tempatWisata as $wis)
+                @foreach ($tempatWisata as $wis)
                 <tr>
                     <td>{{$wis->id}}</td>
                     <td>{{$wis->nama_wisata}}</td>
@@ -184,8 +93,7 @@
                     <td>{{$wis->fasilitas_Wisata}}</td>
                     <td>{{$wis->harga_wisata}}</td>
                 </tr>
-            @endforeach
->>>>>>> update integrasi dashboard admin
+                @endforeach
             </tbody>
         </table>
     </div>

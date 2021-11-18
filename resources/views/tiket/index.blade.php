@@ -70,32 +70,18 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-<<<<<<< HEAD
-                    <th style="width: 10px">#</th>
-                    <th>Nama Bundling</th>
-                    <th>Rincian</th>
-                    <th>Harga</th>
-=======
                     <th style="width: 10px">No</th>
                     <th>Tanggal Pesan</th>
                     <th>Jumlah Pesan</th>
                     <th>Total Harga</th>
                     <th>Keterangan</th>
                     <th>Status</th>
->>>>>>> update integrasi dashboard admin
                     <th style="width: 100px;">Aksi</th>
 
                 </tr>
             </thead>
             <tbody>
-<<<<<<< HEAD
-                <tr>
-                    <td>1.</td>
-                    <td>Jesyca Natalia</td>
-                    <td>Medan</td>
-                    <td>Medan</td>
-=======
-            @foreach ($tiket as $pt)
+                @foreach ($tiket as $pt)
                 <tr>
                     <td>{{$pt->id}}</td>
                     <td>{{$pt->tanggal_pesan}}</td>
@@ -103,7 +89,6 @@
                     <td>{{$pt->total_harga}}</td>
                     <td>{{$pt->keterangan}}</td>
                     <td>{{$pt->status}}</td>
->>>>>>> update integrasi dashboard admin
                     <td>
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
                         <form action="" class="d-inline">
@@ -115,10 +100,7 @@
                         </form>
                     </td>
                 </tr>
-<<<<<<< HEAD
-=======
-            @endforeach
->>>>>>> update integrasi dashboard admin
+                @endforeach
             </tbody>
         </table>
     </div>
