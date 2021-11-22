@@ -22,9 +22,15 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('login', 'API\UserController@login');
 Route::post('register', 'API\UserController@register');
 
+Route::get('get_tempat_wisata', 'API\DetailController@get_tempat_wisata');
+Route::get('get_bundling_tiket', 'API\DetailController@get_bundling_tiket');
+Route::get('get_artikel', 'API\DetailController@get_artikel');
+
 Route::group(['middleware' => 'auth:api'], function(){
     Route::get('user/detail', 'Api\UserController@details');
     Route::post('logout', 'Api\UserController@logout');
+
+    //Route::get('user/detail', 'Api\UserController@details');
 }); 
 
 
