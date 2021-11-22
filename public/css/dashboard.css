@@ -37,6 +37,11 @@ body {
     font-size: 15px;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+@media (max-width: 750px) {
+    .sidebar-sticky {
+        margin-top: 700px;
+    }
+}
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
     .sidebar-sticky {
@@ -128,7 +133,7 @@ body {
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 750px) {
     .col H2 {
         margin-top: 700px;
     }

@@ -37,14 +37,20 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama</label>
+                                    <label for="">Username</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Admin . . . ">
+                                    <input type="text" placeholder="Username Admin . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Daerah</label> <br>
-                                    <select name="" placeholder="Daerah Admin " autofocus>
+                                    <label for="">Nama Lengkap</label>
+                                    <br>
+                                    <input type="text" placeholder="Nama Lengkap . . . ">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for="">Asal Daerah</label> <br>
+                                    <select name="" placeholder="Asal Daerah . . . " autofocus>
                                         <option value="">- Pilih -</option>
                                     </select>
                                 </div>
@@ -57,6 +63,31 @@
                                 <div class="input">
                                     <label for=""> No. Telepon </label><br>
                                     <input type="number" placeholder="Nomor telepon admin">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Status </label><br>
+                                    <input type="text" placeholder="Status admin">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Rencana Liburan </label><br>
+                                    <input type="text" placeholder="Rencana Liburan">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Pemesanan </label><br>
+                                    <input type="text" placeholder="Pemesanan">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Foto/Video </label><br>
+                                    <input type="text" placeholder="Foto/Video">
+                                </div>
+                                <br>
+                                <div class="input">
+                                    <label for=""> Ulasan</label><br>
+                                    <input type="text" placeholder="Ulasan">
                                 </div>
                                 <br>
                             </div>
@@ -90,7 +121,7 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach ($users as $us)
+                @foreach ($users as $us)
                 <tr>
                     <td>{{$us->id}}</td>
                     <td>{{$us->username}}</td>
@@ -99,13 +130,61 @@
                     <td>{{$us->email}}</td>
                     <td>{{$us->phone}}</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <i class="bi bi-file-earmark-text"></i>
+                            Detail
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal1Label">Rencana Liburan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <i class="bi bi-file-earmark-text"></i>
+                            Detail
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal1Label">Rencana Liburan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
                     <td>{{$us->photo}}</td>
                     <td></td>
-                    
+
                 </tr>
-            @endforeach
+                @endforeach
             </tbody>
         </table>
     </div>

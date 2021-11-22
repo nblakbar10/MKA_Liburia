@@ -18,11 +18,21 @@ body {
     display: grid;
     grid-template-columns: repeat();
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .logo img {
-        width: 15000px;
-        left: 50%;
-        margin-top: -270px;
+        width: 1px;
+        left: 10%;
+    }
+}
+@media (max-width: 375px) {
+    .logo img {
+        width: 1px;
+        left: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .logo img {
+        width: 1px;
     }
 }
 
@@ -35,13 +45,20 @@ body {
     background: #ffffff;
     border-radius: 25px;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .forms-container {
-        width: 200px;
-        width: 400px;
-        margin-top: 10px;
-        margin-left: -50px;
+        width: 360px;
+        margin-left: -150px;
         box-shadow: #afafaf;
+        border-radius: 0px;
+    }
+}
+@media (max-width: 375px) {
+    .forms-container {
+        width: 360px;
+        margin-left: -110px;
+        box-shadow: #afafaf;
+        border-radius: 0px;
     }
 }
 .title1 {
@@ -225,6 +242,14 @@ body {
         padding-right: 30px;
     }
 }
+@media (max-width: 750px) {
+    .signup-field5 {
+        width: 230px;
+        height: 35px;
+        padding-right: 30px;
+    }
+}
+
 .signup-field3 input {
     background: none;
     outline: none;
@@ -233,6 +258,11 @@ body {
 }
 @media (max-width: 750px) {
     .signup-field3 input {
+        font-size: 15px;
+    }
+}
+@media (max-width: 750px) {
+    .signup-field5 input {
         font-size: 15px;
     }
 }
@@ -266,6 +296,28 @@ body {
     outline: none;
     border: none;
     font-size: 20px;
+}
+@media (max-width: 320px) {
+    .signup-field5 input {
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .signup-field5 input {
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 15px;
+    }
+}
+@media (max-width: 750px) {
+    .signup-field5 input {
+        width: 230px;
+        height: 35px;
+    }
 }
 .signup-field5 {
     position: absolute;
@@ -330,9 +382,16 @@ body {
     box-sizing: border-box;
     border-radius: 30px;
 }
-@media (max-width: 750px) {
+@media (max-width: 320px) {
     .submit2 {
-        width: 250px;
+        width: 150px;
+        margin-left: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .submit2 {
+        width: 150px;
+        margin-left: 50px;
     }
 }
 

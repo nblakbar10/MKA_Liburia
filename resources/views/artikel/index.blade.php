@@ -37,85 +37,78 @@
                             <!-- body -->
                             <div class="modal-body">
                                 <div class="input">
-                                    <label for="">Nama Artikel</label>
+                                    <label for="">Judul Artikel</label>
                                     <br>
-                                    <input type="text" placeholder="Nama Artikel . . . ">
+                                    <input type="text" placeholder="Judul Artikel . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for="">Alamat Artikel</label> <br>
+                                    <label for="">Foto/Video Artikel</label> <br>
                                     <br>
-                                    <input type="text" placeholder="Alamat Artikel . . . ">
+                                    <input type="text" placeholder="Foto/Video Artikel . . . ">
                                 </div>
                                 <br>
                                 <div class="input">
-                                    <label for=""> Kamar</label><br>
-                                    <input type="text" placeholder="Jenis Kamar . . . ">
+                                    <label for=""> Isi Artikel</label><br>
+                                    <input type="text" placeholder="Isi Artikel . . . ">
                                 </div>
                                 <br>
-                            </div>
-                            <br>
-                                <div class="input">
-                                    <label for=""> Foto/Video</label><br>
-                                    <input type="text" placeholder="Foto/Video . . . ">
-                                </div>
                                 <br>
-                            </div>
-                            <br>
-                            <br>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <br>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th style="width: 10px">No</th>
-                    <th>Judul Artikel</th>
-                    <th>Foto/Video Artikel</th>
-                    <th>Isi Artikel</th>
-                    <th style="width: 100px;">Aksi</th>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th style="width: 10px">No</th>
+                <th>Judul Artikel</th>
+                <th>Foto/Video Artikel</th>
+                <th>Isi Artikel</th>
+                <th style="width: 100px;">Aksi</th>
 
-                </tr>
-            </thead>
-            <tbody>
+            </tr>
+        </thead>
+        <tbody>
             @foreach ($artikel as $at)
-                <tr>
-                    <td>{{$at->id}}</td>
-                    <td>{{$at->judul}}</td>
-                    <td>{{$at->foto}}</td>
-                    <td>{{$at->isi}}</td>
-                    <td>
-                        <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
-                        <form action="" class="d-inline">
-                            @method('delete')
-                            @csrf
-                            <button class="btn btn-danger btn-sm">
-                                <i class="fa fa-trash"></i>
-                            </button>
-                        </form>
-                    </td>
-                </tr>
+            <tr>
+                <td>{{$at->id}}</td>
+                <td>{{$at->judul}}</td>
+                <td>{{$at->foto}}</td>
+                <td>{{$at->isi}}</td>
+                <td>
+                    <a href="" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> </a>
+                    <form action="" class="d-inline">
+                        @method('delete')
+                        @csrf
+                        <button class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
             @endforeach
-            </tbody>
-        </table>
-    </div>
-    <!-- /.card-body -->
-    <div class="card-footer clearfix">
-        <ul class="pagination pagination-sm m-0 float-right">
-            <li class="page-item"><a class="page-link" href="#">«</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">»</a></li>
-        </ul>
-    </div>
+        </tbody>
+    </table>
+</div>
+<!-- /.card-body -->
+<div class="card-footer clearfix">
+    <ul class="pagination pagination-sm m-0 float-right">
+        <li class="page-item"><a class="page-link" href="#">«</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">»</a></li>
+    </ul>
+</div>
 </div>
 
 @endsection

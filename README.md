@@ -7,7 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+<<<<<<< HEAD
 ## About Laravel
+=======
+<<<<<<< HEAD
+## About Laravel (LIBURIA)
+=======
+## About Laravel
+>>>>>>> update integrasi dashboard admin
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 

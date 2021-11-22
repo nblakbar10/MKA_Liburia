@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasAPiTokens, Notifiable; 
+    use HasAPiTokens, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -23,13 +23,12 @@ class User extends Authenticatable
     protected $fillable = [
         'fullname', 'username', 'email', 'password', 'phone' //'photo' 
     ];
-    
-        
+
+
     public function pemesanantiket()
     {
         return $this->hasMany(PemesananTiket::class);
     }
-    
 
     /**
      * The attributes that should be hidden for arrays.

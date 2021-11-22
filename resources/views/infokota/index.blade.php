@@ -13,8 +13,8 @@
             <h3 class="judul">Cari Tempat Wisatamu di <br> Kalimantan</h3>
             <p class="subjudul">Nikmati Indahnya Destinasi Wisata Alam</p>
             <form action="" method="GET">
-                <input type="text" name="cari" placeholder="Cari ...">
-                <input type="submit" value="CARI">
+                <input class="box" type="text" name="cari" placeholder="Cari ...">
+                <input class="box2" type="submit" value="CARI">
             </form>
         </div>
     </div>
@@ -42,32 +42,73 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
+<<<<<<< HEAD
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+=======
+<<<<<<< HEAD
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+=======
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="wisata">
+<<<<<<< HEAD
+                <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+=======
+<<<<<<< HEAD
+                <a href="/info">
+                    <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+                </a>
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+
+=======
+                <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+<<<<<<< HEAD
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+=======
+<<<<<<< HEAD
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+=======
+                <p>Pulau Derawan</p>
+                <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+<<<<<<< HEAD
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="wisata">
-                <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+=======
+<<<<<<< HEAD
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+=======
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+>>>>>>> update integrasi dashboard admin
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             </div>
         </div>
     </div>

@@ -43,10 +43,10 @@ Route::get('/info', [InfoController::class, 'index']);
 
 
 
-Route::group(['middleware' => ['auth:user,admin']], function(){
+Route::group(['middleware' => ['auth:user,admin']], function () {
     Route::get('/dashboard', function () {
         return view('dashboard.index', [
-            "title"=>"Dashboard"
+            "title" => "Dashboard"
         ]);
     });
     Route::get('/admin', function () {
@@ -55,8 +55,7 @@ Route::group(['middleware' => ['auth:user,admin']], function(){
         ]);
     });
     Route::get('/chart', function () {
-        return view('chart.index', [
-        ]);
+        return view('chart.index', []);
     });
     Route::get('/user', function () {
         return view('user.index', [
@@ -81,15 +80,15 @@ Route::group(['middleware' => ['auth:user,admin']], function(){
     Route::get('/halamanutama', [UtamaController::class, 'index']);
 });
 
-Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
+Route::post('login', ['as' => 'login', 'uses' => 'LoginController@login']);
 
 // Route::get('/', function ())
 
-Route::get('/admin','AdminController@index');
-Route::get('/tiket','PemesananTiketnewController@index');
-Route::get('/wisata','TempatWisataController@index');
-Route::get('/artikel','ArtikelController@index');
-Route::get('/user','UserDashController@index');
+Route::get('/admin', 'AdminController@index');
+Route::get('/tiket', 'PemesananTiketnewController@index');
+Route::get('/wisata', 'TempatWisataController@index');
+Route::get('/artikel', 'ArtikelController@index');
+Route::get('/user', 'UserDashController@index');
 // Route::get('/pemesanantiket/{id}/pemesanantiket','PemesananTiketController@pemesanantiket');
 //Route::get('/admins', 'AdminsController@index')->name('admins');
 

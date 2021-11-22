@@ -14,8 +14,8 @@
             <p class="subjudul">Nikmati Indahnya Destinasi Wisata Alam</p>
 
             <form action="" method="GET">
-                <input type="text" name="cari" placeholder="Cari ...">
-                <input type="submit" value="CARI">
+                <input class="box" type="text" name="cari" placeholder="Cari ...">
+                <input class="box2" type="submit" value="CARI">
             </form>
         </div>
     </div>
@@ -91,8 +91,12 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
+<<<<<<< HEAD
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+=======
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             </div>
         </div>
 
@@ -101,24 +105,36 @@
                 <a href="/info">
                     <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
                 </a>
+<<<<<<< HEAD
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+=======
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+<<<<<<< HEAD
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+=======
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             </div>
         </div>
 
         <div class="col">
             <div class="wisata">
                 <img src="{{asset('img/favorit.svg')}}" width="225" alt="">
+<<<<<<< HEAD
                 <p>Pulau Derawan</p>
                 <i class="bi bi-star-fill">4.9 (5.3k reviews)</i>
+=======
+                <p>Pulau Derawan | <i class="bi bi-star-fill">4.9 (5.3k reviews)</i></p>
+>>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             </div>
         </div>
     </div>
