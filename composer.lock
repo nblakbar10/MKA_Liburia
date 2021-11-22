@@ -551,29 +551,6 @@
         },
         {
             "name": "firebase/php-jwt",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "v5.5.1",
-=======
-<<<<<<< HEAD
-            "version": "v5.5.0",
->>>>>>> 68abe247e8b42a074c24eb68b1af35a49ba8a6bc
-            "source": {
-                "type": "git",
-                "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6"
-            },
-            "dist": {
-                "type": "zip",
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/83b609028194aa042ea33b5af2d41a7427de80e6",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6",
-=======
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/cf814442ce0e9eebe5317d61b63ccda4b85de67a",
-                "reference": "cf814442ce0e9eebe5317d61b63ccda4b85de67a",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "v5.4.0",
             "source": {
                 "type": "git",
@@ -584,11 +561,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/firebase/php-jwt/zipball/d2113d9b2e0e349796e72d2a63cf9319100382d2",
                 "reference": "d2113d9b2e0e349796e72d2a63cf9319100382d2",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 68abe247e8b42a074c24eb68b1af35a49ba8a6bc
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
@@ -630,27 +602,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/firebase/php-jwt/tree/v5.4.0"
             },
             "time": "2021-06-23T19:00:23+00:00"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/firebase/php-jwt/tree/v5.5.1"
-            },
-            "time": "2021-11-08T20:18:51+00:00"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/firebase/php-jwt/tree/v5.5.0"
-            },
-            "time": "2021-11-04T16:21:41+00:00"
-=======
-                "source": "https://github.com/firebase/php-jwt/tree/v5.4.0"
-            },
-            "time": "2021-06-23T19:00:23+00:00"
->>>>>>> update integrasi dashboard admin
->>>>>>> 68abe247e8b42a074c24eb68b1af35a49ba8a6bc
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -1054,26 +1008,6 @@
         },
         {
             "name": "laminas/laminas-diactoros",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "2.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "36ef09b73e884135d2059cc498c938e90821bb57"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/36ef09b73e884135d2059cc498c938e90821bb57",
-                "reference": "36ef09b73e884135d2059cc498c938e90821bb57",
-                "shasum": ""
-            },
-            "require": {
-                "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^7.1",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "2.8.0",
             "source": {
                 "type": "git",
@@ -1088,53 +1022,22 @@
             },
             "require": {
                 "php": "^7.3 || ~8.0.0 || ~8.1.0",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0"
             },
             "conflict": {
-<<<<<<< HEAD
                 "phpspec/prophecy": "<1.9.0",
                 "zendframework/zend-diactoros": "*"
-=======
-<<<<<<< HEAD
-                "phpspec/prophecy": "<1.9.0"
-=======
-                "phpspec/prophecy": "<1.9.0",
-                "zendframework/zend-diactoros": "*"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "provide": {
                 "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "replace": {
-                "zendframework/zend-diactoros": "^2.2.1"
-            },
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "require-dev": {
                 "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-gd": "*",
                 "ext-libxml": "*",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "http-interop/http-factory-tests": "^0.5.0",
-                "laminas/laminas-coding-standard": "~1.0.0",
-                "php-http/psr7-integration-tests": "^1.0",
-                "phpunit/phpunit": "^7.5.18"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "http-interop/http-factory-tests": "^0.8.0",
                 "laminas/laminas-coding-standard": "~1.0.0",
                 "php-http/psr7-integration-tests": "^1.1",
@@ -1142,10 +1045,6 @@
                 "phpunit/phpunit": "^9.1",
                 "psalm/plugin-phpunit": "^0.14.0",
                 "vimeo/psalm": "^4.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
@@ -1204,75 +1103,7 @@
                     "type": "community_bridge"
                 }
             ],
-<<<<<<< HEAD
             "time": "2021-09-22T03:54:36+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2020-09-03T14:29:41+00:00"
-        },
-        {
-            "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "type": "library",
-            "extra": {
-                "laminas": {
-                    "module": "Laminas\\ZendFrameworkBridge"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/autoload.php"
-                ],
-                "psr-4": {
-                    "Laminas\\ZendFrameworkBridge\\": "src//"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Alias legacy ZF class names to Laminas Project equivalents.",
-            "keywords": [
-                "ZendFramework",
-                "autoloading",
-                "laminas",
-                "zf"
-            ],
-            "support": {
-                "forum": "https://discourse.laminas.dev/",
-                "issues": "https://github.com/laminas/laminas-zendframework-bridge/issues",
-                "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
-                "source": "https://github.com/laminas/laminas-zendframework-bridge"
-            },
-            "funding": [
-                {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
-                }
-            ],
-            "time": "2020-09-14T14:23:00+00:00"
-=======
-            "time": "2021-09-22T03:54:36+00:00"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "laravel/framework",
@@ -1582,22 +1413,6 @@
             "time": "2021-09-28T15:47:34+00:00"
         },
         {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "name": "lcobucci/jwt",
-            "version": "3.4.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "3ef8657a78278dfeae7707d51747251db4176240"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/3ef8657a78278dfeae7707d51747251db4176240",
-                "reference": "3ef8657a78278dfeae7707d51747251db4176240",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "name": "lcobucci/clock",
             "version": "2.1.0",
             "source": {
@@ -1669,31 +1484,11 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/lcobucci/jwt/zipball/55564265fddf810504110bd68ca311932324b0e9",
                 "reference": "55564265fddf810504110bd68ca311932324b0e9",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "~1.5",
-                "phpmd/phpmd": "~2.2",
-                "phpunit/php-invoker": "~1.1",
-                "phpunit/phpunit": "^5.7 || ^7.3",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "suggest": {
-                "lcobucci/clock": "*"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "lcobucci/clock": "^2.0",
                 "php": "^7.4 || ^8.0"
             },
@@ -1709,42 +1504,17 @@
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/php-invoker": "^3.1",
                 "phpunit/phpunit": "^9.4"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "4.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.1-dev"
-=======
-                    "dev-master": "4.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Lcobucci\\JWT\\": "src"
-<<<<<<< HEAD
                 }
-=======
-<<<<<<< HEAD
-                },
-                "files": [
-                    "compat/class-aliases.php",
-                    "compat/json-exception-polyfill.php",
-                    "compat/lcobucci-clock-polyfill.php"
-                ]
-=======
-                }
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1752,15 +1522,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
                     "name": "Luís Cobucci",
-=======
-<<<<<<< HEAD
-                    "name": "Luís Otávio Cobucci Oblonczyk",
-=======
-                    "name": "Luís Cobucci",
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                     "email": "lcobucci@gmail.com",
                     "role": "Developer"
                 }
@@ -1772,15 +1534,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/lcobucci/jwt/tree/4.0.4"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/lcobucci/jwt/tree/3.4.6"
-=======
-                "source": "https://github.com/lcobucci/jwt/tree/4.0.4"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -2287,21 +2041,6 @@
         },
         {
             "name": "nesbot/carbon",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "2.54.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "eed83939f1aed3eee517d03a33f5ec587ac529b5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/eed83939f1aed3eee517d03a33f5ec587ac529b5",
-                "reference": "eed83939f1aed3eee517d03a33f5ec587ac529b5",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "2.53.1",
             "source": {
                 "type": "git",
@@ -2312,10 +2051,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f4655858a784988f880c1b8c7feabbf02dfdf045",
                 "reference": "f4655858a784988f880c1b8c7feabbf02dfdf045",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
@@ -2326,13 +2061,6 @@
                 "symfony/translation": "^3.4 || ^4.0 || ^5.0"
             },
             "require-dev": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "doctrine/dbal": "^2.0 || ^3.0",
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "doctrine/orm": "^2.7",
                 "friendsofphp/php-cs-fixer": "^3.0",
                 "kylekatarnls/multi-tester": "^2.0",
@@ -2403,25 +2131,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2021-11-01T21:22:20+00:00"
-        },
-        {
-            "name": "nikic/php-parser",
-            "version": "v4.13.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/63a79e8daa781cac14e5195e63ed8ae231dd10fd",
-                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2021-09-06T09:29:23+00:00"
         },
         {
@@ -2436,10 +2145,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/50953a2691a922aa1769461637869a0a2faa3f53",
                 "reference": "50953a2691a922aa1769461637869a0a2faa3f53",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
@@ -2480,21 +2185,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.0"
             },
             "time": "2021-09-20T12:20:58+00:00"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.1"
-            },
-            "time": "2021-11-03T20:52:16+00:00"
-=======
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.0"
-            },
-            "time": "2021-09-20T12:20:58+00:00"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "nyholm/psr7",
@@ -3180,25 +2873,6 @@
         },
         {
             "name": "psr/log",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "2.0.0",
             "source": {
                 "type": "git",
@@ -3213,36 +2887,16 @@
             },
             "require": {
                 "php": ">=8.0.0"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "2.0.x-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "1.1.x-dev"
-=======
-                    "dev-master": "2.0.x-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
                     "Psr\\Log\\": "src"
-=======
-<<<<<<< HEAD
-                    "Psr\\Log\\": "Psr/Log/"
-=======
-                    "Psr\\Log\\": "src"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3263,21 +2917,9 @@
                 "psr-3"
             ],
             "support": {
-<<<<<<< HEAD
                 "source": "https://github.com/php-fig/log/tree/2.0.0"
             },
             "time": "2021-07-14T16:41:46+00:00"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/php-fig/log/tree/1.1.4"
-            },
-            "time": "2021-05-03T11:20:27+00:00"
-=======
-                "source": "https://github.com/php-fig/log/tree/2.0.0"
-            },
-            "time": "2021-07-14T16:41:46+00:00"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "psr/simple-cache",
@@ -3451,25 +3093,6 @@
         },
         {
             "name": "ramsey/collection",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ramsey/collection.git",
-                "reference": "ab2237657ad99667a5143e32ba2683c8029563d4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/collection/zipball/ab2237657ad99667a5143e32ba2683c8029563d4",
-                "reference": "ab2237657ad99667a5143e32ba2683c8029563d4",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2 || ^8"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "1.2.2",
             "source": {
                 "type": "git",
@@ -3485,10 +3108,6 @@
             "require": {
                 "php": "^7.3 || ^8",
                 "symfony/polyfill-php81": "^1.23"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "require-dev": {
                 "captainhook/captainhook": "^5.3",
@@ -3498,14 +3117,7 @@
                 "hamcrest/hamcrest-php": "^2",
                 "jangregor/phpstan-prophecy": "^0.8",
                 "mockery/mockery": "^1.3",
-<<<<<<< HEAD
                 "phpspec/prophecy-phpunit": "^2.0",
-=======
-<<<<<<< HEAD
-=======
-                "phpspec/prophecy-phpunit": "^2.0",
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "phpstan/extension-installer": "^1",
                 "phpstan/phpstan": "^0.12.32",
                 "phpstan/phpstan-mockery": "^0.12.5",
@@ -3533,15 +3145,7 @@
                     "homepage": "https://benramsey.com"
                 }
             ],
-<<<<<<< HEAD
             "description": "A PHP library for representing and manipulating collections.",
-=======
-<<<<<<< HEAD
-            "description": "A PHP 7.2+ library for representing and manipulating collections.",
-=======
-            "description": "A PHP library for representing and manipulating collections.",
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "keywords": [
                 "array",
                 "collection",
@@ -3552,15 +3156,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/collection/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/ramsey/collection/tree/1.2.2"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/ramsey/collection/tree/1.1.4"
-=======
-                "source": "https://github.com/ramsey/collection/tree/1.2.2"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -3572,15 +3168,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
             "time": "2021-10-10T03:01:02+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2021-07-30T00:58:27+00:00"
-=======
-            "time": "2021-10-10T03:01:02+00:00"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "ramsey/uuid",
@@ -5357,11 +4945,6 @@
             "time": "2021-07-28T13:41:28+00:00"
         },
         {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "name": "symfony/polyfill-php81",
             "version": "v1.23.0",
             "source": {
@@ -5441,10 +5024,6 @@
             "time": "2021-05-21T13:25:03+00:00"
         },
         {
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "name": "symfony/process",
             "version": "v5.3.7",
             "source": {
@@ -5508,7 +5087,6 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-<<<<<<< HEAD
             "version": "v2.1.1",
             "source": {
                 "type": "git",
@@ -5519,47 +5097,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/c9012994c4b4fb23e7c57dd86b763a417a04feba",
                 "reference": "c9012994c4b4fb23e7c57dd86b763a417a04feba",
-=======
-            "version": "v2.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "22b37c8a3f6b5d94e9cdbd88e1270d96e2f97b34"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/22b37c8a3f6b5d94e9cdbd88e1270d96e2f97b34",
-                "reference": "22b37c8a3f6b5d94e9cdbd88e1270d96e2f97b34",
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1",
                 "psr/http-message": "^1.0",
-<<<<<<< HEAD
                 "symfony/http-foundation": "^4.4 || ^5.0"
-=======
-                "symfony/http-foundation": "^4.4 || ^5.0 || ^6.0"
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "require-dev": {
                 "nyholm/psr7": "^1.1",
                 "psr/log": "^1.1 || ^2 || ^3",
-<<<<<<< HEAD
                 "symfony/browser-kit": "^4.4 || ^5.0",
                 "symfony/config": "^4.4 || ^5.0",
                 "symfony/event-dispatcher": "^4.4 || ^5.0",
                 "symfony/framework-bundle": "^4.4 || ^5.0",
                 "symfony/http-kernel": "^4.4 || ^5.0",
                 "symfony/phpunit-bridge": "^4.4.19 || ^5.2"
-=======
-                "symfony/browser-kit": "^4.4 || ^5.0 || ^6.0",
-                "symfony/config": "^4.4 || ^5.0 || ^6.0",
-                "symfony/event-dispatcher": "^4.4 || ^5.0 || ^6.0",
-                "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0",
-                "symfony/http-kernel": "^4.4 || ^5.0 || ^6.0",
-                "symfony/phpunit-bridge": "^5.4@dev || ^6.0"
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "suggest": {
                 "nyholm/psr7": "For a super lightweight PSR-7/17 implementation"
@@ -5602,11 +5155,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/psr-http-message-bridge/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/symfony/psr-http-message-bridge/tree/v2.1.1"
-=======
-                "source": "https://github.com/symfony/psr-http-message-bridge/tree/v2.1.2"
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -5622,11 +5171,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
             "time": "2021-07-27T17:25:39+00:00"
-=======
-            "time": "2021-11-05T13:13:39+00:00"
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "symfony/routing",
@@ -6482,33 +6027,6 @@
         },
         {
             "name": "facade/ignition",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "2.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facade/ignition.git",
-                "reference": "2179568bdfddfa56c90c845a0be1a0b52adbf52a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/2179568bdfddfa56c90c845a0be1a0b52adbf52a",
-                "reference": "2179568bdfddfa56c90c845a0be1a0b52adbf52a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "facade/flare-client-php": "^1.0",
-                "facade/ignition-contracts": "^1.0",
-                "filp/whoops": "^2.4",
-                "illuminate/support": "^7.0|^8.0",
-                "monolog/monolog": "^2.0",
-                "php": "^7.2.5",
-                "scrivo/highlight.php": "^9.15",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "2.16.0",
             "source": {
                 "type": "git",
@@ -6530,10 +6048,6 @@
                 "illuminate/support": "^7.0|^8.0",
                 "monolog/monolog": "^2.0",
                 "php": "^7.2.5|^8.0",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "symfony/console": "^5.0",
                 "symfony/var-dumper": "^5.0"
             },
@@ -6586,34 +6100,6 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2021-03-08T13:56:01+00:00"
-        },
-        {
-            "name": "facade/ignition-contracts",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facade/ignition-contracts.git",
-                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition-contracts/zipball/aeab1ce8b68b188a43e81758e750151ad7da796b",
-                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.14",
-                "phpunit/phpunit": "^7.5|^8.0",
-                "vimeo/psalm": "^3.12"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2021-10-28T11:47:23+00:00"
         },
         {
@@ -6637,10 +6123,6 @@
                 "friendsofphp/php-cs-fixer": "^v2.15.8",
                 "phpunit/phpunit": "^9.3.11",
                 "vimeo/psalm": "^3.17.1"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "autoload": {
@@ -6669,21 +6151,9 @@
             ],
             "support": {
                 "issues": "https://github.com/facade/ignition-contracts/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/facade/ignition-contracts/tree/1.0.2"
             },
             "time": "2020-10-16T08:27:54+00:00"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/facade/ignition-contracts/tree/1.0.1"
-            },
-            "time": "2020-07-14T10:10:28+00:00"
-=======
-                "source": "https://github.com/facade/ignition-contracts/tree/1.0.2"
-            },
-            "time": "2020-10-16T08:27:54+00:00"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "fakerphp/faker",
@@ -6874,21 +6344,6 @@
         },
         {
             "name": "mockery/mockery",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "1.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mockery/mockery.git",
-                "reference": "472fa8ca4e55483d55ee1e73c963718c4393791d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/472fa8ca4e55483d55ee1e73c963718c4393791d",
-                "reference": "472fa8ca4e55483d55ee1e73c963718c4393791d",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "1.4.4",
             "source": {
                 "type": "git",
@@ -6899,24 +6354,11 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/mockery/mockery/zipball/e01123a0e847d52d186c5eb4b9bf58b0c6d00346",
                 "reference": "e01123a0e847d52d186c5eb4b9bf58b0c6d00346",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
                 "hamcrest/hamcrest-php": "^2.0.1",
                 "lib-pcre": ">=7.0",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7.10|^6.5|^7.5|^8.5|^9.3"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "php": "^7.3 || ^8.0"
             },
             "conflict": {
@@ -6924,23 +6366,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5 || ^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "1.4.x-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "1.3.x-dev"
-=======
-                    "dev-master": "1.4.x-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -6980,21 +6410,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mockery/mockery/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/mockery/mockery/tree/1.4.4"
             },
             "time": "2021-09-13T15:28:59+00:00"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/mockery/mockery/tree/1.3.5"
-            },
-            "time": "2021-09-13T15:33:03+00:00"
-=======
-                "source": "https://github.com/mockery/mockery/tree/1.4.4"
-            },
-            "time": "2021-09-13T15:28:59+00:00"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "myclabs/deep-copy",
@@ -7482,21 +6900,6 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "version": "7.0.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "819f92bba8b001d4363065928088de22f25a3a48"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/819f92bba8b001d4363065928088de22f25a3a48",
-                "reference": "819f92bba8b001d4363065928088de22f25a3a48",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "version": "9.2.8",
             "source": {
                 "type": "git",
@@ -7507,34 +6910,10 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/cf04e88a2e3c56fc1a65488afd493325b4c1bc3e",
                 "reference": "cf04e88a2e3c56fc1a65488afd493325b4c1bc3e",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "ext-xmlwriter": "*",
-                "php": ">=7.2",
-                "phpunit/php-file-iterator": "^2.0.2",
-                "phpunit/php-text-template": "^1.2.1",
-                "phpunit/php-token-stream": "^3.1.3 || ^4.0",
-                "sebastian/code-unit-reverse-lookup": "^1.0.1",
-                "sebastian/environment": "^4.2.2",
-                "sebastian/version": "^2.0.1",
-                "theseer/tokenizer": "^1.1.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.2.2"
-            },
-            "suggest": {
-                "ext-xdebug": "^2.7.2"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
                 "nikic/php-parser": "^4.13.0",
@@ -7554,23 +6933,11 @@
             "suggest": {
                 "ext-pcov": "*",
                 "ext-xdebug": "*"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "9.2-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "7.0-dev"
-=======
-                    "dev-master": "9.2-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -7598,15 +6965,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.8"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/7.0.15"
-=======
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.8"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -7614,32 +6973,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2021-07-26T12:20:09+00:00"
-        },
-        {
-            "name": "phpunit/php-file-iterator",
-            "version": "2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "28af674ff175d0768a5a978e6de83f697d4a7f05"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/28af674ff175d0768a5a978e6de83f697d4a7f05",
-                "reference": "28af674ff175d0768a5a978e6de83f697d4a7f05",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2021-10-30T08:01:38+00:00"
         },
         {
@@ -7661,23 +6994,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "3.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "2.0.x-dev"
-=======
-                    "dev-master": "3.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -7704,15 +7025,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.5"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/2.0.4"
-=======
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.5"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -7720,31 +7033,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2021-07-19T06:46:01+00:00"
-        },
-        {
-            "name": "phpunit/php-text-template",
-            "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
-                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-09-28T05:57:25+00:00"
         },
         {
@@ -7777,10 +7065,6 @@
                     "dev-master": "3.1-dev"
                 }
             },
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "autoload": {
                 "classmap": [
                     "src/"
@@ -7797,41 +7081,6 @@
                     "role": "lead"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "description": "Simple template engine.",
-            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
-            "keywords": [
-                "template"
-            ],
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
-                "source": "https://github.com/sebastianbergmann/php-text-template/tree/1.2.1"
-            },
-            "time": "2015-06-21T13:50:34+00:00"
-        },
-        {
-            "name": "phpunit/php-timer",
-            "version": "2.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "2454ae1765516d20c4ffe103d85a58a9a3bd5662"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/2454ae1765516d20c4ffe103d85a58a9a3bd5662",
-                "reference": "2454ae1765516d20c4ffe103d85a58a9a3bd5662",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "description": "Invoke callables with a timeout",
             "homepage": "https://github.com/sebastianbergmann/php-invoker/",
             "keywords": [
@@ -7868,23 +7117,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "2.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "2.1-dev"
-=======
-                    "dev-master": "2.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -7903,19 +7140,6 @@
                     "role": "lead"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "description": "Utility class for timing",
-            "homepage": "https://github.com/sebastianbergmann/php-timer/",
-            "keywords": [
-                "timer"
-            ],
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-timer/issues",
-                "source": "https://github.com/sebastianbergmann/php-timer/tree/2.1.3"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "description": "Simple template engine.",
             "homepage": "https://github.com/sebastianbergmann/php-text-template/",
             "keywords": [
@@ -7924,10 +7148,6 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
                 "source": "https://github.com/sebastianbergmann/php-text-template/tree/2.0.4"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -7935,33 +7155,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T08:20:02+00:00"
-        },
-        {
-            "name": "phpunit/php-token-stream",
-            "version": "3.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "9c1da83261628cb24b6a6df371b6e312b3954768"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/9c1da83261628cb24b6a6df371b6e312b3954768",
-                "reference": "9c1da83261628cb24b6a6df371b6e312b3954768",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-10-26T05:33:50+00:00"
         },
         {
@@ -7983,23 +7176,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "5.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.1-dev"
-=======
-                    "dev-master": "5.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -8014,22 +7195,6 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Wrapper around PHP's tokenizer extension.",
-            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
-            "keywords": [
-                "tokenizer"
-            ],
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
-                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/3.1.3"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                     "email": "sebastian@phpunit.de",
                     "role": "lead"
                 }
@@ -8042,10 +7207,6 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-timer/issues",
                 "source": "https://github.com/sebastianbergmann/php-timer/tree/5.0.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -8053,26 +7214,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "abandoned": true,
-            "time": "2021-07-26T12:15:06+00:00"
-        },
-        {
-            "name": "phpunit/phpunit",
-            "version": "8.5.21",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "50a58a60b85947b0bee4c8ecfe0f4bbdcf20e984"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/50a58a60b85947b0bee4c8ecfe0f4bbdcf20e984",
-                "reference": "50a58a60b85947b0bee4c8ecfe0f4bbdcf20e984",
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-10-26T13:16:10+00:00"
         },
         {
@@ -8087,10 +7228,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c814a05837f2edb0d1471d6e3f4ab3501ca3899a",
                 "reference": "c814a05837f2edb0d1471d6e3f4ab3501ca3899a",
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "shasum": ""
             },
             "require": {
@@ -8101,37 +7238,6 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "myclabs/deep-copy": "^1.10.0",
-                "phar-io/manifest": "^2.0.3",
-                "phar-io/version": "^3.0.2",
-                "php": ">=7.2",
-                "phpspec/prophecy": "^1.10.3",
-                "phpunit/php-code-coverage": "^7.0.12",
-                "phpunit/php-file-iterator": "^2.0.4",
-                "phpunit/php-text-template": "^1.2.1",
-                "phpunit/php-timer": "^2.1.2",
-                "sebastian/comparator": "^3.0.2",
-                "sebastian/diff": "^3.0.2",
-                "sebastian/environment": "^4.2.3",
-                "sebastian/exporter": "^3.1.2",
-                "sebastian/global-state": "^3.0.0",
-                "sebastian/object-enumerator": "^3.0.3",
-                "sebastian/resource-operations": "^2.0.1",
-                "sebastian/type": "^1.1.3",
-                "sebastian/version": "^2.0.1"
-            },
-            "require-dev": {
-                "ext-pdo": "*"
-            },
-            "suggest": {
-                "ext-soap": "*",
-                "ext-xdebug": "*",
-                "phpunit/php-invoker": "^2.0.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "myclabs/deep-copy": "^1.10.1",
                 "phar-io/manifest": "^2.0.3",
                 "phar-io/version": "^3.0.2",
@@ -8161,10 +7267,6 @@
             "suggest": {
                 "ext-soap": "*",
                 "ext-xdebug": "*"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "bin": [
                 "phpunit"
@@ -8172,32 +7274,15 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "9.5-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "8.5-dev"
-=======
-                    "dev-master": "9.5-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
-<<<<<<< HEAD
                 ],
                 "files": [
                     "src/Framework/Assert/Functions.php"
-=======
-<<<<<<< HEAD
-=======
-                ],
-                "files": [
-                    "src/Framework/Assert/Functions.php"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -8220,15 +7305,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.10"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.21"
-=======
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.10"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -8240,48 +7317,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2021-09-25T07:37:20+00:00"
-        },
-        {
-            "name": "scrivo/highlight.php",
-            "version": "v9.18.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "6d5049cd2578e19a06adbb6ac77879089be1e3f9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/6d5049cd2578e19a06adbb6ac77879089be1e3f9",
-                "reference": "6d5049cd2578e19a06adbb6ac77879089be1e3f9",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8|^5.7",
-                "sabberworm/php-css-parser": "^8.3",
-                "symfony/finder": "^2.8|^3.4",
-                "symfony/var-dumper": "^2.8|^3.4"
-            },
-            "suggest": {
-                "ext-mbstring": "Allows highlighting code with unicode characters and supports language with unicode keywords"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Highlight\\": "",
-                    "HighlightUtilities\\": ""
-                },
-                "files": [
-                    "HighlightUtilities/functions.php"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2021-09-25T07:38:51+00:00"
         },
         {
@@ -8313,10 +7348,6 @@
             "autoload": {
                 "classmap": [
                     "src/"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -8325,65 +7356,6 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                    "name": "Geert Bergman",
-                    "homepage": "http://www.scrivo.org/",
-                    "role": "Project Author"
-                },
-                {
-                    "name": "Vladimir Jimenez",
-                    "homepage": "https://allejo.io",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Martin Folkers",
-                    "homepage": "https://twobrain.io",
-                    "role": "Contributor"
-                }
-            ],
-            "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
-            "keywords": [
-                "code",
-                "highlight",
-                "highlight.js",
-                "highlight.php",
-                "syntax"
-            ],
-            "support": {
-                "issues": "https://github.com/scrivo/highlight.php/issues",
-                "source": "https://github.com/scrivo/highlight.php"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/allejo",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-10-24T00:28:14+00:00"
-        },
-        {
-            "name": "sebastian/code-unit-reverse-lookup",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "1de8cd5c010cb153fcd68b8d0f64606f523f7619"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/1de8cd5c010cb153fcd68b8d0f64606f523f7619",
-                "reference": "1de8cd5c010cb153fcd68b8d0f64606f523f7619",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                     "name": "Sebastian Bergmann",
                     "email": "sebastian@phpunit.de",
                     "role": "lead"
@@ -8478,23 +7450,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "2.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "1.0.x-dev"
-=======
-                    "dev-master": "2.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -8516,15 +7476,7 @@
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/2.0.3"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/1.0.2"
-=======
-                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/2.0.3"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -8532,34 +7484,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T08:15:22+00:00"
-        },
-        {
-            "name": "sebastian/comparator",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "1071dfcef776a57013124ff35e1fc41ccd294758"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/1071dfcef776a57013124ff35e1fc41ccd294758",
-                "reference": "1071dfcef776a57013124ff35e1fc41ccd294758",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "sebastian/diff": "^3.0",
-                "sebastian/exporter": "^3.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-09-28T05:30:19+00:00"
         },
         {
@@ -8583,23 +7507,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "4.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.0-dev"
-=======
-                    "dev-master": "4.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -8638,12 +7550,6 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/comparator/tree/3.0.3"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "source": "https://github.com/sebastianbergmann/comparator/tree/4.0.6"
             },
             "funding": [
@@ -8702,10 +7608,6 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/complexity/issues",
                 "source": "https://github.com/sebastianbergmann/complexity/tree/2.0.2"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -8713,33 +7615,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T08:04:30+00:00"
-        },
-        {
-            "name": "sebastian/diff",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "14f72dd46eaf2f2293cbe79c93cc0bc43161a211"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/14f72dd46eaf2f2293cbe79c93cc0bc43161a211",
-                "reference": "14f72dd46eaf2f2293cbe79c93cc0bc43161a211",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.5 || ^8.0",
-                "symfony/process": "^2 || ^3.3 || ^4"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-10-26T15:52:27+00:00"
         },
         {
@@ -8762,23 +7637,11 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3",
                 "symfony/process": "^4.2 || ^5"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "4.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.0-dev"
-=======
-                    "dev-master": "4.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -8810,15 +7673,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/diff/tree/4.0.4"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/diff/tree/3.0.3"
-=======
-                "source": "https://github.com/sebastianbergmann/diff/tree/4.0.4"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -8826,32 +7681,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:59:04+00:00"
-        },
-        {
-            "name": "sebastian/environment",
-            "version": "4.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "d47bbbad83711771f167c72d4e3f25f7fcc1f8b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/d47bbbad83711771f167c72d4e3f25f7fcc1f8b0",
-                "reference": "d47bbbad83711771f167c72d4e3f25f7fcc1f8b0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.5"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-10-26T13:10:38+00:00"
         },
         {
@@ -8873,10 +7702,6 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "suggest": {
                 "ext-posix": "*"
@@ -8884,15 +7709,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "5.1-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "4.2-dev"
-=======
-                    "dev-master": "5.1-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -8919,15 +7736,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/environment/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/environment/tree/5.1.3"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/environment/tree/4.2.4"
-=======
-                "source": "https://github.com/sebastianbergmann/environment/tree/5.1.3"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -8935,37 +7744,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:53:42+00:00"
-        },
-        {
-            "name": "sebastian/exporter",
-            "version": "3.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "0c32ea2e40dbf59de29f3b49bf375176ce7dd8db"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/0c32ea2e40dbf59de29f3b49bf375176ce7dd8db",
-                "reference": "0c32ea2e40dbf59de29f3b49bf375176ce7dd8db",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0",
-                "sebastian/recursion-context": "^3.0"
-            },
-            "require-dev": {
-                "ext-mbstring": "*",
-<<<<<<< HEAD
-                "phpunit/phpunit": "^8.5"
-=======
-                "phpunit/phpunit": "^6.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-09-28T05:52:38+00:00"
         },
         {
@@ -8989,24 +7767,11 @@
             "require-dev": {
                 "ext-mbstring": "*",
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 68abe247e8b42a074c24eb68b1af35a49ba8a6bc
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "4.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.1.x-dev"
-=======
-                    "dev-master": "4.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9048,19 +7813,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/exporter/tree/3.1.4"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/exporter/tree/3.1.3"
-=======
-                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
->>>>>>> update integrasi dashboard admin
->>>>>>> 68abe247e8b42a074c24eb68b1af35a49ba8a6bc
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -9068,39 +7821,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2021-11-11T13:51:24+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:47:53+00:00"
->>>>>>> 68abe247e8b42a074c24eb68b1af35a49ba8a6bc
-        },
-        {
-            "name": "sebastian/global-state",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "474fb9edb7ab891665d3bfc6317f42a0a150454b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/474fb9edb7ab891665d3bfc6317f42a0a150454b",
-                "reference": "474fb9edb7ab891665d3bfc6317f42a0a150454b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2",
-                "sebastian/object-reflector": "^1.1.1",
-                "sebastian/recursion-context": "^3.0"
-            },
-            "require-dev": {
-                "ext-dom": "*",
-                "phpunit/phpunit": "^8.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-09-28T05:24:23+00:00"
         },
         {
@@ -9125,10 +7845,6 @@
             "require-dev": {
                 "ext-dom": "*",
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "suggest": {
                 "ext-uopz": "*"
@@ -9136,15 +7852,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "5.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.0-dev"
-=======
-                    "dev-master": "5.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9169,12 +7877,6 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/global-state/tree/3.0.1"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.3"
             },
             "funding": [
@@ -9233,10 +7935,6 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
                 "source": "https://github.com/sebastianbergmann/lines-of-code/tree/1.0.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -9244,34 +7942,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:43:24+00:00"
-        },
-        {
-            "name": "sebastian/object-enumerator",
-            "version": "3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/object-enumerator.git",
-                "reference": "e67f6d32ebd0c749cf9d1dbd9f226c727043cdf2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/e67f6d32ebd0c749cf9d1dbd9f226c727043cdf2",
-                "reference": "e67f6d32ebd0c749cf9d1dbd9f226c727043cdf2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0",
-                "sebastian/object-reflector": "^1.1.1",
-                "sebastian/recursion-context": "^3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-11-28T06:42:11+00:00"
         },
         {
@@ -9295,23 +7965,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "4.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.0.x-dev"
-=======
-                    "dev-master": "4.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9333,15 +7991,7 @@
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/object-enumerator/tree/4.0.4"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/3.0.4"
-=======
-                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/4.0.4"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -9349,32 +7999,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:40:27+00:00"
-        },
-        {
-            "name": "sebastian/object-reflector",
-            "version": "1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/object-reflector.git",
-                "reference": "9b8772b9cbd456ab45d4a598d2dd1a1bced6363d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/9b8772b9cbd456ab45d4a598d2dd1a1bced6363d",
-                "reference": "9b8772b9cbd456ab45d4a598d2dd1a1bced6363d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-10-26T13:12:34+00:00"
         },
         {
@@ -9396,23 +8020,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "2.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "1.1-dev"
-=======
-                    "dev-master": "2.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9434,15 +8046,7 @@
             "homepage": "https://github.com/sebastianbergmann/object-reflector/",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/object-reflector/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/object-reflector/tree/2.0.4"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/object-reflector/tree/1.1.2"
-=======
-                "source": "https://github.com/sebastianbergmann/object-reflector/tree/2.0.4"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -9450,32 +8054,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:37:18+00:00"
-        },
-        {
-            "name": "sebastian/recursion-context",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "367dcba38d6e1977be014dc4b22f47a484dac7fb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/367dcba38d6e1977be014dc4b22f47a484dac7fb",
-                "reference": "367dcba38d6e1977be014dc4b22f47a484dac7fb",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-10-26T13:14:26+00:00"
         },
         {
@@ -9497,23 +8075,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "4.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "3.0.x-dev"
-=======
-                    "dev-master": "4.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9543,15 +8109,7 @@
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/3.0.1"
-=======
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -9559,29 +8117,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:34:24+00:00"
-        },
-        {
-            "name": "sebastian/resource-operations",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/resource-operations.git",
-                "reference": "31d35ca87926450c44eae7e2611d45a7a65ea8b3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/31d35ca87926450c44eae7e2611d45a7a65ea8b3",
-                "reference": "31d35ca87926450c44eae7e2611d45a7a65ea8b3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-10-26T13:17:30+00:00"
         },
         {
@@ -9603,23 +8138,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.0"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "3.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "2.0-dev"
-=======
-                    "dev-master": "3.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9641,15 +8164,7 @@
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/resource-operations/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/resource-operations/tree/3.0.3"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/resource-operations/tree/2.0.2"
-=======
-                "source": "https://github.com/sebastianbergmann/resource-operations/tree/3.0.3"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -9657,32 +8172,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:30:19+00:00"
-        },
-        {
-            "name": "sebastian/type",
-            "version": "1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "0150cfbc4495ed2df3872fb31b26781e4e077eb4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/0150cfbc4495ed2df3872fb31b26781e4e077eb4",
-                "reference": "0150cfbc4495ed2df3872fb31b26781e4e077eb4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.2"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
@@ -9704,23 +8193,11 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "2.3-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "1.1-dev"
-=======
-                    "dev-master": "2.3-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9743,15 +8220,7 @@
             "homepage": "https://github.com/sebastianbergmann/type",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/type/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/type/tree/2.3.4"
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/type/tree/1.1.4"
-=======
-                "source": "https://github.com/sebastianbergmann/type/tree/2.3.4"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "funding": [
                 {
@@ -9759,29 +8228,6 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "time": "2020-11-30T07:25:11+00:00"
-        },
-        {
-            "name": "sebastian/version",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             "time": "2021-06-15T12:49:02+00:00"
         },
         {
@@ -9800,23 +8246,11 @@
             },
             "require": {
                 "php": ">=7.3"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "3.0-dev"
-=======
-<<<<<<< HEAD
-                    "dev-master": "2.0.x-dev"
-=======
-                    "dev-master": "3.0-dev"
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 }
             },
             "autoload": {
@@ -9839,14 +8273,6 @@
             "homepage": "https://github.com/sebastianbergmann/version",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/version/issues",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/sebastianbergmann/version/tree/master"
-            },
-            "time": "2016-10-03T07:35:21+00:00"
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                 "source": "https://github.com/sebastianbergmann/version/tree/3.0.2"
             },
             "funding": [
@@ -9856,10 +8282,6 @@
                 }
             ],
             "time": "2020-09-28T06:39:44+00:00"
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
         },
         {
             "name": "theseer/tokenizer",
