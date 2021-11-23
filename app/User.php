@@ -30,6 +30,11 @@ class User extends Authenticatable
         return $this->hasMany(PemesananTiket::class);
     }
 
+    public function rencanaliburan()
+    {
+        return $this->hasMany(RencanaLiburan::class);
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *

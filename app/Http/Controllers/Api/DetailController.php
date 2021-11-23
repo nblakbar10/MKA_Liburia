@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use App\TempatWisata;
 use App\BundlingTiket;
 use App\Artikel;
+use App\RencanaLiburan;
+use App\ReviewWisata;
 use Illuminate\Support\Facades\Auth;
 use Validator;
 
@@ -33,11 +35,11 @@ class DetailController extends Controller
     }
 
     public function get_review_wisata(){
-        $tempatwisata = TempatWisata::orderBy('id', 'desc')->get();
+        $reviewwisata = ReviewWisata::orderBy('id', 'desc')->get();
         return response()->json([
             'status' => '200 OK',
-            'message' =>'get_tempat_wisata success',
-            'data' => $tempatwisata
+            'message' =>'get_review_wisata success',
+            'data' => $reviewwisata
         ]);
     }
 
@@ -51,7 +53,14 @@ class DetailController extends Controller
     }
 
 
-    public function getdanpost_rencana_liburan(){}
+    public function get_rencana_liburan(){ //getdanpost
+        $rencanaliburan = RencanaLiburan::orderBy('id', 'desc')->get();
+        return response()->json([
+            'status' => '200 OK',
+            'message' =>'get_rencana_liburan success',
+            'data' => $rencanaliburan
+        ]);
+    }
     public function get_user_badge(){}
     public function get_follow_user(){}
     public function get_user_riwayat_liburan(){}

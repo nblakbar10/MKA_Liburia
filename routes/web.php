@@ -49,34 +49,39 @@ Route::group(['middleware' => ['auth:user,admin']], function () {
             "title" => "Dashboard"
         ]);
     });
-    Route::get('/admin', function () {
-        return view('admin.index', [
-            "title" => "Manajemen Admin"
-        ]);
-    });
-    Route::get('/chart', function () {
-        return view('chart.index', []);
-    });
-    Route::get('/user', function () {
-        return view('user.index', [
-            "title" => "Manajemen User"
-        ]);
-    });
-    Route::get('/wisata', function () {
-        return view('wisata.index', [
-            "title" => "Manajemen Wisata"
-        ]);
-    });
-    Route::get('/tiket', function () {
-        return view('tiket.index', [
-            "title" => "Manajemen Tiket"
-        ]);
-    });
-    Route::get('/artikel', function () {
-        return view('artikel.index', [
-            "title" => "Manajemen artikel"
-        ]);
-    });
+    Route::get('/admin', 'AdminController@index');
+    Route::get('/tiket', 'PemesananTiketnewController@index');
+    Route::get('/wisata', 'TempatWisataController@index');
+    Route::get('/artikel', 'ArtikelController@index');
+    Route::get('/user', 'UserDashController@index');
+    // // Route::get('/admin', function () {
+    // //     return view('admin.index', [
+    // //         "title" => "Manajemen Admin"
+    // //     ]);
+    // // });
+    // // Route::get('/chart', function () {
+    // //     return view('chart.index', []);
+    // // });
+    // // Route::get('/user', function () {
+    // //     return view('user.index', [
+    // //         "title" => "Manajemen User"
+    // //     ]);
+    // // });
+    // // Route::get('/wisata', function () {
+    // //     return view('wisata.index', [
+    // //         "title" => "Manajemen Wisata"
+    // //     ]);
+    // // });
+    // // Route::get('/tiket', function () {
+    // //     return view('tiket.index', [
+    // //         "title" => "Manajemen Tiket"
+    // //     ]);
+    // // });
+    // // Route::get('/artikel', function () {
+    // //     return view('artikel.index', [
+    // //         "title" => "Manajemen artikel"
+    // //     ]);
+    // // });
     Route::get('/halamanutama', [UtamaController::class, 'index']);
 });
 
@@ -84,11 +89,11 @@ Route::post('login', ['as' => 'login', 'uses' => 'LoginController@login']);
 
 // Route::get('/', function ())
 
-Route::get('/admin', 'AdminController@index');
-Route::get('/tiket', 'PemesananTiketnewController@index');
-Route::get('/wisata', 'TempatWisataController@index');
-Route::get('/artikel', 'ArtikelController@index');
-Route::get('/user', 'UserDashController@index');
+// // Route::get('/admin', 'AdminController@index');
+// // Route::get('/tiket', 'PemesananTiketnewController@index');
+// // Route::get('/wisata', 'TempatWisataController@index');
+// // Route::get('/artikel', 'ArtikelController@index');
+// // Route::get('/user', 'UserDashController@index');
 // Route::get('/pemesanantiket/{id}/pemesanantiket','PemesananTiketController@pemesanantiket');
 //Route::get('/admins', 'AdminsController@index')->name('admins');
 
