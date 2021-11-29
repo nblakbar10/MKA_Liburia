@@ -134,6 +134,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                             </a>
                         </li>
+                        <br>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('transaksi') ? 'active' : '' }}" href="/transaksi">
+                                <i class="bi bi-clipboard"></i>
+                                Manajemen Transaksi
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

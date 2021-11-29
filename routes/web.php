@@ -87,6 +87,12 @@ Route::group(['middleware' => ['auth:user,admin']], function () {
 
 Route::post('login', ['as' => 'login', 'uses' => 'LoginController@login']);
 
+// route transaksi 
+Route::get('/transaksi', function () {
+    return view('transaksi.index', [
+        "title" => "Manajemen Transaksi"
+    ]);
+});
 // Route::get('/', function ())
 
 // // Route::get('/admin', 'AdminController@index');
