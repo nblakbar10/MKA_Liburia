@@ -66,59 +66,25 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                        <div class="row destinasi1">
-                            <div class="col-md-4">
-                                <div class="single-box">
-                                    <a href="/destinasi">
-                                        <div class="img-areaone">
-                                            <img src="{{asset('img/destinasi1.svg')}}" alt="">
-                                        </div>
-=======
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <a href="/destinasi">
                                         <div class="img-areaone"><img src="{{asset('img/destinasi1.svg')}}" alt=""></div>
-<<<<<<< HEAD
-=======
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <a href="/destinasi">
-<<<<<<< HEAD
                                         <div class="img-area"><img src="{{asset('img/destinasi2.svg')}}" alt=""></div>
-=======
-<<<<<<< HEAD
-                                        <div class="img-area">
-                                            <img src="{{asset('img/destinasi2.svg')}}" alt="">
-                                        </div>
-=======
-                                        <div class="img-area"><img src="{{asset('img/destinasi2.svg')}}" alt=""></div>
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <a href="/destinasi">
-<<<<<<< HEAD
                                         <div class="img-area"><img src="{{asset('img/destinasi3.svg')}}" alt=""></div>
-=======
-<<<<<<< HEAD
-                                        <div class="img-area1"><img src="{{asset('img/destinasi3.svg')}}" alt=""></div>
-=======
-                                        <div class="img-area"><img src="{{asset('img/destinasi3.svg')}}" alt=""></div>
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
                                     </a>
                                 </div>
                             </div>
@@ -144,15 +110,8 @@
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <a href="/destinasi">
-<<<<<<< HEAD
-                                        <div class="img-area"><img src="{{asset('img/destinasi6.svg')}}" alt=""></div>
-=======
-<<<<<<< HEAD
-                                        <div class="img-area1"><img src="{{asset('img/destinasi6.svg')}}" alt=""></div>
-=======
-                                        <div class="img-area"><img src="{{asset('img/destinasi6.svg')}}" alt=""></div>
->>>>>>> update integrasi dashboard admin
->>>>>>> 99bb788a10ac966b74c291cd93674854678a49fc
+                                        <div class="img-area"><img src="{{asset('img/destinasi6.svg')}}" alt="">
+                                        </div>
                                     </a>
                                 </div>
                             </div>
