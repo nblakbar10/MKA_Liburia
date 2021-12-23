@@ -81,11 +81,71 @@ class UserController extends Controller
     }
 
     ///ini buat show data (user)
-    public function details()
+    public function details(Request $request)
     {
-        $user = Auth::user();
+        //$user = $request->user()->token();
+        $user = $request->user();
         return response()->json(['success' => $user], $this->successStatus);
     }
+
+    public function user_edit(Request $request)
+    {
+        //validate data
+        $validator = Validator::make($request->all(), [
+            'username' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required'
+        ]);
+        $idusernya = auth()->user()->id;
+        // $updated_user = Auth::user();
+        if($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Silahkan Isi Bidang Yang Kosong',
+                'data'    => $validator->errors()
+            ],401);
+        }
+    
+        $user = User::whereId($idusernya)->update($request->all());
+        if ($user) {
+            return response()->json([
+                'success' => true,
+                'message' => 'User Berhasil Diupdate!',
+                'data' => Auth::user()
+            ], 200);
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'User Gagal Diupdate!',
+            ], 401);
+        }
+    }
+
+    public function user_delete($id) {
+        $user = User::findOrFail($id);
+        if($user)
+           $user->delete(); 
+        else
+            return response()->json(error);
+        return response()->json([
+            'status' => '200 OK',
+            'message' =>'delete_user success',
+            'data' => $user
+        ]);
+    }
+}
+    
+
+    // // public function delete(Request $request, User $user)
+    // // {
+    // //     //$user = Auth::user();
+    // //     // $user = $request->user()->token();
+    // //     // $user->delete();
+    // //     $user->tokens()->where('id', $user->currentAccessToken()->id)->delete();
+    // //     return response(['message' => ' Delete user success!']);
+    // // }
+
+    
 /* 
     public function uploadTest(Request $request) {
         if(!$request->hasFile('image')) {
@@ -99,4 +159,5 @@ class UserController extends Controller
         $file->move($path, $file->getClientOriginalName());
         return response()->json(compact('path'));
      }*/
-}
+
+     

@@ -19,20 +19,32 @@ class User extends Authenticatable
 
     protected $table = "users";
     protected $primaryKey = "id";
+    
+    protected $guarded = [];
 
     protected $fillable = [
-        'fullname', 'username', 'email', 'password', 'phone' //'photo' 
+        'fullname', 'username', 'email', 'password', 'phone', 'photo' 
     ];
 
 
     public function pemesanantiket()
     {
-        return $this->hasMany(PemesananTiket::class);
+        return $this->hasMany(PemesananTiket::class); //'user_id'
     }
 
     public function rencanaliburan()
     {
-        return $this->hasMany(RencanaLiburan::class);
+        return $this->hasMany(RencanaLiburan::class, 'user_id');
+    }
+
+
+    public function follower()
+    {
+        return $this->hasMany(Follow::class, 'user_id');
+    }
+    public function following()
+    {
+        return $this->hasMany(Follow::class, 'user_id');
     }
 
     /**

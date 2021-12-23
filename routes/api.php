@@ -14,23 +14,40 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 
 Route::post('login', 'API\UserController@login');
 Route::post('register', 'API\UserController@register');
 
-Route::get('get_tempat_wisata', 'API\DetailController@get_tempat_wisata');
-Route::get('get_bundling_tiket', 'API\DetailController@get_bundling_tiket');
-Route::get('get_review_wisata', 'API\DetailController@get_review_wisata');
-Route::get('get_artikel', 'API\DetailController@get_artikel');
-Route::get('get_rencana_liburan', 'API\DetailController@get_rencana_liburan');
-
 Route::group(['middleware' => 'auth:api'], function(){
-    Route::get('user/detail', 'Api\UserController@details');
+    Route::get('details', 'Api\UserController@details');
     Route::post('logout', 'Api\UserController@logout');
+    Route::post('user_edit', 'Api\UserController@user_edit'); //harusnya ini put tapi malah error wkwkkw jadinya pake post
+    Route::delete('user_delete/{id}', 'Api\UserController@user_delete');
+
+    Route::post('update', 'Api\UserController@update');
+
+    Route::get('get_tempat_wisata', 'API\DetailController@get_tempat_wisata');
+    Route::get('get_bundling_tiket', 'API\DetailController@get_bundling_tiket');
+    Route::get('get_review_wisata', 'API\DetailController@get_review_wisata');
+    Route::get('get_artikel', 'API\DetailController@get_artikel');
+
+    Route::get('get_rencana_liburan', 'Api\RencanaLiburanController@get_rencana_liburan');
+    Route::post('post_rencana_liburan', 'Api\RencanaLiburanController@post_rencana_liburan');
+    Route::delete('delete_rencana_liburan/{id}', 'Api\RencanaLiburanController@delete_rencana_liburan');
+
+    Route::post('follow_user', 'Api\FollowController@follow_user');
+    Route::delete('unfollow_user', 'Api\FollowController@unfollow_user');
+    
+    //Route::match(array('GET','POST'),'post_rencana_liburan', 'Api\DetailController@post_rencana_liburan');
+
+    
+    
+    
+    
 }); 
 
 

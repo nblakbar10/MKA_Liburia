@@ -8,7 +8,7 @@ class BundlingTiket extends Model
 {
     protected $table = 'bundling_tiket';
 
-    protected $filable = ['nama_bundling', 'deskripsi_bundling', 'harga_bundling'];
+    protected $fillable = ['nama_bundling', 'deskripsi_bundling', 'harga_bundling'];
 
     //public function TempatWisata(){
         //return $this->belongsTo(TempatWisata::class);

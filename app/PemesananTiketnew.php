@@ -8,9 +8,9 @@ class PemesananTiketnew extends Model
 {
     protected $table = 'pemesanan_tiketnew';
 
-    protected $filable = ['tanggal_pesan', 'jumlah_pesan', 'total_harga', 'keterangan', 'status'];
+    protected $fillable = ['tanggal_pesan', 'jumlah_pesan', 'total_harga', 'keterangan', 'status'];
 
-    public function user(){
+    public function users(){
         return $this->belongsTo(User::class);
     }
 }

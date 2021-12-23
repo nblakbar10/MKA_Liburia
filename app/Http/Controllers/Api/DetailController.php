@@ -4,7 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-//use App\User;
+use App\User;
 use App\TempatWisata;
 use App\BundlingTiket;
 use App\Artikel;
@@ -15,7 +15,8 @@ use Validator;
 
 class DetailController extends Controller
 {
-    public function get_tempat_wisata(Request $request)
+    
+    public function get_tempat_wisata()
     {
         $tempatwisata = TempatWisata::orderBy('id', 'desc')->get();
         return response()->json([
@@ -24,16 +25,6 @@ class DetailController extends Controller
             'data' => $tempatwisata
         ]);
     }
-
-    public function get_bundling_tiket(){
-        $bundlingtiket = BundlingTiket::orderBy('id', 'desc')->get();
-        return response()->json([
-            'status' => '200 OK',
-            'message' =>'get_bundling_tiket success',
-            'data' => $bundlingtiket
-        ]);
-    }
-
     public function get_review_wisata(){
         $reviewwisata = ReviewWisata::orderBy('id', 'desc')->get();
         return response()->json([
@@ -49,16 +40,6 @@ class DetailController extends Controller
             'status' => '200 OK',
             'message' =>'get_artikel success',
             'data' => $artikel
-        ]);
-    }
-
-
-    public function get_rencana_liburan(){ //getdanpost
-        $rencanaliburan = RencanaLiburan::orderBy('id', 'desc')->get();
-        return response()->json([
-            'status' => '200 OK',
-            'message' =>'get_rencana_liburan success',
-            'data' => $rencanaliburan
         ]);
     }
     public function get_user_badge(){}

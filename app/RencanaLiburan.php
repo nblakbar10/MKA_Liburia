@@ -8,9 +8,9 @@ class RencanaLiburan extends Model
 {
     protected $table = 'rencana_liburan';
 
-    protected $filable = ['nama_rencana', 'deskripsi_rencana'];
+    protected $fillable = ['nama_rencana', 'deskripsi_rencana', 'user_id'];
 
-    public function user(){
-        return $this->belongsTo(User::class);
+    public function users(){
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
