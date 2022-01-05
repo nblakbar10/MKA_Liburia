@@ -48,12 +48,6 @@
                                     <input type="text" placeholder="Nama Lengkap . . . ">
                                 </div>
                                 <br>
-                                <div class="input">
-                                    <label for="">Asal Daerah</label> <br>
-                                    <select name="" placeholder="Asal Daerah . . . " autofocus>
-                                        <option value="">- Pilih -</option>
-                                    </select>
-                                </div>
                                 <br>
                                 <div class="input">
                                     <label for=""> Email </label><br>
@@ -64,7 +58,7 @@
                                     <label for=""> No. Telepon </label><br>
                                     <input type="number" placeholder="Nomor telepon admin">
                                 </div>
-                                <br>
+                                <!-- <br>
                                 <div class="input">
                                     <label for=""> Status </label><br>
                                     <input type="text" placeholder="Status admin">
@@ -73,22 +67,22 @@
                                 <div class="input">
                                     <label for=""> Rencana Liburan </label><br>
                                     <input type="text" placeholder="Rencana Liburan">
-                                </div>
-                                <br>
+                                </div> -->
+                                <!-- <br>
                                 <div class="input">
                                     <label for=""> Pemesanan </label><br>
                                     <input type="text" placeholder="Pemesanan">
-                                </div>
+                                </div> -->
                                 <br>
                                 <div class="input">
-                                    <label for=""> Foto/Video </label><br>
-                                    <input type="text" placeholder="Foto/Video">
+                                    <label for=""> Foto </label><br>
+                                    <input type="text" placeholder="Foto">
                                 </div>
-                                <br>
+                                <!-- <br>
                                 <div class="input">
                                     <label for=""> Ulasan</label><br>
                                     <input type="text" placeholder="Ulasan">
-                                </div>
+                                </div> -->
                                 <br>
                             </div>
                             <br>
@@ -109,10 +103,8 @@
                     <th style="width: 10px">ID</th>
                     <th>Username</th>
                     <th>Nama Lengkap</th>
-                    <th>Asal Daerah</th>
                     <th>Email</th>
                     <th>No.Telepon</th>
-                    <th>Status</th>
                     <th>Rencana Liburan</th>
                     <th>Pemesanan</th>
                     <th>Foto/Video</th>
@@ -126,9 +118,9 @@
                     <td>{{$us->id}}</td>
                     <td>{{$us->username}}</td>
                     <td>{{$us->fullname}}</td>
-                    <td></td>
                     <td>{{$us->email}}</td>
                     <td>{{$us->phone}}</td>
+                    <td>{{$us->photo}}</td>
                     <td></td>
                     <td>
                         <!-- Button trigger modal -->

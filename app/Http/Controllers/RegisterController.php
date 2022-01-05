@@ -25,7 +25,11 @@ class RegisterController extends Controller
             'password' => 'required|min:5',
             'c_password' => 'required|same:password',
             'phone' => 'required',
+            'photo' => 'required'
         ]);
+
+        
+            // $file_progress->move(public_path('storage/progress'), $fileName_progress);
 
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);

@@ -120,13 +120,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li><br>
 
-                        <li class="nav-item">
-                            <a class="nav-link {{ Request::is('tiket') ? 'active' : '' }}" href="/tiket">
-                                <i class="bi bi-card-text"></i>
-                                Manajemen Tiket
-
-                            </a>
-                        </li><br>
 
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('artikel') ? 'active' : '' }}" href="/artikel">

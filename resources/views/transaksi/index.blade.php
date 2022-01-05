@@ -13,7 +13,7 @@
             <div id="example1_filter" class="dataTables_filter">
                 <i class="bi bi-search"></i>
                 <label>
-                    <input type="search" class="form-control form-control-sm" placeholder="Cari nama bundling . . ." aria-controls="example1">
+                    <input type="search" class="form-control form-control-sm" placeholder="Cari transaksi . . ." aria-controls="example1">
                 </label>
             </div>
         </div>
@@ -85,26 +85,34 @@
                 <tr>
                     <th style="width: 10px">No</th>
                     <th>Username</th>
-                    <th>Nama User</th>
                     <th>No.Telp User</th>
-                    <th>ID Transaksi</th>
-                    <th>Detail</th>
-                    <th>Status</th>
-                    <th>Bukti Transaksi</th>
+                    <th>Nama Tempat Wisata</th>
+                    <th>Tanggal Pesan</th>
+                    <th>Jumlah Pesan</th>
+                    <th>Total Harga</th>
+                    <th>Bukti Pembayaran</th>
+                    <th>Verify Status</th>
                     <th style="width: 100px;">Aksi</th>
-
                 </tr>
             </thead>
             <tbody>
+                @foreach ($transaksis as $trs)
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{{$trs->id}}</td>
+                    <td>{{$trs->username_pemesan}}</td>
+                    <td>{{$trs->phone_pemesan}}</td>
+                    <td>{{$trs->nama_tempat_wisata}}</td>
+                    <td>{{$trs->tanggal_pesan}}</td>
+                    <td>{{$trs->jumlah_pesan}}</td>
+                    <td>{{$trs->total_harga}}</td>
+                    <td>{{$trs->bukti_pembayaran}}</td>
+                    <td>{{$trs->verify_status}}</td>
+                    <td>
+                        
+
+                    </td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

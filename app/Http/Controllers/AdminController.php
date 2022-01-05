@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Admin;
 use Illuminate\Http\Request;
-
 use App\Http\Controllers\Controller;
+
 use Illuminate\Support\Facades\Auth;
 use Validator;
 
@@ -20,7 +20,7 @@ class AdminController extends Controller
     {
         $title = 'Admin';
         $admins = Admin::orderBy('id', 'desc')->get();
-        return view('admin.index', compact('admins', 'title'));
+        return View('admin.index', compact('admins', 'title'));
         // dd($admins);
     }
 

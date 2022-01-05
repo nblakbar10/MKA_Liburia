@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\PemesananTiketnew;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+use Illuminate\Support\Facades\Auth;
+use Validator;
 
 class PemesananTiketnewController extends Controller
 {
@@ -15,8 +19,10 @@ class PemesananTiketnewController extends Controller
     public function index()
     {
         $title = 'Pemesanan Tiket';
-        $tiket = PemesananTiketnew::orderBy('id', 'desc')->get();
-        return view('tiket.index', compact('tiket', 'title'));
+        $transaksis = PemesananTiketnew::orderBy('id', 'desc')->get();
+        return View('transaksi.index', compact('transaksis', 'title'));
+
+        //dd($tikets);
     }
 
     /**
@@ -80,8 +86,12 @@ class PemesananTiketnewController extends Controller
      * @param  \App\PemesananTiketnew  $pemesananTiketnew
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PemesananTiketnew $pemesananTiketnew)
+    public function destroy($id)
     {
-        //
+        $post = PemesananTiketnew::find($id);
+
+        $post->delete();
+
+        return back()->with('success',' Penghapusan berhasil.');
     }
 }

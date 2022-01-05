@@ -78,7 +78,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th style="width: 10px">#</th>
+                    <th style="width: 10px">No</th>
                     <th>Nama Lengkap</th>
                     <th>Username</th>
                     <th>Email</th>

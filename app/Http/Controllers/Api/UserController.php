@@ -47,16 +47,30 @@ class UserController extends Controller
             'password' => 'required',
             'c_password' => 'required|same:password',
             'phone' => 'required',
-            'photo' => 'mimes:png,jpg,jpeg|max:2048',
+            'photo' => 'mimes:png,jpg,jpeg|max:2048'
         ]);
 
         if ($validator->fails()) {
             return response()->json(['error'=>$validator->errors()], 401);            
         }
 
-        $input = $request->all();
-        $input['password'] = bcrypt($input['password']);
-        $user = User::create($input);
+        $file_progress = $request->photo;
+            $fileName_progress = time() . '_' . $file_progress->getClientOriginalName();
+            $file_progress->move(public_path('storage/user'), $fileName_progress);
+            // dd($fileName_progress);
+
+        // $input = $request->all();
+        // $input['password'] = bcrypt($input['password']); //ini buat encrypt password
+        // $user = User::create($input);
+            $user = User::create([
+                'fullname' => $request->fullname,
+                'username' => $request->username,
+                'email' => $request->email,
+                'password' => $request->password,
+                'phone' => $request->phone,
+                'photo' => $fileName_progress,  
+            ]);
+        
         $success['token'] =  $user->createToken('nApp')->accessToken;
 
         return response()->json([
@@ -88,13 +102,15 @@ class UserController extends Controller
         return response()->json(['success' => $user], $this->successStatus);
     }
 
+
     public function user_edit(Request $request)
     {
         //validate data
         $validator = Validator::make($request->all(), [
             'username' => 'required',
             'email' => 'required|email',
-            'phone' => 'required'
+            'phone' => 'required',
+            'photo' => 'required|image:jpeg,png,jpg,gif,svg|max:2048'
         ]);
         $idusernya = auth()->user()->id;
         // $updated_user = Auth::user();

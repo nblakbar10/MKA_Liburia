@@ -9,13 +9,25 @@ use App\RencanaLiburan;
 
 class RencanaLiburanController extends Controller
 {
-    public function get_rencana_liburan(){
-        $rencanaliburan = RencanaLiburan::orderBy('id', 'desc')->get();
+    public function get_rencana_liburan($user_id){
+        $rencanaliburan = RencanaLiburan::where('user_id',$user_id)->get();
+        //RencanaLiburan::where('user_id',$user_id)->get();
+        
         return response()->json([
             'status' => '200 OK',
-            'message' =>'get_rencana_liburan success',
-            'data' => $rencanaliburan
+            "message" => "rencana liburan retrieved successfully.",
+            "data" => $rencanaliburan
         ]);
+    }
+
+    public function edit_rencana_liburan(Request $request, $id){
+        $rencanaliburan = RencanaLiburan::find($id);
+        $rencanaliburan->update($request->all());
+        return response()->json([
+            'status' => '200 OK',
+            "message" => "edit rencana liburan sukses",
+            "data" => $rencanaliburan
+        ]); 
     }
 
     public function post_rencana_liburan(Request $request){

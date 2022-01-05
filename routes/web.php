@@ -41,19 +41,16 @@ Route::get('/infokota', [InfokotaController::class, 'index']);
 Route::get('/info', [InfoController::class, 'index']);
 
 
-
+// Route::get('login', 'LoginController@index');
+// Route::post('login', 'LoginController@index');
 
 Route::group(['middleware' => ['auth:user,admin']], function () {
     Route::get('/dashboard', function () {
         return view('dashboard.index', [
             "title" => "Dashboard"
         ]);
-    });
-    Route::get('/admin', 'AdminController@index');
-    Route::get('/tiket', 'PemesananTiketnewController@index');
-    Route::get('/wisata', 'TempatWisataController@index');
-    Route::get('/artikel', 'ArtikelController@index');
-    Route::get('/user', 'UserDashController@index');
+    
+    
     // // Route::get('/admin', function () {
     // //     return view('admin.index', [
     // //         "title" => "Manajemen Admin"
@@ -81,18 +78,29 @@ Route::group(['middleware' => ['auth:user,admin']], function () {
     // //     return view('artikel.index', [
     // //         "title" => "Manajemen artikel"
     // //     ]);
-    // // });
+    });
+    Route::get('/admin', 'AdminController@index');
+    Route::get('/transaksi', 'PemesananTiketnewController@index');
+    Route::get('/wisata', 'TempatWisataController@index');
+    Route::get('/artikel', 'ArtikelController@index');
+    //Route::get('/transaksi', 'TransaksiController@index');
+    Route::get('/user', 'UserDashController@index');
+
     Route::get('/halamanutama', [UtamaController::class, 'index']);
+
+    // Route::post('login',  'LoginController@index');
+    // return view()
+    //Route::resource('transaksis', PemesananTiketnewController::class);
 });
 
-Route::post('login', ['as' => 'login', 'uses' => 'LoginController@login']);
+//Route::post('login', ['as' => 'login', 'uses' => 'LoginController@index']);
 
 // route transaksi 
-Route::get('/transaksi', function () {
-    return view('transaksi.index', [
-        "title" => "Manajemen Transaksi"
-    ]);
-});
+// // Route::get('/transaksi', function () {
+// //     return view('transaksi.index', [
+// //         "title" => "Manajemen Transaksi"
+// //     ]);
+
 // Route::get('/', function ())
 
 // // Route::get('/admin', 'AdminController@index');
