@@ -56,7 +56,7 @@
                                     <div class="input">
                                         <label for="">Foto</label>
                                         <br>
-                                        <input type="file" class="form-control" id="foto" name="foto">
+                                        <input type="file" class="form-control" id="photo" name="photo">
                                     </div>
                                     <br>
                                 </div>
@@ -98,7 +98,7 @@
                                     <div class="input">
                                         <label for="">Foto</label>
                                         <br>
-                                        <input type="file" class="form-control" id="foto-edit" name="foto">
+                                        <input type="file" class="form-control" id="photo-edit" name="photo">
                                     </div>
                                     <br>
                                 </div>
@@ -134,10 +134,9 @@
                 <td>{{$at->id}}</td>
                 <td>{{$at->judul}}</td>
                 <td>{{$at->isi}}</td>
-                <!-- <td>{{$at->foto}}</td> -->
                 <td>
                     <!-- Button trigger modal -->
-                    <button style="width:95px" type="button" class="btn btn-primary btn-show-foto" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-photo="{{asset('storage/artikel/' .$at->foto)}}">
+                    <button style="width:95px" type="button" class="btn btn-primary btn-show-photo" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-photo="{{asset('storage/artikel/' .$at->photo)}}">
                         <i class="bi bi-file-earmark-text"></i>
                         Detail
                     </button>
@@ -152,7 +151,7 @@
                                     
                                 </div>
                                 <div class="model-body p-4">
-                                    <img alt="{{$at->foto}}" width='50%' height='50%' id="fotonya">
+                                    <img alt="{{$at->photo}}" width='50%' height='50%' id="fotonya">
                                 </div>
                                 <!-- body -->
                                 <div class="modal-body">
@@ -167,7 +166,7 @@
                     data-link="{{ route('artikel.update', $at->id) }}" 
                     data-judul="{{$at->judul}}"
                     data-isi="{{$at->isi}}"
-                    data-foto="{{$at->foto}}" >
+                    data-foto="{{$at->photo}}" >
                         <i class="fas fa-pencil-alt"></i>
                     </a>
 
@@ -201,19 +200,19 @@
     $(document).on('click', '.btn-edit-artikel', function(event) {
             var judul = $(this).data('judul');
             var isi = $(this).data('isi');
-            var foto = $(this).data('foto');
+            var photo = $(this).data('photo');
 
             $('#judul-edit').val(judul);
             $('#isi-edit').val(isi);
-            $('#foto-edit').val(foto);
+            $('#photo-edit').val(photo);
             console.log(judul, $('#form-edit-artikel'));
         });
 
-    $(document).on('click', '.btn-show-foto', function(event) {
-        var foto = $(this).data('foto');
+    $(document).on('click', '.btn-show-photo', function(event) {
+        var photo = $(this).data('photo');
 
-        $('#fotonya').attr("src", foto);
-        console.log(foto);
+        $('#fotonya').attr("src", photo);
+        console.log(photo);
     });
         
 </script>

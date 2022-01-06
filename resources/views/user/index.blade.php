@@ -33,10 +33,6 @@
                                 <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-
-                            <!-- body -->
-                            <!-- <form method=”POST” action=”/user/store”>
-                            @csrf -->
                             <form action="{{ route('user.store') }}" method="POST" id="form-tambah-user" enctype="multipart/form-data" >
                                 @csrf
                                 @method('POST')   
@@ -147,16 +143,13 @@
                                 <button type="submit" class="btn btn-primary">Save changes</button>
                                 </div>
                             </form>
-                            
                         </div>
                     </div>
-                </div>
                 @endforeach
+                </div>
             </div>
         </div>
 
-
-        
         <br>
         <table class="table table-bordered">
             <thead>
@@ -168,7 +161,6 @@
                     <th>No.Telepon</th>
                     <th>Foto/Video</th>
                     <th style="width: 95px">Aksi</th>
-                    <!-- <th style="width: 95px">Aksi</th> -->
                 </tr>
             </thead>
             <tbody>
@@ -235,10 +227,6 @@
     </div>
 </div>
 
-</tr>
-</tbody>
-</table>
-</div>
 <!-- /.card-body -->
 <div class="card-footer clearfix">
     <ul class="pagination pagination-sm m-0 float-right">

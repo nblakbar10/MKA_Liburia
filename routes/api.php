@@ -40,13 +40,21 @@ Route::group(['middleware' => 'auth:api'], function(){
     Route::put('edit_rencana_liburan/{id}', 'Api\RencanaLiburanController@edit_rencana_liburan');
     Route::delete('delete_rencana_liburan/{id}', 'Api\RencanaLiburanController@delete_rencana_liburan');
 
+
     Route::get('get_pemesanan_tiket', 'Api\PemesananTiketController@get_pemesanan_tiket');
     Route::post('post_pemesanan_tiket/{id}', 'Api\PemesananTiketController@post_pemesanan_tiket');
-    Route::put('add_bukti_pembayaran/{id}', 'Api\PemesananTiketController@add_bukti_pembayaran');
+
+    Route::post('add_bukti_pembayaran/{id}', 'Api\PemesananTiketController@add_bukti_pembayaran');
+
     Route::delete('delete_riwayat_pemesanan/{id}', 'Api\PemesananTiketController@delete_riwayat_pemesanan');
+
 
     Route::post('follow_user', 'Api\FollowController@follow_user');
     Route::delete('unfollow_user', 'Api\FollowController@unfollow_user');
+
+
+
+    Route::get('get_riwayat_liburan/{user_id}', 'API\RiwayatLiburanController@get_riwayat_liburan');
 
     Route::apiResource('tempatwisatas/{tempatwisata}/reviews', 'ReviewTempatWisataController')
     ->only('store', 'update', 'destroy');

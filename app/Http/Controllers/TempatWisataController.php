@@ -41,7 +41,7 @@ class TempatWisataController extends Controller
     public function store(Request $request)
     {
         
-        $file_progress = $request->foto;
+        $file_progress = $request->file('foto');
             $fileName_progress = time() . '_' . $file_progress->getClientOriginalName();
             $file_progress->move(public_path('storage/wisata'), $fileName_progress);
 

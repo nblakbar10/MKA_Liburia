@@ -15,6 +15,11 @@ class CreateTempatWisatasTable extends Migration
     {
         Schema::create('tempat_wisata', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_wisata');
+            $table->string('alamat_wisata');
+            $table->string('foto');
+            $table->string('fasilitas_wisata');
+            $table->string('harga_wisata');
             $table->timestamps();
         });
     }

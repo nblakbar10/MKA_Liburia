@@ -43,7 +43,37 @@
                     <td>{{$trs->tanggal_pesan}}</td>
                     <td>{{$trs->jumlah_pesan}}</td>
                     <td>{{$trs->total_harga}}</td>
-                    <td>{{$trs->bukti_pembayaran}}</td>
+                    
+                    
+                    <!-- Button trigger modal -->
+                    <td>
+                    <button style="width:95px" type="button" class="btn btn-primary btn-show-bukti" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bukti="{{asset('storage/bukti/' .$trs->bukti)}}">
+                        <i class="bi bi-file-earmark-text"></i>
+                        Detail
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal1Label">Bukti Transaksi</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        
+                                    </div>
+                                    <div class="model-body p-4">
+                                        <img alt="{{$trs->bukti}}" width='50%' height='50%' id="fotonya">
+                                    </div>
+
+                                    <!-- body -->
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </td>
                     <td>{{$trs->verify_status}}</td>
                     <td>
                         @if($trs->verify_status == "BELUM DIBAYAR")
@@ -68,4 +98,14 @@
     </div>
 </div>
 
+
+<script>
+    $(document).on('click', '.btn-show-bukti', function(event) {
+        var bukti = $(this).data('bukti');
+
+        $('#fotonya').attr("src", bukti);
+        console.log(bukti);
+    });
+        
+</script>
 @endsection

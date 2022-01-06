@@ -100,33 +100,26 @@ class PemesananTiketController extends Controller
         $riwayatpemesanan = PemesananTiketNew::find($id);
         
         $validator = Validator::make($request->all(), [
-            'bukti_pembayaran' => 'required|image:jpeg,png,jpg,gif,svg|max:2048'
+            'bukti' => 'required|image:jpeg,png,jpg,gif,svg'
         ]);
 
-        $file_progress = $request->bukti_pembayaran;
+        if ($validator->fails()) {
+            return response()->json(['error'=>$validator->errors()], 401);            
+        }
+
+        $file_progress = $request->bukti;
             $fileName_progress = time() . '_' . $file_progress->getClientOriginalName();
-            $file_progress->move(public_path('storage/invoice'), $fileName_progress);
-        // $riwayatpemesanan->update($request->all(), [
-        //     'bukti_pembayaran' => 'required|image:jpeg,png,jpg,gif,svg|max:2048'
-        // ]);
+            $file_progress->move(public_path('storage/bukti'), $fileName_progress);
+
 
         $riwayatpemesanan->update([
-            'bukti_pembayaran' => $fileName_progress
+            'bukti' => $fileName_progress
         ]);
-
-        // $uploadFolder = 'invoice';
-        // $image = $request->file('bukti_pembayaran');
-        // $image_uploaded_path = $image->store($uploadFolder, 'public');
-        // $uploadedImageResponse = array(
-        //     "image_name" => basename($image_uploaded_path),
-        //     "image_url" => Storage::disk('public')->url($image_uploaded_path),
-        //     "mime" => $image->getClientMimeType()
-        // );
 
         return response()->json([
             'status' => '200 OK',
-            "message" => "edit riwayat_pemesanan success",
-            "data" => $riwayatpemesanan
+            "message" => "add bukti pembayaran sukses",
+            // "data" => $transaksi
         ]); 
     }
 

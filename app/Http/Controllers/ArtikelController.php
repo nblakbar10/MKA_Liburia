@@ -95,7 +95,7 @@ class ArtikelController extends Controller
         // dd("admins");
         $artikel = Artikel::where('id', $id)->first();
 
-        if ($request->picture == NULL) {
+        if ($request->photo == NULL) {
             $artikel->update([
                 'judul' => $request->judul,
                 'isi' => $request->isi,

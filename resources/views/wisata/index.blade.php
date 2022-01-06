@@ -53,7 +53,7 @@
                                     <div class="input">
                                         <label for="">Foto</label>
                                         <br>
-                                        <input type="file" class="form-control" id="foto" name="Foto">
+                                        <input type="file" class="form-control" id="foto" name="foto">
                                     </div>
                                     <br>
 
@@ -64,7 +64,7 @@
                                     <br>
                                     <div class="input">
                                         <label for="">Harga</label><br>
-                                        <input type="text" class="form-control" id="harga" name="harga" placeholder="Harga">
+                                        <input type="text" class="form-control" id="harga" name="harga_wisata" placeholder="Harga">
                                     </div>
                 
                                     <br>
@@ -90,7 +90,7 @@
                             <!-- body -->
                             <!-- <form method=”POST” action=”/user/store”>
                             @csrf -->
-                            <form action="{{ route('wisata.store', $wis->id) }}" method="POST" id="form-edit-wisata" enctype="multipart/form-data" >
+                            <form action="{{ route('wisata.update', $wis->id) }}" method="POST" id="form-edit-wisata" enctype="multipart/form-data" >
                                 @csrf
                                 @method('PUT')   
                                 <div class="modal-body">
@@ -110,7 +110,7 @@
                                     <div class="input">
                                         <label for="">Foto</label>
                                         <br>
-                                        <input type="file" class="form-control" id="foto-edit" name="Foto">
+                                        <input type="file" class="form-control" id="foto-edit" name="foto">
                                     </div>
                                     <br>
 
@@ -121,7 +121,7 @@
                                     <br>
                                     <div class="input">
                                         <label for="">Harga</label><br>
-                                        <input type="text" class="form-control" id="harga_wisata-edit" name="Harga" placeholder="Harga">
+                                        <input type="text" class="form-control" id="harga_wisata-edit" name="harga_wisata" placeholder="Harga">
                                     </div>
                 
                                     <br>
@@ -146,7 +146,7 @@
                     <th>Nama Tempat Wisata</th>
                     <th>Alamat</th>   
                     <th>Fasilitas</th>
-                    <th>Harga</th>
+                    <th>Harga Tiket</th>
                     <th>Foto</th>
                     <th style="width: 95px">Aksi</th>
                 </tr>
@@ -156,8 +156,8 @@
                 <tr>
                     <td>{{$wis->id}}</td>
                     <td>{{$wis->nama_wisata}}</td>
-                    <td>{{$wis->alamat_Wisata}}</td>
-                    <td>{{$wis->fasilitas_Wisata}}</td>
+                    <td>{{$wis->alamat_wisata}}</td>
+                    <td>{{$wis->fasilitas_wisata}}</td>
                     <td>{{$wis->harga_wisata}}</td>
                     <!-- <td>{{$wis->foto}}</td> -->
                     <td>
@@ -212,16 +212,17 @@
             </tbody>
         </table>
     </div>
-    <!-- /.card-body -->
-    <div class="card-footer clearfix">
-        <ul class="pagination pagination-sm m-0 float-right">
-            <li class="page-item"><a class="page-link" href="#">«</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">»</a></li>
-        </ul>
-    </div>
+</div>
+<!-- /.card-body -->
+<div class="card-footer clearfix">
+    <ul class="pagination pagination-sm m-0 float-right">
+        <li class="page-item"><a class="page-link" href="#">«</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">»</a></li>
+    </ul>
+</div>
 </div>
 
 
