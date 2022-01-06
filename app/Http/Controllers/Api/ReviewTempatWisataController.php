@@ -23,22 +23,37 @@ class ReviewTempatWisataController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function store(Request $request, TempatWisata $tempatwisata)
+    public function post_review_wisata(Request $request, $tempatwisata)
     {
-        $request->validate([
-            'review' => 'required|string',
-            'rating' => 'required|numeric|min:0|max:5',
+        $review = ReviewTempatWisata::create([
+            'review' => $request->review,
+            'rating' => $request->rating,
+            'user_id' => auth()->user()->id
+            ]);
+
+        // $review->user_id;
+        $review->save();
+
+        return response()->json([
+            'status' => '200 OK',
+            'message' =>'post_rencana_liburan success',
+            'data' => $review
         ]);
-
-        $review = new ReviewTempatWisata;
-        $review->review = $request->review;
-        $review->rating = $request->rating;
-        $review->user_id = auth()->user()->id;
-
-        $product->reviews()->save($review);
-        return response()->json(['message' => 'Review Added!', 'review' => $review]);
     }
 
+
+    public function get_review_wisata($user_id){
+        $review = ReviewTempatWisata::where('user_id',$user_id)->get();
+        //RencanaLiburan::where('user_id',$user_id)->get();
+        
+        return response()->json([
+            'status' => '200 OK',
+            "message" => "review wisata from this user retrieved successfully.",
+            "data" => $review
+        ]);
+    }
+
+    
     /**
      * Update the specified resource in storage.
      *

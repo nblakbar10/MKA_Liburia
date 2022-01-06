@@ -52,7 +52,8 @@ Route::group(['middleware' => 'auth:api'], function(){
     Route::post('follow_user', 'Api\FollowController@follow_user');
     Route::delete('unfollow_user', 'Api\FollowController@unfollow_user');
 
-
+    Route::post('post_review_wisata/{tempatwisata}', 'API\ReviewTempatWisataController@post_review_wisata');
+    Route::get('get_review_wisata/{user_id}', 'API\ReviewTempatWisataController@get_review_wisata');
 
     Route::get('get_riwayat_liburan/{user_id}', 'API\RiwayatLiburanController@get_riwayat_liburan');
 
