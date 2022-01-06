@@ -17,68 +17,6 @@
                 </label>
             </div>
         </div>
-
-        <div class="row">
-            <div class="tambah col ">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="bi bi-plus"></i> Tambah
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-
-                            <!-- body -->
-                            <div class="modal-body">
-                                <div class="input">
-                                    <label for="">Username</label>
-                                    <br>
-                                    <input type="text" placeholder="Username . . . ">
-                                </div>
-                                <br>
-                                <div class="input">
-                                    <label for="">Nama User</label> <br>
-                                    <input type="text" placeholder="Nama User . . . ">
-                                </div>
-                                <br>
-                                <div class="input">
-                                    <label for="">No.Telp</label><br>
-                                    <input type="text" placeholder="total harga . . . ">
-                                </div>
-                                <br>
-                                <div class="input">
-                                    <label for="">ID Transaksi</label><br>
-                                    <input type="text" placeholder="ID Transaksi . . . ">
-                                </div>
-                                <br>
-                                <div class="input">
-                                    <label for="">Detail Transaksi</label><br>
-                                    <input type="text" placeholder="Detail Transaksi . . . ">
-                                </div>
-                                <br>
-                                <div class="input">
-                                    <label for="">Jumlah Transaksi</label><br>
-                                    <input type="text" placeholder="Jumlah Transaksi . . . ">
-                                </div>
-                                <br>
-                            </div>
-                            <br>
-                            <br>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <br>
         <table class="table table-bordered">
             <thead>
@@ -108,8 +46,10 @@
                     <td>{{$trs->bukti_pembayaran}}</td>
                     <td>{{$trs->verify_status}}</td>
                     <td>
-                        
-
+                        @if($trs->verify_status == "BELUM DIBAYAR")
+                            <a href="/confirm/{{$trs->id}}" type="submit" class="btn btn-warning btn-sm"><i class="fas fa-check"></i> </a>
+                            <a href="/reject/{{$trs->id}}" type="submit" class="btn btn-danger btn-sm"><i class="fa fa-times"></i> </a>
+                        @endif
                     </td>
                 </tr>
                 @endforeach

@@ -10,7 +10,7 @@ class FrontendController extends Controller
     {
         $data = [
             [
-                "title" => "Majukan Pariwisata NTT Lewat Ideathon 2021 #RinduLabuanBajo",
+                "title" => "555Majukan Pariwisata NTT Lewat Ideathon 2021 #RinduLabuanBajo",
                 "description" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quibusdam ullam? Accusamus labore sapiente magni quia autem impedit in voluptatibus assumenda blanditiis quae illum perspiciatis dignissimos dolorum ut, vitae molestias?"
             ],
             [

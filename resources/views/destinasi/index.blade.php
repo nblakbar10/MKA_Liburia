@@ -27,15 +27,18 @@
     <h2 class="tag">Kota Favorit</h2>
     <br>
     <div class="row slider">
+        @foreach ($tempatwisata as $tws)
         <div class="col-md-4">
             <div class="details">
-                <a href="/infokota">
-                    <img src="{{asset('img/kota.svg')}}" width="200px" alt="">
+                <a href="/infokota/{{$tws->id}}">
+                    <img src="{{asset('img') /$tws->picture}}" width="200px" alt="">
                 </a>
             </div>
+        
         </div>
+        @foreach
 
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
             <div class="details">
                 <img src="{{asset('img/kota.svg')}}" width="200px" alt="">
             </div>
@@ -75,7 +78,7 @@
             <div class="details">
                 <img src="{{asset('img/kota.svg')}}" width="200px" alt="">
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

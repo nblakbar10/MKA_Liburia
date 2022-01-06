@@ -61,10 +61,10 @@ class PemesananTiketController extends Controller
             'jumlah_pesan' => $request->input('jumlah_pesan'),
 
             //'total_harga' => $request->input('total_harga'),
-            'total_harga' => $totalharga
+            'total_harga' => $totalharga,
 
             // 'bukti_pembayaran' => $request->input('bukti_pembayaran'),
-            // 'verify_status' => $request->input('bukti_pembayaran'),
+            'verify_status' => "BELUM DIBAYAR",
             ]);
 
         // $pemesanantiket->user_id;

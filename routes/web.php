@@ -9,6 +9,14 @@ use App\Http\Controllers\InfokotaController;
 use App\Http\Controllers\InfoController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\DashboardController;
+
+// use App\Http\Controllers\ArtikelController;
+// use App\Http\Controllers\TempatWisataController;
+// use App\Http\Controllers\PemesananTiketnewController;
+// use App\Http\Controllers\AdminController;
+// use App\Http\Controllers\UserDashController;
+
+// use App\Admin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,6 +51,7 @@ Route::get('/info', [InfoController::class, 'index']);
 
 // Route::get('login', 'LoginController@index');
 // Route::post('login', 'LoginController@index');
+
 
 Route::group(['middleware' => ['auth:user,admin']], function () {
     Route::get('/dashboard', function () {
@@ -79,14 +88,30 @@ Route::group(['middleware' => ['auth:user,admin']], function () {
     // //         "title" => "Manajemen artikel"
     // //     ]);
     });
-    Route::get('/admin', 'AdminController@index');
+    Route::get('admin', 'AdminController@index');
     Route::get('/transaksi', 'PemesananTiketnewController@index');
     Route::get('/wisata', 'TempatWisataController@index');
     Route::get('/artikel', 'ArtikelController@index');
     //Route::get('/transaksi', 'TransaksiController@index');
     Route::get('/user', 'UserDashController@index');
-
+    //Route::post('/user/store','UserDashController@store');
     Route::get('/halamanutama', [UtamaController::class, 'index']);
+
+    Route::resource('user', UserDashController::class);
+    Route::resource('admin', AdminController::class);
+    Route::resource('wisata', TempatWisataController::class);
+    Route::resource('artikel', ArtikelController::class);
+    Route::resource('transaksi', PemesananTiketnewController::class);
+
+    Route::get("confirm/{id}", "PemesananTiketnewController@confirm");
+    Route::get("reject/{id}", "PemesananTiketnewController@reject");
+    // Route::get('admin', 'App\Http\Controllers\AdminController@register');
+    
+
+
+
+
+    
 
     // Route::post('login',  'LoginController@index');
     // return view()

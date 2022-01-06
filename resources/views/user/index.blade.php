@@ -35,67 +35,128 @@
                             </div>
 
                             <!-- body -->
-                            <div class="modal-body">
-                                <div class="input">
-                                    <label for="">Username</label>
+                            <!-- <form method=”POST” action=”/user/store”>
+                            @csrf -->
+                            <form action="{{ route('user.store') }}" method="POST" id="form-tambah-user" enctype="multipart/form-data" >
+                                @csrf
+                                @method('POST')   
+                                <div class="modal-body">
+                                    <div class="input">
+                                        <label for="">Fullname</label>
+                                        <br>
+                                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Fullname">
+                                    </div>
                                     <br>
-                                    <input type="text" placeholder="Username Admin . . . ">
-                                </div>
-                                <br>
-                                <div class="input">
-                                    <label for="">Nama Lengkap</label>
+                                    <div class="input">
+                                        <label for="">Username</label>
+                                        <br>
+                                        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                                    </div>
                                     <br>
-                                    <input type="text" placeholder="Nama Lengkap . . . ">
+                                    
+                                    <div class="input">
+                                        <label for="">Photo</label>
+                                        <br>
+                                        <input type="file" class="form-control" id="photo" name="photo">
+                                    </div>
+                                    <br>
+
+                                    <div class="input">
+                                        <label for=""> Email </label><br>
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                                    </div>
+                                    <br>
+                                    <div class="input">
+                                        <label for=""> Phone </label><br>
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                    </div>
+                                    <br>
+                                    <div class="input">
+                                        <label for=""> Password </label><br>
+                                        <input type="text" class="form-control" id="password" name="password" placeholder="Password">
+                                    </div>
+                                    <br>
                                 </div>
                                 <br>
-                                <br>
-                                <div class="input">
-                                    <label for=""> Email </label><br>
-                                    <input type="text" placeholder="Email ">
+                                <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Save changes</button>
                                 </div>
-                                <br>
-                                <div class="input">
-                                    <label for=""> No. Telepon </label><br>
-                                    <input type="number" placeholder="Nomor telepon admin">
-                                </div>
-                                <!-- <br>
-                                <div class="input">
-                                    <label for=""> Status </label><br>
-                                    <input type="text" placeholder="Status admin">
-                                </div>
-                                <br>
-                                <div class="input">
-                                    <label for=""> Rencana Liburan </label><br>
-                                    <input type="text" placeholder="Rencana Liburan">
-                                </div> -->
-                                <!-- <br>
-                                <div class="input">
-                                    <label for=""> Pemesanan </label><br>
-                                    <input type="text" placeholder="Pemesanan">
-                                </div> -->
-                                <br>
-                                <div class="input">
-                                    <label for=""> Foto </label><br>
-                                    <input type="text" placeholder="Foto">
-                                </div>
-                                <!-- <br>
-                                <div class="input">
-                                    <label for=""> Ulasan</label><br>
-                                    <input type="text" placeholder="Ulasan">
-                                </div> -->
-                                <br>
-                            </div>
-                            <br>
-                            <br>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+
+                 <!-- Modal -->
+                 @foreach ($users as $us)
+                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <!-- body -->
+                            <!-- <form method=”POST” action=”/user/store”>
+                            @csrf -->
+                            <!-- <form action="/user/update" method="PUT" id="form-edit-user" enctype="multipart/form-data" > -->
+                            <!-- {{ route('user.destroy', $us->id) }} -->
+                            
+                            <form action="{{ route('user.update', $us->id) }}" method="POST" id="form-edit-user" enctype="multipart/form-data" >
+                                @csrf
+                                @method('PUT')   
+                                <div class="modal-body">
+                                    <div class="input">
+                                        <label for="">Fullname</label>
+                                        <br>
+                                        <input type="text" class="form-control" id="fullname-edit" name="fullname" placeholder="Fullname">
+                                    </div>
+                                    <br>
+                                    <div class="input">
+                                        <label for="">Username</label>
+                                        <br>
+                                        <input type="text" class="form-control" id="username-edit" name="username" placeholder="Username">
+                                    </div>
+                                    <br>
+                                    
+                                    <div class="input">
+                                        <label for="">Photo</label>
+                                        <br>
+                                        <input type="file" class="form-control" id="photo-edit" name="photo">
+                                    </div>
+                                    <br>
+
+                                    <div class="input">
+                                        <label for=""> Email </label><br>
+                                        <input type="text" class="form-control" id="email-edit" name="email" placeholder="Email">
+                                    </div>
+                                    <br>
+                                    <div class="input">
+                                        <label for=""> Phone </label><br>
+                                        <input type="text" class="form-control" id="phone-edit" name="phone" placeholder="Phone">
+                                    </div>
+                                    <br>
+                                    <!-- <div class="input">
+                                        <label for=""> Password </label><br>
+                                        <input type="text" class="form-control" id="password-edit" name="password" placeholder="Password">
+                                    </div>
+                                    <br> -->
+                                </div>
+                                <br>
+                                <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+                @endforeach
             </div>
         </div>
 
+
+        
         <br>
         <table class="table table-bordered">
             <thead>
@@ -105,10 +166,8 @@
                     <th>Nama Lengkap</th>
                     <th>Email</th>
                     <th>No.Telepon</th>
-                    <th>Rencana Liburan</th>
-                    <th>Pemesanan</th>
                     <th>Foto/Video</th>
-                    <th>Ulasan</th>
+                    <th style="width: 95px">Aksi</th>
                     <!-- <th style="width: 95px">Aksi</th> -->
                 </tr>
             </thead>
@@ -120,11 +179,10 @@
                     <td>{{$us->fullname}}</td>
                     <td>{{$us->email}}</td>
                     <td>{{$us->phone}}</td>
-                    <td>{{$us->photo}}</td>
-                    <td></td>
+                    <!-- <td>{{$us->photo}}</td> -->
                     <td>
                         <!-- Button trigger modal -->
-                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <button style="width:95px" type="button" class="btn btn-primary btn-show-photo" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-photo="{{asset('storage/user/' .$us->photo)}}">
                             <i class="bi bi-file-earmark-text"></i>
                             Detail
                         </button>
@@ -134,8 +192,14 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModal1Label">Rencana Liburan</h5>
+                                        <h5 class="modal-title" id="exampleModal1Label">Foto User</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        
+                                    </div>
+                                    <div class="model-body p-4">
+                                        <img alt="{{$us->photo}}" width='50%' height='50%' id="fotonya">
+                                        <!-- src="{{asset('storage/user/' .$us->photo)}}"  -->
+                                        <!-- <img src="{{asset('storage/user/' .Auth::user()->profile_pic)}}" alt="{{$us->photo}}" width='50%' height='50%'> -->
                                     </div>
 
                                     <!-- body -->
@@ -146,35 +210,24 @@
                             </div>
                         </div>
                     </td>
-
                     <td>
-                        <!-- Button trigger modal -->
-                        <button style="width:95px" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Detail
-                        </button>
+                        <a class="btn btn-warning btn-sm m-1 btn-edit-user" type="submit" value="edit" data-bs-toggle="modal" data-bs-target="#exampleModal2" 
+                        data-link="{{ route('user.update', $us->id) }}" 
+                        data-username="{{$us->username}}"
+                        data-fullname="{{$us->fullname}}"
+                        data-email="{{$us->email}}"
+                        data-phone="{{$us->phone}}" >
+                            <i class="fas fa-pencil-alt"></i>
+                        </a>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModal1Label">Rencana Liburan</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <!-- body -->
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <form action="{{ route('user.destroy', $us->id) }}" method="post">
+                        @csrf    
+                        @method('delete')
+                            <button class="btn btn-danger btn-sm m-1" type="submit" value="delete" onclick="return confirm('Apakah anda yakin untuk menghapus user ini ?');">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </form>
                     </td>
-
-                    <td>{{$us->photo}}</td>
-                    <td></td>
-
                 </tr>
                 @endforeach
             </tbody>
@@ -197,5 +250,29 @@
     </ul>
 </div>
 </div>
+
+
+<script>
+    $(document).on('click', '.btn-edit-user', function(event) {
+            var fullname = $(this).data('fullname');
+            var username = $(this).data('username');
+            var email = $(this).data('email');
+            var phone = $(this).data('phone');
+
+            $('#fullname-edit').val(fullname);
+            $('#username-edit').val(username);
+            $('#email-edit').val(email);
+            $('#phone-edit').val(phone);
+            console.log(username, $('#form-edit-user'));
+        });
+
+    $(document).on('click', '.btn-show-photo', function(event) {
+        var photo = $(this).data('photo');
+
+        $('#fotonya').attr("src", photo);
+        console.log(photo);
+    });
+        
+</script>
 
 @endsection

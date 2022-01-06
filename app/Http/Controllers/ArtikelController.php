@@ -37,7 +37,24 @@ class ArtikelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $file_progress = $request->file('photo');
+            $fileName_progress = time() . '_' . $file_progress->getClientOriginalName();
+            $file_progress->move(public_path('storage/user'), $fileName_progress);
+            // dd($fileName_progress);
+
+
+        // insert data ke table user
+        $artikel= Artikel::create([
+            'judul' => $request->judul,
+            'isi' => $request->isi,
+            'photo' => $fileName_progress, 
+        ]);
+
+        $artikel->save();
+        // alihkan halaman ke halaman user
+        return redirect()->back()->with('success', 'Berhasil menambah artikel');
+ 
     }
 
     /**
@@ -57,9 +74,13 @@ class ArtikelController extends Controller
      * @param  \App\Artikel  $artikel
      * @return \Illuminate\Http\Response
      */
-    public function edit(Artikel $artikel)
+    public function edit($id)
     {
-        //
+        $artikel = Artikel::find($id);
+
+        $action = URL::route('artikel.update', ['id' => $id]);
+
+        return view('artikel.index', compact('artikel', 'title'));
     }
 
     /**
@@ -69,9 +90,30 @@ class ArtikelController extends Controller
      * @param  \App\Artikel  $artikel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Artikel $artikel)
+    public function update(Request $request, $id)
     {
-        //
+        // dd("admins");
+        $artikel = Artikel::where('id', $id)->first();
+
+        if ($request->picture == NULL) {
+            $artikel->update([
+                'judul' => $request->judul,
+                'isi' => $request->isi,
+                'photo' => $request->photo,
+            ]);
+        } else {
+            $file_progress = $request->file('photo');
+            $fileName_progress = time() . '_' . $file_progress->getClientOriginalName();
+            $file_progress->move(public_path('storage/artikel'), $fileName_progress);
+
+            $artikel->update([
+                'judul' => $request->fullname,
+                'isi' => $request->username,
+                'photo' => $fileName_progress,
+                // 'address' => $request->address,.
+            ]);
+        }
+        return redirect()->back()->with('success', 'Berhasil melakukan update artikel');
     }
 
     /**
@@ -80,8 +122,17 @@ class ArtikelController extends Controller
      * @param  \App\Artikel  $artikel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Artikel $artikel)
+    public function destroy($id)
     {
-        //
+        $artikel = Artikel::find($id);
+        $artikel->delete();
+        
+        // $merchant = Merchant::where('user_id', $id)->first();
+        // if ($merchant != NULL) {
+        //     $merchant->delete();
+        // }
+
+        return redirect()->back()->with('success', "Berhasil menghapus artikel");
+
     }
 }

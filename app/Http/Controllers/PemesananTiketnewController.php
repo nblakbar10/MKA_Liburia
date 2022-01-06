@@ -94,4 +94,27 @@ class PemesananTiketnewController extends Controller
 
         return back()->with('success',' Penghapusan berhasil.');
     }
+
+
+    public function confirm($id)
+    {
+        $post = PemesananTiketnew::find($id);
+
+        $post->update([
+            'verify_status' => "LUNAS"
+        ]);
+
+        return back()->with('success',' Transaksi Disetujui.');
+    }
+
+    public function reject($id)
+    {
+        $post = PemesananTiketnew::find($id);
+
+        $post->update([
+            'verify_status' => "DITOLAK"
+        ]);
+
+        return back()->with('success','Transaksi Ditolak.');
+    }
 }

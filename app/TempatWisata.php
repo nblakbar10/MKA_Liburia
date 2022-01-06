@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class TempatWisata extends Model
 {
     protected $table = 'tempat_wisata';
-
-    protected $fillable = ['nama_wisata', 'alamat_wisata', 'foto_wisata', 'fasilitas_wisata', 'harga_wisata',];
+    protected $primaryKey = "id";
+    protected $fillable = ['nama_wisata', 'alamat_wisata', 'foto', 'fasilitas_wisata', 'harga_wisata',];
 
 
     // public function pemesanantiketnew()
@@ -19,4 +19,8 @@ class TempatWisata extends Model
     // public function BundlingTiket(){
     //     return $this->hasMany(BundlingTiket::class);
     // }
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d H:i',
+        'updated_at' => 'datetime:Y-m-d H:i'
+    ];
 }
